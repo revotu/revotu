@@ -104,7 +104,7 @@
 <meta property="og:url" content="http://www.revotu.com/common-questions-about-git.html">
 <meta property="og:site_name" content="大师兄">
 <meta property="og:description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
-<meta property="og:updated_time" content="2017-07-05T11:29:44.985Z">
+<meta property="og:updated_time" content="2017-07-08T03:13:08.595Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git常见问题指南">
 <meta name="twitter:description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
@@ -388,6 +388,8 @@
 <p>撤销所有文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset</div></pre></td></tr></table></figure></p>
 <h2 id="本地新创建的项目push到git上"><a href="#本地新创建的项目push到git上" class="headerlink" title="本地新创建的项目push到git上"></a>本地新创建的项目push到git上</h2><p>首先，登陆github创建一个空的repo，然后：<br>进入到本地项目路径，首先初始化git，然后关联远端repo地址，最后push到git上。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git init                      <span class="comment">#初始化git，在当前目录生成.git文件夹</span></div><div class="line">git add -A                    <span class="comment">#添加即将commit的文件(注意：-A代表所有)</span></div><div class="line">git commit -m <span class="string">"first commit"</span>  <span class="comment">#commit到本地版本库</span></div><div class="line">git remote add origin https://github.com/username/reponame.git <span class="comment">#关联远端刚刚创建的repo地址</span></div><div class="line">git push -u origin master     <span class="comment">#推到远端git上</span></div></pre></td></tr></table></figure></p>
 <h2 id="解决git-warning-LF-will-be-replaced-by-CRLF问题"><a href="#解决git-warning-LF-will-be-replaced-by-CRLF问题" class="headerlink" title="解决git warning: LF will be replaced by CRLF问题"></a>解决git warning: LF will be replaced by CRLF问题</h2><p>Windows下的换行符是CRLF，而在Linux下的换行符是LF，执行如下命令，关闭换行符自动转换：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global core.autocrlf <span class="literal">false</span></div></pre></td></tr></table></figure></p>
+<h2 id="移除已经在git版本库中某文件"><a href="#移除已经在git版本库中某文件" class="headerlink" title="移除已经在git版本库中某文件"></a>移除已经在git版本库中某文件</h2><p>首先在<code>.gitignore</code>文件中添加要移除的文件。然后执行如下命令:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm --cached &lt;file&gt;</div></pre></td></tr></table></figure></p>
+<p>此时，本地这个文件已经从git版本库移除。<br>注意：当执行commit操作并push到线上后，线上环境在pull代码，此时会删除线上的这个文件！</p>
 
       
     </div>
@@ -537,7 +539,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">32</span>
+                <span class="site-state-item-count">33</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -585,7 +587,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#删除分支"><span class="nav-number">1.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#clone代码到本地并且更改成指定的文件夹"><span class="nav-number">2.</span> <span class="nav-text">clone代码到本地并且更改成指定的文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销已经add但还没有commit的文件"><span class="nav-number">3.</span> <span class="nav-text">撤销已经add但还没有commit的文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地新创建的项目push到git上"><span class="nav-number">4.</span> <span class="nav-text">本地新创建的项目push到git上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决git-warning-LF-will-be-replaced-by-CRLF问题"><span class="nav-number">5.</span> <span class="nav-text">解决git warning: LF will be replaced by CRLF问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#删除分支"><span class="nav-number">1.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#clone代码到本地并且更改成指定的文件夹"><span class="nav-number">2.</span> <span class="nav-text">clone代码到本地并且更改成指定的文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销已经add但还没有commit的文件"><span class="nav-number">3.</span> <span class="nav-text">撤销已经add但还没有commit的文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地新创建的项目push到git上"><span class="nav-number">4.</span> <span class="nav-text">本地新创建的项目push到git上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决git-warning-LF-will-be-replaced-by-CRLF问题"><span class="nav-number">5.</span> <span class="nav-text">解决git warning: LF will be replaced by CRLF问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移除已经在git版本库中某文件"><span class="nav-number">6.</span> <span class="nav-text">移除已经在git版本库中某文件</span></a></li></ol></div>
             
 
           </div>
