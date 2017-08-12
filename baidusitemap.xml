@@ -4,6 +4,74 @@
 
     
   <url>
+    <loc>http://www.revotu.com/ubuntu-change-source-to-sove-download-too-slow-problem.html</loc>
+    <lastmod>2017-08-12T14:38:13.000Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu换源解决下载安装软件速度太慢问题</title>
+        <pubTime>2017-08-12T14:08:34.000Z</pubTime>
+        
+        <tag>Ubuntu</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <lastmod>2017-08-12T13:42:03.684Z</lastmod>
+    <data>
+        <display>
+        <title>Python如何递归删除空文件夹</title>
+        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <lastmod>2017-08-12T13:42:03.684Z</lastmod>
+    <data>
+        <display>
+        <title>修改crontab默认编辑器</title>
+        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
+        
+        <tag>Crontab</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/why-print-became-a-function-in-python-3.html</loc>
+    <lastmod>2017-08-02T08:14:29.280Z</lastmod>
+    <data>
+        <display>
+        <title>为什么在Python3中print不再是语句而成了函数</title>
+        <pubTime>2017-08-01T15:52:56.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/understanding-python-with-statement.html</loc>
     <lastmod>2017-07-31T15:47:29.000Z</lastmod>
     <data>
@@ -27,6 +95,76 @@
         <display>
         <title>Python进阶指南</title>
         <pubTime>2017-01-27T03:46:34.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>BeautifulSoup删除html文档中所有属性</title>
+        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
+        
+        <tag>BeautifulSoup</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
+        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Selenium</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>Python之list、dict、json等常见操作</title>
+        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -74,76 +212,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>BeautifulSoup删除html文档中所有属性</title>
-        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
-        
-        <tag>BeautifulSoup</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>Python之list、dict、json等常见操作</title>
-        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
-        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Selenium</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/useful-online-tools.html</loc>
     <lastmod>2017-07-08T03:19:36.413Z</lastmod>
     <data>
@@ -152,23 +220,6 @@
         <pubTime>2016-05-06T08:58:10.000Z</pubTime>
         
         <tag>Tools</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    <data>
-        <display>
-        <title>Git常见问题指南</title>
-        <pubTime>2016-05-26T02:49:37.000Z</pubTime>
-        
-        <tag>Git</tag>
          
          
            
@@ -195,16 +246,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
         <display>
-        <title>MySQL之一道关于GROUP BY的经典面试题</title>
-        <pubTime>2016-05-09T01:27:31.000Z</pubTime>
+        <title>Git常见问题指南</title>
+        <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
-        <tag>SQL</tag>
-         
-        <tag>MySQL</tag>
+        <tag>Git</tag>
          
          
            
@@ -214,52 +263,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
+    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Ubuntu apt-get时出现Segmentation faults... 0%错误</title>
-        <pubTime>2016-06-27T03:24:41.000Z</pubTime>
+        <title>Python编码问题</title>
+        <pubTime>2017-03-13T02:47:33.000Z</pubTime>
         
-        <tag>Linux</tag>
-         
-        <tag>ubuntu</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu修改主机名</title>
-        <pubTime>2016-06-08T02:30:51.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>ubuntu</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>两张图搞清composer install与composer update区别</title>
-        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
-        
-        <tag>Composer</tag>
+        <tag>Python</tag>
          
          
            
@@ -320,16 +331,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
+    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Redis下批量删除特定pattern的keys</title>
-        <pubTime>2015-04-23T14:51:35.000Z</pubTime>
+        <title>Nginx Rewrite简明指南</title>
+        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
         
-        <tag>Redis</tag>
-         
-        <tag>NoSQL</tag>
+        <tag>Nginx</tag>
          
          
            
@@ -345,222 +354,6 @@
         <display>
         <title>Python文件操作相关问题</title>
         <pubTime>2017-02-05T03:57:09.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下C语言的几道经典面试题</title>
-        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
-        
-        <tag>C</tag>
-         
-        <tag>Linux</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python字符串操作相关问题</title>
-        <pubTime>2017-03-15T08:49:29.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python编码问题</title>
-        <pubTime>2017-03-13T02:47:33.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Django Admin创建不关联任何model的自定义页面</title>
-        <pubTime>2017-04-16T08:04:34.000Z</pubTime>
-        
-        <tag>Django</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>MySQL常用函数清单</title>
-        <pubTime>2017-04-06T08:40:57.000Z</pubTime>
-        
-        <tag>MySQL</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>XPATH简明指南</title>
-        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
-        
-        <tag>XPATH</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/calling-python-script-from-crontab-with-activate.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Crontab激活virtualenv的python环境运行脚本</title>
-        <pubTime>2017-06-15T07:07:02.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Virtualenv</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>解决Scrapy中xpath用到中文报错问题</title>
-        <pubTime>2017-05-28T10:36:42.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>XPATH</tag>
-         
-        <tag>Scrapy</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Scrapy爬虫常见问题总结</title>
-        <pubTime>2017-06-22T05:49:15.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Scrapy</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>MySQL时间处理相关函数</title>
-        <pubTime>2017-06-28T05:53:17.000Z</pubTime>
-        
-        <tag>SQL</tag>
-         
-        <tag>MySQL</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python获取当前时间</title>
-        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python处理Windows环境下文件路径问题解决方案</title>
-        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -593,14 +386,198 @@
 
     
   <url>
-    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Nginx Rewrite简明指南</title>
-        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
+        <title>Linux下删除文件中空行的几种方法</title>
+        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
         
-        <tag>Nginx</tag>
+        <tag>Linux</tag>
+         
+        <tag>grep</tag>
+         
+        <tag>sed</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python字符串操作相关问题</title>
+        <pubTime>2017-03-15T08:49:29.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL常用函数清单</title>
+        <pubTime>2017-04-06T08:40:57.000Z</pubTime>
+        
+        <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Django Admin创建不关联任何model的自定义页面</title>
+        <pubTime>2017-04-16T08:04:34.000Z</pubTime>
+        
+        <tag>Django</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>XPATH简明指南</title>
+        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
+        
+        <tag>XPATH</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>解决Scrapy中xpath用到中文报错问题</title>
+        <pubTime>2017-05-28T10:36:42.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>XPATH</tag>
+         
+        <tag>Scrapy</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/calling-python-script-from-crontab-with-activate.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Crontab激活virtualenv的python环境运行脚本</title>
+        <pubTime>2017-06-15T07:07:02.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Virtualenv</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Scrapy爬虫常见问题总结</title>
+        <pubTime>2017-06-22T05:49:15.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Scrapy</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python获取当前时间</title>
+        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL时间处理相关函数</title>
+        <pubTime>2017-06-28T05:53:17.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+        <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python处理Windows环境下文件路径问题解决方案</title>
+        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
+        
+        <tag>Python</tag>
          
          
            
@@ -646,27 +623,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下删除文件中空行的几种方法</title>
-        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>grep</tag>
-         
-        <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/python-practical-script-list.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -696,6 +652,118 @@
         <tag>Python</tag>
          
         <tag>WebDriver</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下C语言的几道经典面试题</title>
+        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>C</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL之一道关于GROUP BY的经典面试题</title>
+        <pubTime>2016-05-09T01:27:31.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+        <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Redis下批量删除特定pattern的keys</title>
+        <pubTime>2015-04-23T14:51:35.000Z</pubTime>
+        
+        <tag>Redis</tag>
+         
+        <tag>NoSQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu修改主机名</title>
+        <pubTime>2016-06-08T02:30:51.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>ubuntu</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu apt-get时出现Segmentation faults... 0%错误</title>
+        <pubTime>2016-06-27T03:24:41.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>ubuntu</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>两张图搞清composer install与composer update区别</title>
+        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
+        
+        <tag>Composer</tag>
          
          
            
