@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/keeping-the-last-n-items.html</loc>
+    
+    <lastmod>2017-08-27T14:00:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/unpacking-a-sequence-into-separate-variables.html</loc>
     
     <lastmod>2017-08-27T12:11:02.000Z</lastmod>
@@ -150,13 +157,6 @@
   
   <url>
     <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -339,6 +339,13 @@
   
   <url>
     <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
