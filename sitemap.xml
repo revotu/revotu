@@ -2,21 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/unpacking-a-sequence-into-separate-variables.html</loc>
+    
+    <lastmod>2017-08-27T11:35:03.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -30,7 +23,21 @@
   </url>
   
   <url>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -44,14 +51,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
@@ -79,28 +86,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -114,7 +100,28 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -128,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
-    
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
@@ -142,14 +142,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -170,14 +170,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -332,6 +332,13 @@
   
   <url>
     <loc>http://www.revotu.com/python-file-operation-related-issues.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     

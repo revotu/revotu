@@ -4,46 +4,29 @@
 
     
   <url>
+    <loc>http://www.revotu.com/unpacking-a-sequence-into-separate-variables.html</loc>
+    <lastmod>2017-08-27T11:35:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python将序列分解为单独的变量</title>
+        <pubTime>2017-08-27T10:39:16.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
         <title>Python开发环境复制迁移之requirements files</title>
         <pubTime>2017-08-25T09:22:35.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -72,12 +55,46 @@
 
     
   <url>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
         <title>Python中json转成html table</title>
         <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -106,14 +123,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>修改crontab默认编辑器</title>
-        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
+        <title>Python如何递归删除空文件夹</title>
+        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
         
-        <tag>Crontab</tag>
+        <tag>Python</tag>
          
          
            
@@ -123,14 +140,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>Python如何递归删除空文件夹</title>
-        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
+        <title>修改crontab默认编辑器</title>
+        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Crontab</tag>
          
          
            
@@ -191,16 +208,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python解析Json时注意字符串单双引号问题</title>
-        <pubTime>2017-02-14T08:13:42.000Z</pubTime>
+        <title>Python之list、dict、json等常见操作</title>
+        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
         
         <tag>Python</tag>
-         
-        <tag>Json</tag>
          
          
            
@@ -210,12 +225,29 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>BeautifulSoup删除html文档中所有属性</title>
+        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
         
         <tag>BeautifulSoup</tag>
          
@@ -246,12 +278,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除html文档中所有属性</title>
-        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
         <tag>BeautifulSoup</tag>
          
@@ -263,31 +295,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        <title>Python解析Json时注意字符串单双引号问题</title>
+        <pubTime>2017-02-14T08:13:42.000Z</pubTime>
         
         <tag>Python</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>Python之list、dict、json等常见操作</title>
-        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
-        
-        <tag>Python</tag>
+        <tag>Json</tag>
          
          
            
@@ -314,23 +331,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    <data>
-        <display>
-        <title>Python编码规范</title>
-        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
@@ -348,14 +348,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
         <display>
-        <title>MySQL常用函数清单</title>
-        <pubTime>2017-04-06T08:40:57.000Z</pubTime>
+        <title>Python编码规范</title>
+        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
         
-        <tag>MySQL</tag>
+        <tag>Python</tag>
          
          
            
@@ -365,18 +365,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>HTML/CSS/JS常见问题清单</title>
-        <pubTime>2015-10-16T07:31:58.000Z</pubTime>
+        <title>Django Admin创建不关联任何model的自定义页面</title>
+        <pubTime>2017-04-16T08:04:34.000Z</pubTime>
         
-        <tag>HTML</tag>
-         
-        <tag>CSS</tag>
-         
-        <tag>JS</tag>
+        <tag>Django</tag>
          
          
            
@@ -420,6 +416,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL常用函数清单</title>
+        <pubTime>2017-04-06T08:40:57.000Z</pubTime>
+        
+        <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -432,23 +445,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Django Admin创建不关联任何model的自定义页面</title>
-        <pubTime>2017-04-16T08:04:34.000Z</pubTime>
-        
-        <tag>Django</tag>
          
          
            
@@ -849,6 +845,27 @@
         <pubTime>2017-02-05T03:57:09.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>HTML/CSS/JS常见问题清单</title>
+        <pubTime>2015-10-16T07:31:58.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+        <tag>CSS</tag>
+         
+        <tag>JS</tag>
          
          
            
