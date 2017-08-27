@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/finding-the-largest-or-smallest-n-items.html</loc>
+    
+    <lastmod>2017-08-27T15:12:27.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/keeping-the-last-n-items.html</loc>
     
     <lastmod>2017-08-27T14:00:46.000Z</lastmod>
@@ -100,6 +107,13 @@
   </url>
   
   <url>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
@@ -115,13 +129,6 @@
   
   <url>
     <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -156,14 +163,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
+    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -177,14 +177,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -346,6 +346,13 @@
   
   <url>
     <loc>http://www.revotu.com/python-encoding-problem.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
