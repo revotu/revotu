@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="revotu, Python, Redis, Linux, SQL, Programming" />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -97,15 +97,17 @@
 
 
 
-<meta name="description" content="心有猛虎,细嗅蔷薇">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大师兄">
-<meta property="og:url" content="http://www.revotu.com/tags/C/index.html">
+<meta name="description" content="问题我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。 解决方案要控制字典中元素顺序，可以使用collections模块中的OrderedDict类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python让字典保持有序">
+<meta property="og:url" content="http://www.revotu.com/keeping-dictionaries-in-order.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="心有猛虎,细嗅蔷薇">
+<meta property="og:description" content="问题我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。 解决方案要控制字典中元素顺序，可以使用collections模块中的OrderedDict类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：">
+<meta property="og:updated_time" content="2017-08-28T16:10:38.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大师兄">
-<meta name="twitter:description" content="心有猛虎,细嗅蔷薇">
+<meta name="twitter:title" content="Python让字典保持有序">
+<meta name="twitter:description" content="问题我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。 解决方案要控制字典中元素顺序，可以使用collections模块中的OrderedDict类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：">
 
 
 
@@ -133,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/tags/C/"/>
+  <link rel="canonical" href="http://www.revotu.com/keeping-dictionaries-in-order.html"/>
 
 
 
 
 
-  <title>标签: C | 大师兄</title>
+  <title>Python让字典保持有序 | 大师兄</title>
   
 
 
@@ -170,7 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -292,44 +294,186 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h1>C<small>标签</small>
-      </h1>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/keeping-dictionaries-in-order.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大师兄">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大师兄">
+    </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python让字典保持有序</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-28T23:46:35+08:00">
+                2017-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/keeping-dictionaries-in-order.html" class="leancloud_visitors" data-flag-title="Python让字典保持有序">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>要控制字典中元素顺序，可以使用collections模块中的<code>OrderedDict</code>类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：<br><a id="more"></a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</div><div class="line"></div><div class="line">print(<span class="string">'Regular dictionary:'</span>)</div><div class="line">d = &#123;&#125;</div><div class="line">d[<span class="string">'A'</span>] = <span class="number">1</span></div><div class="line">d[<span class="string">'B'</span>] = <span class="number">2</span></div><div class="line">d[<span class="string">'C'</span>] = <span class="number">3</span></div><div class="line">d[<span class="string">'D'</span>] = <span class="number">4</span></div><div class="line"></div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> d.items():</div><div class="line">    print(k, v)</div><div class="line"></div><div class="line">print(<span class="string">'OrderedDict:'</span>)</div><div class="line">d = OrderedDict()</div><div class="line">d[<span class="string">'A'</span>] = <span class="number">1</span></div><div class="line">d[<span class="string">'B'</span>] = <span class="number">2</span></div><div class="line">d[<span class="string">'C'</span>] = <span class="number">3</span></div><div class="line">d[<span class="string">'D'</span>] = <span class="number">4</span></div><div class="line"></div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> d.items():</div><div class="line">    print(k, v)</div></pre></td></tr></table></figure></p>
+<p>输出结果，其中正常创建的字典，迭代时顺序是不确定的，但是用<code>OrderedDict</code>创建的字典迭代时会严格按照元素初始添加的顺序进行：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Regular dictionary:</div><div class="line">A <span class="number">1</span></div><div class="line">B <span class="number">2</span></div><div class="line">D <span class="number">4</span></div><div class="line">C <span class="number">3</span></div><div class="line">OrderedDict:</div><div class="line">A <span class="number">1</span></div><div class="line">B <span class="number">2</span></div><div class="line">C <span class="number">3</span></div><div class="line">D <span class="number">4</span></div></pre></td></tr></table></figure></p>
+<p>当想构建一个映射结构以便稍后对其做序列化或编码成另一种格式时，<code>OrderedDict</code>就显得特别有用。例如，想对json编码时精确控制各字段的顺序，那么只要先在OrderedDict中构建数据就可以了：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> json</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>json.dumps(d)</div><div class="line">&#123;<span class="string">"A"</span>: <span class="number">1</span>, <span class="string">"B"</span>: <span class="number">2</span>, <span class="string">"C"</span>: <span class="number">3</span>, <span class="string">"D"</span>: <span class="number">4</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><p><code>OrderedDict</code>内部维护了一个双向链表，它会根据元素加入的顺序来排列键的位置。第一个新添加的元素放置在链表的末尾。接下来对已存在的键做重新赋值时不会改变键的顺序。<br>请注意<code>OrderedDict</code>的大小是普通字典的2倍多，这是由于它额外创建的链表所致。因此，如果打算构建一个涉及大量OrderedDict字典的数据结构（例如从CSV文件中读取100000行内容到OrderedDict中），那么需要认真对应用做需求分析，从而使用<code>OrderedDict</code>所带来的好处是否能超越因额外的内存开销所带来的缺点。</p>
 
-      <h2 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/advanced-c-interview-questions-and-answers.html" itemprop="url">
-              
-                <span itemprop="name">Linux下C语言的几道经典面试题</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h2>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-05-24T10:20:37+08:00"
-              content="2015-05-24" >
-          05-24
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/mapping-keys-to-multiple-values-in-a-dictionary.html" rel="next" title="Python在字典中将键映射到多个值上">
+                <i class="fa fa-chevron-left"></i> Python在字典中将键映射到多个值上
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -337,6 +481,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -356,8 +504,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar/avatar.jpg"
@@ -410,6 +567,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论"><span class="nav-number">3.</span> <span class="nav-text">讨论</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -530,10 +703,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 

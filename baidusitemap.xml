@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/keeping-dictionaries-in-order.html</loc>
+    <lastmod>2017-08-28T16:10:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python让字典保持有序</title>
+        <pubTime>2017-08-28T15:46:35.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/mapping-keys-to-multiple-values-in-a-dictionary.html</loc>
     <lastmod>2017-08-28T15:37:32.000Z</lastmod>
     <data>
@@ -445,23 +462,6 @@
         <tag>XPATH</tag>
          
         <tag>Scrapy</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>XPATH简明指南</title>
-        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
-        
-        <tag>XPATH</tag>
          
          
            
@@ -934,6 +934,23 @@
         <pubTime>2017-04-16T08:04:34.000Z</pubTime>
         
         <tag>Django</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>XPATH简明指南</title>
+        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
+        
+        <tag>XPATH</tag>
          
          
            
