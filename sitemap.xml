@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/mapping-keys-to-multiple-values-in-a-dictionary.html</loc>
+    
+    <lastmod>2017-08-28T15:37:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/map-two-lists-into-a-dictionary-in-python.html</loc>
+    
+    <lastmod>2017-08-28T14:56:43.638Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/finding-the-largest-or-smallest-n-items.html</loc>
     
     <lastmod>2017-08-27T15:12:27.000Z</lastmod>
@@ -65,14 +79,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
@@ -100,14 +114,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -128,7 +135,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -149,6 +163,13 @@
   </url>
   
   <url>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
+    
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
@@ -156,9 +177,9 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
+    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
     
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
@@ -170,28 +191,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -353,6 +353,20 @@
   
   <url>
     <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     

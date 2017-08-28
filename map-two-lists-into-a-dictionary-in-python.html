@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="revotu, Python, Redis, Linux, SQL, Programming" />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -97,15 +97,17 @@
 
 
 
-<meta name="description" content="心有猛虎,细嗅蔷薇">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大师兄">
-<meta property="og:url" content="http://www.revotu.com/archives/2016/11/index.html">
+<meta name="description" content="问题有两个列表如下：12keys = [1, 2, 3]values = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;] 最终结果，生成如下字典：1d = &amp;#123;1: &amp;apos;A&amp;apos;, 2: &amp;apos;B&amp;apos;, 3: &amp;apos;C&amp;apos;&amp;#125;">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python合并两个列表成字典">
+<meta property="og:url" content="http://www.revotu.com/map-two-lists-into-a-dictionary-in-python.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="心有猛虎,细嗅蔷薇">
+<meta property="og:description" content="问题有两个列表如下：12keys = [1, 2, 3]values = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;] 最终结果，生成如下字典：1d = &amp;#123;1: &amp;apos;A&amp;apos;, 2: &amp;apos;B&amp;apos;, 3: &amp;apos;C&amp;apos;&amp;#125;">
+<meta property="og:updated_time" content="2017-08-28T14:56:43.638Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大师兄">
-<meta name="twitter:description" content="心有猛虎,细嗅蔷薇">
+<meta name="twitter:title" content="python合并两个列表成字典">
+<meta name="twitter:description" content="问题有两个列表如下：12keys = [1, 2, 3]values = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;] 最终结果，生成如下字典：1d = &amp;#123;1: &amp;apos;A&amp;apos;, 2: &amp;apos;B&amp;apos;, 3: &amp;apos;C&amp;apos;&amp;#125;">
 
 
 
@@ -133,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/archives/2016/11/"/>
+  <link rel="canonical" href="http://www.revotu.com/map-two-lists-into-a-dictionary-in-python.html"/>
 
 
 
 
 
-  <title>归档 | 大师兄</title>
+  <title>python合并两个列表成字典 | 大师兄</title>
   
 
 
@@ -170,7 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -292,65 +294,192 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-       
-        
-      好! 目前共计 53 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/map-two-lists-into-a-dictionary-in-python.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大师兄">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大师兄">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python合并两个列表成字典</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-28T17:58:31+08:00">
+                2017-08-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/map-two-lists-into-a-dictionary-in-python.html" class="leancloud_visitors" data-flag-title="python合并两个列表成字典">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>有两个列表如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">keys = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">values = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div></pre></td></tr></table></figure></p>
+<p>最终结果，生成如下字典：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">d = &#123;1: &apos;A&apos;, 2: &apos;B&apos;, 3: &apos;C&apos;&#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>用zip函数生成一个列表（每个元素都是输入列表对应元素组成的元组），然后再用dict构造字典。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Good</span></div><div class="line"></div><div class="line">keys = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">values = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"></div><div class="line">d = dict(zip(keys, values))</div></pre></td></tr></table></figure></p>
+<p>上面的办法要优于下面的办法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># bad</span></div><div class="line"></div><div class="line">keys = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">values = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"></div><div class="line">d = &#123;&#125;</div><div class="line"><span class="keyword">for</span> i, key <span class="keyword">in</span> enumerate(keys):</div><div class="line">    d[key] = values[i]</div></pre></td></tr></table></figure></p>
+<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><p>zip函数的原型如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">zip</span><span class="params">(seq1, seq2, *more_seqs)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    zip(seq1 [, seq2 [...]]) -&gt; [(seq1[0], seq2[0] ...), (...)]</div><div class="line">    </div><div class="line">    Return a list of tuples, where each tuple contains the i-th element</div><div class="line">    from each of the argument sequences.  The returned list is truncated</div><div class="line">    in length to the length of the shortest argument sequence.</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>dict构造字典有以下几种方式：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">dict</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    dict() -&gt; new empty dictionary</div><div class="line">    dict(mapping) -&gt; new dictionary initialized from a mapping object's</div><div class="line">        (key, value) pairs</div><div class="line">    dict(iterable) -&gt; new dictionary initialized as if via:</div><div class="line">        d = &#123;&#125;</div><div class="line">        for k, v in iterable:</div><div class="line">            d[k] = v</div><div class="line">    dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs</div><div class="line">        in the keyword argument list.  For example:  dict(one=1, two=2)</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
         </div>
       
+
+      
+      
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/finding-the-largest-or-smallest-n-items.html" rel="next" title="Python找到最大或最小的N个元素">
+                <i class="fa fa-chevron-left"></i> Python找到最大或最小的N个元素
+              </a>
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <span class="post-nav-divider"></span>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/a-visual-explanation-of-sql-joins.html" itemprop="url">
-              
-                <span itemprop="name">可视化理解SQL的JOIN用法</span>
-              
-            </a>
-        
-      </h2>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/mapping-keys-to-multiple-values-in-a-dictionary.html" rel="prev" title="Python在字典中将键映射到多个值上">
+                Python在字典中将键映射到多个值上 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-11-15T17:37:53+08:00"
-              content="2016-11-15" >
-          11-15
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
-  </section>
-
-  
-
+      
+    </div>
+  </div>
 
 
           </div>
@@ -358,6 +487,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -377,8 +510,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar/avatar.jpg"
@@ -431,6 +573,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决办法"><span class="nav-number">2.</span> <span class="nav-text">解决办法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论"><span class="nav-number">3.</span> <span class="nav-text">讨论</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -551,11 +709,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
