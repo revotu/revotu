@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/calculating-with-dictionaries.html</loc>
+    
+    <lastmod>2017-08-29T16:25:55.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-convert-base64-string-to-image.html</loc>
+    
+    <lastmod>2017-08-29T15:40:02.719Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/keeping-dictionaries-in-order.html</loc>
     
     <lastmod>2017-08-28T16:10:38.000Z</lastmod>
@@ -86,14 +100,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
@@ -180,20 +194,6 @@
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
@@ -374,6 +374,20 @@
   
   <url>
     <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     

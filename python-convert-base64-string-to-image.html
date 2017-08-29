@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Git," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
-<meta name="keywords" content="Git">
+<meta name="description" content="处理图片时通常会遇到base64编码的字符串，如何将base64编码的字符串转换成图像并存储：123456import base64base64_image_str = &apos;very long base64 encoded image string&apos;with open(&apos;some_image.jpg&apos;, &apos;wb&apos;) as f:    f.write(base64.b64decode(base64_i">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git常见问题指南">
-<meta property="og:url" content="http://www.revotu.com/common-questions-about-git.html">
+<meta property="og:title" content="Python处理base64编码图片">
+<meta property="og:url" content="http://www.revotu.com/python-convert-base64-string-to-image.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
-<meta property="og:updated_time" content="2017-07-08T03:13:08.595Z">
+<meta property="og:description" content="处理图片时通常会遇到base64编码的字符串，如何将base64编码的字符串转换成图像并存储：123456import base64base64_image_str = &apos;very long base64 encoded image string&apos;with open(&apos;some_image.jpg&apos;, &apos;wb&apos;) as f:    f.write(base64.b64decode(base64_i">
+<meta property="og:updated_time" content="2017-08-29T15:40:02.719Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git常见问题指南">
-<meta name="twitter:description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
+<meta name="twitter:title" content="Python处理base64编码图片">
+<meta name="twitter:description" content="处理图片时通常会遇到base64编码的字符串，如何将base64编码的字符串转换成图像并存储：123456import base64base64_image_str = &apos;very long base64 encoded image string&apos;with open(&apos;some_image.jpg&apos;, &apos;wb&apos;) as f:    f.write(base64.b64decode(base64_i">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/common-questions-about-git.html"/>
+  <link rel="canonical" href="http://www.revotu.com/python-convert-base64-string-to-image.html"/>
 
 
 
 
 
-  <title>Git常见问题指南 | 大师兄</title>
+  <title>Python处理base64编码图片 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/common-questions-about-git.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-convert-base64-string-to-image.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git常见问题指南</h1>
+          <h1 class="post-title" itemprop="name headline">Python处理base64编码图片</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-26T10:49:37+08:00">
-                2016-05-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-29T19:10:04+08:00">
+                2017-08-29
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/common-questions-about-git.html" class="leancloud_visitors" data-flag-title="Git常见问题指南">
+             <span id="/python-convert-base64-string-to-image.html" class="leancloud_visitors" data-flag-title="Python处理base64编码图片">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,17 +379,9 @@
       
 
       
-        <h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><p>删除<strong>本地</strong>分支：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d &lt;branch_name&gt;</div></pre></td></tr></table></figure></p>
-<p>删除<strong>远程</strong>分支：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin --delete &lt;branch_name&gt;</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>删除本地分支的命令中的<code>-d</code>代表<code>--delete</code>，它只会删除已经merge完成的分支，如果想无论是否merge都要删除，用<code>-D</code>代表<code>--delete --force</code>即强制删除。在其他机器上要执行 <code>git fetch --all --prune</code>使这些改变生效。</p>
-<h2 id="clone代码到本地并且更改成指定的文件夹"><a href="#clone代码到本地并且更改成指定的文件夹" class="headerlink" title="clone代码到本地并且更改成指定的文件夹"></a>clone代码到本地并且更改成指定的文件夹</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> git@github.com:whatever folder-name</div></pre></td></tr></table></figure>
-<h2 id="撤销已经add但还没有commit的文件"><a href="#撤销已经add但还没有commit的文件" class="headerlink" title="撤销已经add但还没有commit的文件"></a>撤销已经add但还没有commit的文件</h2><p>撤销单个文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset &lt;file&gt;</div></pre></td></tr></table></figure></p>
-<p>撤销所有文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset</div></pre></td></tr></table></figure></p>
-<h2 id="本地新创建的项目push到git上"><a href="#本地新创建的项目push到git上" class="headerlink" title="本地新创建的项目push到git上"></a>本地新创建的项目push到git上</h2><p>首先，登陆github创建一个空的repo，然后：<br>进入到本地项目路径，首先初始化git，然后关联远端repo地址，最后push到git上。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git init                      <span class="comment">#初始化git，在当前目录生成.git文件夹</span></div><div class="line">git add -A                    <span class="comment">#添加即将commit的文件(注意：-A代表所有)</span></div><div class="line">git commit -m <span class="string">"first commit"</span>  <span class="comment">#commit到本地版本库</span></div><div class="line">git remote add origin https://github.com/username/reponame.git <span class="comment">#关联远端刚刚创建的repo地址</span></div><div class="line">git push -u origin master     <span class="comment">#推到远端git上</span></div></pre></td></tr></table></figure></p>
-<h2 id="解决git-warning-LF-will-be-replaced-by-CRLF问题"><a href="#解决git-warning-LF-will-be-replaced-by-CRLF问题" class="headerlink" title="解决git warning: LF will be replaced by CRLF问题"></a>解决git warning: LF will be replaced by CRLF问题</h2><p>Windows下的换行符是CRLF，而在Linux下的换行符是LF，执行如下命令，关闭换行符自动转换：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global core.autocrlf <span class="literal">false</span></div></pre></td></tr></table></figure></p>
-<h2 id="移除已经在git版本库中某文件"><a href="#移除已经在git版本库中某文件" class="headerlink" title="移除已经在git版本库中某文件"></a>移除已经在git版本库中某文件</h2><p>首先在<code>.gitignore</code>文件中添加要移除的文件。然后执行如下命令:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm --cached &lt;file&gt;</div></pre></td></tr></table></figure></p>
-<p>此时，本地这个文件已经从git版本库移除。<br>注意：当执行commit操作并push到线上后，线上环境在pull代码，此时会删除线上的这个文件！</p>
+        <p>处理图片时通常会遇到<code>base64</code>编码的字符串，如何将<code>base64</code>编码的字符串转换成图像并存储：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> base64</div><div class="line"></div><div class="line">base64_image_str = <span class="string">'very long base64 encoded image string'</span></div><div class="line"></div><div class="line"><span class="keyword">with</span> open(<span class="string">'some_image.jpg'</span>, <span class="string">'wb'</span>) <span class="keyword">as</span> f:</div><div class="line">    f.write(base64.b64decode(base64_image_str))</div></pre></td></tr></table></figure></p>
+<p>其中<code>base64.b64decode()</code>函数用来将<code>base64</code>编码的字符串解码，然后以二进制模式<code>wb</code>写入文件即可。<br><a id="more"></a><br>另外需要注意的是：<br>网页上渲染的<code>base64</code>编码的图片会带有类似这样的字符<code>data:image/jpeg;base64,</code>，其指定的是编码类型及图片格式，如需转成图片需要去掉前面这些字符，只要后面<code>base64</code>编码的数据部分：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">base64_image_str = <span class="string">"data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDA......."</span></div><div class="line"></div><div class="line">base64_image_str = base64_image_str[base64_image_str.find(<span class="string">","</span>)+<span class="number">1</span>:]</div></pre></td></tr></table></figure></p>
+<p>如果，需要将图片转成<code>base64</code>编码的字符串，只需<code>base64.b64encode()</code>函数，以二进制模式<code>rb</code>读取图像即可：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> base64</div><div class="line"></div><div class="line"><span class="keyword">with</span> open(<span class="string">'some_image.jpg'</span>, <span class="string">'rb'</span>) <span class="keyword">as</span> f:</div><div class="line">    base64_image_str = base64.b64encode(f.read())</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -419,7 +411,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
         </div>
       
@@ -432,8 +424,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/mysql-groupby-classic-interview-question.html" rel="next" title="MySQL之一道关于GROUP BY的经典面试题">
-                <i class="fa fa-chevron-left"></i> MySQL之一道关于GROUP BY的经典面试题
+              <a href="/keeping-dictionaries-in-order.html" rel="next" title="Python让字典保持有序">
+                <i class="fa fa-chevron-left"></i> Python让字典保持有序
               </a>
             
           </div>
@@ -442,8 +434,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/change-the-ubuntu-hostname.html" rel="prev" title="ubuntu修改主机名">
-                ubuntu修改主机名 <i class="fa fa-chevron-right"></i>
+              <a href="/calculating-with-dictionaries.html" rel="prev" title="Python与字典有关的计算问题">
+                Python与字典有关的计算问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -514,17 +506,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar/avatar.jpg"
@@ -577,22 +560,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#删除分支"><span class="nav-number">1.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#clone代码到本地并且更改成指定的文件夹"><span class="nav-number">2.</span> <span class="nav-text">clone代码到本地并且更改成指定的文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销已经add但还没有commit的文件"><span class="nav-number">3.</span> <span class="nav-text">撤销已经add但还没有commit的文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地新创建的项目push到git上"><span class="nav-number">4.</span> <span class="nav-text">本地新创建的项目push到git上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决git-warning-LF-will-be-replaced-by-CRLF问题"><span class="nav-number">5.</span> <span class="nav-text">解决git warning: LF will be replaced by CRLF问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移除已经在git版本库中某文件"><span class="nav-number">6.</span> <span class="nav-text">移除已经在git版本库中某文件</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

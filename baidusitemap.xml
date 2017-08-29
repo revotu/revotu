@@ -4,6 +4,40 @@
 
     
   <url>
+    <loc>http://www.revotu.com/calculating-with-dictionaries.html</loc>
+    <lastmod>2017-08-29T16:25:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python与字典有关的计算问题</title>
+        <pubTime>2017-08-29T15:43:46.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-convert-base64-string-to-image.html</loc>
+    <lastmod>2017-08-29T15:40:02.719Z</lastmod>
+    <data>
+        <display>
+        <title>Python处理base64编码图片</title>
+        <pubTime>2017-08-29T11:10:04.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/keeping-dictionaries-in-order.html</loc>
     <lastmod>2017-08-28T16:10:38.000Z</lastmod>
     <data>
@@ -208,14 +242,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>修改crontab默认编辑器</title>
-        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
+        <title>Python如何递归删除空文件夹</title>
+        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
         
-        <tag>Crontab</tag>
+        <tag>Python</tag>
          
          
            
@@ -225,14 +259,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>Python如何递归删除空文件夹</title>
-        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
+        <title>修改crontab默认编辑器</title>
+        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Crontab</tag>
          
          
            
@@ -441,48 +475,6 @@
         <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
         <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>解决Scrapy中xpath用到中文报错问题</title>
-        <pubTime>2017-05-28T10:36:42.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>XPATH</tag>
-         
-        <tag>Scrapy</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下删除文件中空行的几种方法</title>
-        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>grep</tag>
-         
-        <tag>sed</tag>
          
          
            
@@ -951,6 +943,48 @@
         <pubTime>2017-05-22T06:17:05.000Z</pubTime>
         
         <tag>XPATH</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>解决Scrapy中xpath用到中文报错问题</title>
+        <pubTime>2017-05-28T10:36:42.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>XPATH</tag>
+         
+        <tag>Scrapy</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下删除文件中空行的几种方法</title>
+        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>grep</tag>
+         
+        <tag>sed</tag>
          
          
            

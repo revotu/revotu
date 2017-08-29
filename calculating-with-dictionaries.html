@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Git," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
-<meta name="keywords" content="Git">
+<meta name="description" content="问题我们想在字典上对数据执行各种各样的计算（比如求最小值、最大值、排序等）。 解决方案假设有个字典在人名和对应的工资间做了映射：123456salary = &amp;#123;    &apos;A&apos;: &apos;10K&apos;,    &apos;D&apos;: &apos;25K&apos;,    &apos;C&apos;: &apos;50K&apos;,    &apos;B&apos;: &apos;35K&apos;&amp;#125;">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Git常见问题指南">
-<meta property="og:url" content="http://www.revotu.com/common-questions-about-git.html">
+<meta property="og:title" content="Python与字典有关的计算问题">
+<meta property="og:url" content="http://www.revotu.com/calculating-with-dictionaries.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
-<meta property="og:updated_time" content="2017-07-08T03:13:08.595Z">
+<meta property="og:description" content="问题我们想在字典上对数据执行各种各样的计算（比如求最小值、最大值、排序等）。 解决方案假设有个字典在人名和对应的工资间做了映射：123456salary = &amp;#123;    &apos;A&apos;: &apos;10K&apos;,    &apos;D&apos;: &apos;25K&apos;,    &apos;C&apos;: &apos;50K&apos;,    &apos;B&apos;: &apos;35K&apos;&amp;#125;">
+<meta property="og:updated_time" content="2017-08-29T16:25:55.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Git常见问题指南">
-<meta name="twitter:description" content="删除分支删除本地分支：1git branch -d &amp;lt;branch_name&amp;gt; 删除远程分支：1git push origin --delete &amp;lt;branch_name&amp;gt;">
+<meta name="twitter:title" content="Python与字典有关的计算问题">
+<meta name="twitter:description" content="问题我们想在字典上对数据执行各种各样的计算（比如求最小值、最大值、排序等）。 解决方案假设有个字典在人名和对应的工资间做了映射：123456salary = &amp;#123;    &apos;A&apos;: &apos;10K&apos;,    &apos;D&apos;: &apos;25K&apos;,    &apos;C&apos;: &apos;50K&apos;,    &apos;B&apos;: &apos;35K&apos;&amp;#125;">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/common-questions-about-git.html"/>
+  <link rel="canonical" href="http://www.revotu.com/calculating-with-dictionaries.html"/>
 
 
 
 
 
-  <title>Git常见问题指南 | 大师兄</title>
+  <title>Python与字典有关的计算问题 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/common-questions-about-git.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/calculating-with-dictionaries.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Git常见问题指南</h1>
+          <h1 class="post-title" itemprop="name headline">Python与字典有关的计算问题</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-26T10:49:37+08:00">
-                2016-05-26
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-29T23:43:46+08:00">
+                2017-08-29
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/common-questions-about-git.html" class="leancloud_visitors" data-flag-title="Git常见问题指南">
+             <span id="/calculating-with-dictionaries.html" class="leancloud_visitors" data-flag-title="Python与字典有关的计算问题">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,17 +379,18 @@
       
 
       
-        <h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><p>删除<strong>本地</strong>分支：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git branch -d &lt;branch_name&gt;</div></pre></td></tr></table></figure></p>
-<p>删除<strong>远程</strong>分支：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin --delete &lt;branch_name&gt;</div></pre></td></tr></table></figure></p>
+        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>我们想在字典上对数据执行各种各样的计算（比如求最小值、最大值、排序等）。</p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>假设有个字典在人名和对应的工资间做了映射：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">salary = &#123;</div><div class="line">    <span class="string">'A'</span>: <span class="string">'10K'</span>,</div><div class="line">    <span class="string">'D'</span>: <span class="string">'25K'</span>,</div><div class="line">    <span class="string">'C'</span>: <span class="string">'50K'</span>,</div><div class="line">    <span class="string">'B'</span>: <span class="string">'35K'</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>删除本地分支的命令中的<code>-d</code>代表<code>--delete</code>，它只会删除已经merge完成的分支，如果想无论是否merge都要删除，用<code>-D</code>代表<code>--delete --force</code>即强制删除。在其他机器上要执行 <code>git fetch --all --prune</code>使这些改变生效。</p>
-<h2 id="clone代码到本地并且更改成指定的文件夹"><a href="#clone代码到本地并且更改成指定的文件夹" class="headerlink" title="clone代码到本地并且更改成指定的文件夹"></a>clone代码到本地并且更改成指定的文件夹</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> git@github.com:whatever folder-name</div></pre></td></tr></table></figure>
-<h2 id="撤销已经add但还没有commit的文件"><a href="#撤销已经add但还没有commit的文件" class="headerlink" title="撤销已经add但还没有commit的文件"></a>撤销已经add但还没有commit的文件</h2><p>撤销单个文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset &lt;file&gt;</div></pre></td></tr></table></figure></p>
-<p>撤销所有文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git reset</div></pre></td></tr></table></figure></p>
-<h2 id="本地新创建的项目push到git上"><a href="#本地新创建的项目push到git上" class="headerlink" title="本地新创建的项目push到git上"></a>本地新创建的项目push到git上</h2><p>首先，登陆github创建一个空的repo，然后：<br>进入到本地项目路径，首先初始化git，然后关联远端repo地址，最后push到git上。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">git init                      <span class="comment">#初始化git，在当前目录生成.git文件夹</span></div><div class="line">git add -A                    <span class="comment">#添加即将commit的文件(注意：-A代表所有)</span></div><div class="line">git commit -m <span class="string">"first commit"</span>  <span class="comment">#commit到本地版本库</span></div><div class="line">git remote add origin https://github.com/username/reponame.git <span class="comment">#关联远端刚刚创建的repo地址</span></div><div class="line">git push -u origin master     <span class="comment">#推到远端git上</span></div></pre></td></tr></table></figure></p>
-<h2 id="解决git-warning-LF-will-be-replaced-by-CRLF问题"><a href="#解决git-warning-LF-will-be-replaced-by-CRLF问题" class="headerlink" title="解决git warning: LF will be replaced by CRLF问题"></a>解决git warning: LF will be replaced by CRLF问题</h2><p>Windows下的换行符是CRLF，而在Linux下的换行符是LF，执行如下命令，关闭换行符自动转换：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config --global core.autocrlf <span class="literal">false</span></div></pre></td></tr></table></figure></p>
-<h2 id="移除已经在git版本库中某文件"><a href="#移除已经在git版本库中某文件" class="headerlink" title="移除已经在git版本库中某文件"></a>移除已经在git版本库中某文件</h2><p>首先在<code>.gitignore</code>文件中添加要移除的文件。然后执行如下命令:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git rm --cached &lt;file&gt;</div></pre></td></tr></table></figure></p>
-<p>此时，本地这个文件已经从git版本库移除。<br>注意：当执行commit操作并push到线上后，线上环境在pull代码，此时会删除线上的这个文件！</p>
+<p>为了能对字典内容做些有用的计算，通常会利用<code>zip()</code>将字典的键和值反转过来。例如，下面的代码会告诉我们如何找出工资最高和最低的人。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">min_salary = min(zip(salary.values(), salary.keys()))</div><div class="line"><span class="comment"># min_salary is ('10K', 'A')</span></div><div class="line">max_salary = max(zip(salary.values(), salary.keys()))</div><div class="line"><span class="comment"># max_salary is ('50K', 'C')</span></div></pre></td></tr></table></figure></p>
+<p>同样，要对数据排序只要使用<code>zip()</code>再配合<code>sorted()</code>就可以了，比如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">salary_sorted = sorted(zip(salary.values(), salary.keys()))</div><div class="line"><span class="comment"># salary_sorted is [('10K', 'A'), ('25K', 'D'), ('35K', 'B'), ('50K', 'C')]</span></div></pre></td></tr></table></figure></p>
+<p>当进行这些计算时，请注意在Python3中<code>zip()</code>函数创建了一个迭代器，它的内容只能被消费一次。下面的代码就是错误的：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">salaries_and_names = zip(salary.values(), salary.keys())</div><div class="line">print(min(salaries_and_names))  <span class="comment"># OK</span></div><div class="line">print(max(salaries_and_names))  <span class="comment"># ValueError: max() arg is an empty sequence</span></div></pre></td></tr></table></figure></p>
+<p>在Python2中，<code>zip()</code>函数返回的是列表，因此不会有上述问题。</p>
+<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><p>如果尝试在字典上常见的数据操作，将会发现他们只会处理键，而不是值。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">min(salary)  <span class="comment"># Returns A</span></div><div class="line">max(salary)  <span class="comment"># Returns D</span></div></pre></td></tr></table></figure></p>
+<p>这很可能不是我们所期望的，因为实际上我们是尝试对字典的值做计算。可以利用字典的<code>values()</code>方法解决这个问题：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">min(salary.values())  <span class="comment"># Returns 10K</span></div><div class="line">max(salary.values())  <span class="comment"># Returns 50K</span></div></pre></td></tr></table></figure></p>
+<p>不幸的是，通常这也不是我们所期望的。比如，我们可能想知道相应的键所关联的信息是什么（哪个人的工资最高？）<br>如果提供一个参数<code>key</code>传递给<code>min()</code>和<code>max()</code>，就能得到最大值和最小值所对应的键是什么。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">min(salary, key=<span class="keyword">lambda</span> k: salary[k])  <span class="comment"># Returns A</span></div><div class="line">max(salary, key=<span class="keyword">lambda</span> k: salary[k])  <span class="comment"># Returns C</span></div></pre></td></tr></table></figure></p>
+<p>但是，要得到最小值的话，还需要额外执行一次查找。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">min_value = salary[min(salary, key=<span class="keyword">lambda</span> k: salary[k])]</div></pre></td></tr></table></figure></p>
+<p>利用了<code>zip()</code>函数的解决方案是通过将字典的键-值对反转，为值-键对序列来解决这个问题的。<br>当在这样的元组上执行比较操作时，值会先进行比较，然后才是键。这完全符合我们的期望，允许我们用一条单独的语句轻松地对字典里的内容做整理和排序。<br>应该要注意的是，当涉及（value， key）对的比较时，如果碰巧有多个条目拥有相同的value值，那么此时key将用来作为判定结果的依据。例如，在计算min()和max()时，如果碰巧value的值相同，则将返回拥有最小或最大key值的那个条目。示例如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">salary = &#123;<span class="string">'A'</span>: <span class="string">'10K'</span>, <span class="string">'C'</span>: <span class="string">'10K'</span>&#125;</div><div class="line"></div><div class="line">min(zip(salary.values(), salary.keys()))  <span class="comment"># Returns ('10K', 'A') </span></div><div class="line">max(zip(salary.values(), salary.keys()))  <span class="comment"># Returns ('10K', 'C')</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -419,7 +420,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag"># Git</a>
+            <a href="/tags/Python/" rel="tag"># Python</a>
           
         </div>
       
@@ -432,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/mysql-groupby-classic-interview-question.html" rel="next" title="MySQL之一道关于GROUP BY的经典面试题">
-                <i class="fa fa-chevron-left"></i> MySQL之一道关于GROUP BY的经典面试题
+              <a href="/python-convert-base64-string-to-image.html" rel="next" title="Python处理base64编码图片">
+                <i class="fa fa-chevron-left"></i> Python处理base64编码图片
               </a>
             
           </div>
@@ -441,10 +442,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/change-the-ubuntu-hostname.html" rel="prev" title="ubuntu修改主机名">
-                ubuntu修改主机名 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -587,7 +584,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#删除分支"><span class="nav-number">1.</span> <span class="nav-text">删除分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#clone代码到本地并且更改成指定的文件夹"><span class="nav-number">2.</span> <span class="nav-text">clone代码到本地并且更改成指定的文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#撤销已经add但还没有commit的文件"><span class="nav-number">3.</span> <span class="nav-text">撤销已经add但还没有commit的文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#本地新创建的项目push到git上"><span class="nav-number">4.</span> <span class="nav-text">本地新创建的项目push到git上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决git-warning-LF-will-be-replaced-by-CRLF问题"><span class="nav-number">5.</span> <span class="nav-text">解决git warning: LF will be replaced by CRLF问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#移除已经在git版本库中某文件"><span class="nav-number">6.</span> <span class="nav-text">移除已经在git版本库中某文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论"><span class="nav-number">3.</span> <span class="nav-text">讨论</span></a></li></ol></div>
             
 
           </div>
