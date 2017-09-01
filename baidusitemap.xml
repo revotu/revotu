@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/removing-the-leading-and-trailing-characters-from-string.html</loc>
+    <lastmod>2017-09-01T08:24:35.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python去除字符串前后指定字符方法strip() lstrip() rstrip()</title>
+        <pubTime>2017-09-01T07:43:09.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html</loc>
     <lastmod>2017-08-30T16:44:40.000Z</lastmod>
     <data>
@@ -520,23 +537,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python获取当前时间</title>
-        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1002,6 +1002,23 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python获取当前时间</title>
+        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
+        
+        <tag>Python</tag>
          
          
            

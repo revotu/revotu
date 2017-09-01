@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/removing-the-leading-and-trailing-characters-from-string.html</loc>
+    
+    <lastmod>2017-09-01T08:24:35.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html</loc>
     
     <lastmod>2017-08-30T16:44:40.000Z</lastmod>
@@ -212,13 +219,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
@@ -395,6 +395,13 @@
   
   <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
