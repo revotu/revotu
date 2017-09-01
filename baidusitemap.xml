@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/find-whether-the-string-starts-with-prefix-ends-with-suffix.html</loc>
+    <lastmod>2017-09-01T09:35:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python查找字符是否在字符串开头或结尾函数之startswith()和endswith()</title>
+        <pubTime>2017-09-01T08:39:22.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/removing-the-leading-and-trailing-characters-from-string.html</loc>
     <lastmod>2017-09-01T08:24:35.000Z</lastmod>
     <data>
@@ -174,12 +191,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python开发环境复制迁移之requirements files</title>
-        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -208,29 +225,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python中json转成html table</title>
-        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        <title>Python开发环境复制迁移之requirements files</title>
+        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -248,6 +248,23 @@
         <display>
         <title>Python join列表时报错TypeError sequence item 0 expected string</title>
         <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python中json转成html table</title>
+        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -361,31 +378,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除html文档中所有属性</title>
-        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
-        
-        <tag>BeautifulSoup</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
+        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
         
         <tag>Python</tag>
+         
+        <tag>Selenium</tag>
          
          
            
@@ -412,16 +414,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
-        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
-        <tag>Python</tag>
-         
-        <tag>Selenium</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -431,14 +431,31 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        <title>BeautifulSoup删除html文档中所有属性</title>
+        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
         
         <tag>BeautifulSoup</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        
+        <tag>Python</tag>
          
          
            
@@ -509,25 +526,6 @@
         <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
         <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Scrapy爬虫常见问题总结</title>
-        <pubTime>2017-06-22T05:49:15.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Scrapy</tag>
          
          
            
@@ -609,25 +607,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python实用脚本清单</title>
-        <pubTime>2016-03-06T09:59:56.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Script</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -647,16 +626,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Linux下C语言的几道经典面试题</title>
-        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
+        <title>Python实用脚本清单</title>
+        <pubTime>2016-03-06T09:59:56.000Z</pubTime>
         
-        <tag>Linux</tag>
+        <tag>Python</tag>
          
-        <tag>C</tag>
+        <tag>Script</tag>
          
          
            
@@ -685,6 +664,27 @@
 
     
   <url>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下删除文件中空行的几种方法</title>
+        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>grep</tag>
+         
+        <tag>sed</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -695,25 +695,6 @@
         <tag>Redis</tag>
          
         <tag>NoSQL</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu修改主机名</title>
-        <pubTime>2016-06-08T02:30:51.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>ubuntu</tag>
          
          
            
@@ -742,14 +723,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
+    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>两张图搞清composer install与composer update区别</title>
-        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
+        <title>ubuntu修改主机名</title>
+        <pubTime>2016-06-08T02:30:51.000Z</pubTime>
         
-        <tag>Composer</tag>
+        <tag>Linux</tag>
+         
+        <tag>ubuntu</tag>
          
          
            
@@ -776,6 +759,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>两张图搞清composer install与composer update区别</title>
+        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
+        
+        <tag>Composer</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/a-visual-explanation-of-sql-joins.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -793,12 +793,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
+    <loc>http://www.revotu.com/python-file-operation-related-issues.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python学习之路上的几个经典问题</title>
-        <pubTime>2016-12-26T06:34:01.000Z</pubTime>
+        <title>Python文件操作相关问题</title>
+        <pubTime>2017-02-05T03:57:09.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -810,29 +810,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
+    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Nginx Rewrite简明指南</title>
-        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
-        
-        <tag>Nginx</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-file-operation-related-issues.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python文件操作相关问题</title>
-        <pubTime>2017-02-05T03:57:09.000Z</pubTime>
+        <title>Python学习之路上的几个经典问题</title>
+        <pubTime>2016-12-26T06:34:01.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -865,14 +848,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
+    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python编码问题</title>
-        <pubTime>2017-03-13T02:47:33.000Z</pubTime>
+        <title>Nginx Rewrite简明指南</title>
+        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Nginx</tag>
          
          
            
@@ -899,14 +882,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
+    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>MySQL常用函数清单</title>
-        <pubTime>2017-04-06T08:40:57.000Z</pubTime>
+        <title>Python编码问题</title>
+        <pubTime>2017-03-13T02:47:33.000Z</pubTime>
         
-        <tag>MySQL</tag>
+        <tag>Python</tag>
          
          
            
@@ -933,14 +916,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>XPATH简明指南</title>
-        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
+        <title>MySQL常用函数清单</title>
+        <pubTime>2017-04-06T08:40:57.000Z</pubTime>
         
-        <tag>XPATH</tag>
+        <tag>MySQL</tag>
          
          
            
@@ -959,7 +942,43 @@
         
         <tag>Python</tag>
          
+        <tag>Scrapy</tag>
+         
         <tag>XPATH</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>XPATH简明指南</title>
+        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
+        
+        <tag>XPATH</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Scrapy爬虫常见问题总结</title>
+        <pubTime>2017-06-22T05:49:15.000Z</pubTime>
+        
+        <tag>Python</tag>
          
         <tag>Scrapy</tag>
          
@@ -990,18 +1009,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Linux下删除文件中空行的几种方法</title>
-        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
+        <title>Linux下C语言的几道经典面试题</title>
+        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
         
+        <tag>C</tag>
+         
         <tag>Linux</tag>
-         
-        <tag>grep</tag>
-         
-        <tag>sed</tag>
          
          
            
