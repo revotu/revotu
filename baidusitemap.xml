@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python3-print-function-keyword-arguments.html</loc>
+    <lastmod>2017-09-02T04:31:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python3 print函数的四个关键字参数</title>
+        <pubTime>2017-09-02T03:35:56.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/writing-to-a-file-that-doesn't-already-exsit.html</loc>
     <lastmod>2017-09-01T15:49:37.000Z</lastmod>
     <data>
@@ -208,12 +225,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        <title>Python中json转成html table</title>
+        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -259,12 +276,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -276,12 +293,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python中json转成html table</title>
-        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -552,31 +569,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
+    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python获取当前时间</title>
-        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
+        <title>MySQL时间处理相关函数</title>
+        <pubTime>2017-06-28T05:53:17.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>SQL</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python环境变量及模块搜索路径</title>
-        <pubTime>2015-11-13T03:03:10.000Z</pubTime>
-        
-        <tag>Python</tag>
+        <tag>MySQL</tag>
          
          
            
@@ -1005,6 +1007,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python获取当前时间</title>
+        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1026,16 +1045,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
+    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>MySQL时间处理相关函数</title>
-        <pubTime>2017-06-28T05:53:17.000Z</pubTime>
+        <title>Python处理Windows环境下文件路径问题解决方案</title>
+        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
         
-        <tag>SQL</tag>
-         
-        <tag>MySQL</tag>
+        <tag>Python</tag>
          
          
            
@@ -1045,12 +1062,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python处理Windows环境下文件路径问题解决方案</title>
-        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
+        <title>Python环境变量及模块搜索路径</title>
+        <pubTime>2015-11-13T03:03:10.000Z</pubTime>
         
         <tag>Python</tag>
          

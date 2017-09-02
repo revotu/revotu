@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python3-print-function-keyword-arguments.html</loc>
+    
+    <lastmod>2017-09-02T04:31:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/writing-to-a-file-that-doesn't-already-exsit.html</loc>
     
     <lastmod>2017-09-01T15:49:37.000Z</lastmod>
@@ -86,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -226,14 +233,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
+    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -401,6 +401,13 @@
   </url>
   
   <url>
+    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
@@ -408,14 +415,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
+    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
