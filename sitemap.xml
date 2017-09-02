@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/getting-a-directory-listing.html</loc>
+    
+    <lastmod>2017-09-02T14:08:53.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/testing-the-exisence-of-a-file.html</loc>
     
     <lastmod>2017-09-02T13:17:32.000Z</lastmod>
@@ -100,6 +107,20 @@
   </url>
   
   <url>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
@@ -114,21 +135,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -240,14 +247,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
+    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -408,14 +408,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -430,6 +430,13 @@
   
   <url>
     <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
