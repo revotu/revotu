@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/testing-the-exisence-of-a-file.html</loc>
+    <lastmod>2017-09-02T13:17:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python检测文件或文件夹是否存在</title>
+        <pubTime>2017-09-02T12:41:11.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python3-print-function-keyword-arguments.html</loc>
     <lastmod>2017-09-02T04:31:10.000Z</lastmod>
     <data>
@@ -259,12 +276,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
-        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -276,12 +293,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
+        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -579,25 +596,6 @@
         <tag>SQL</tag>
          
         <tag>MySQL</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下常见任务指南</title>
-        <pubTime>2016-01-07T08:30:37.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Shell</tag>
          
          
            
@@ -1070,6 +1068,25 @@
         <pubTime>2015-11-13T03:03:10.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下常见任务指南</title>
+        <pubTime>2016-01-07T08:30:37.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Shell</tag>
          
          
            

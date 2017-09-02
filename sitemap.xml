@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/testing-the-exisence-of-a-file.html</loc>
+    
+    <lastmod>2017-09-02T13:17:32.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/python3-print-function-keyword-arguments.html</loc>
     
     <lastmod>2017-09-02T04:31:10.000Z</lastmod>
@@ -107,14 +114,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -234,13 +241,6 @@
   
   <url>
     <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -423,6 +423,13 @@
   
   <url>
     <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
