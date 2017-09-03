@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-dict-methods-and-examples.html</loc>
+    <lastmod>2017-09-03T09:20:28.000Z</lastmod>
+    <data>
+        <display>
+        <title>全面剖析Python字典dict的各方法及各操作的内部实现</title>
+        <pubTime>2017-09-03T07:25:09.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-list-methods-and-examples.html</loc>
     <lastmod>2017-09-03T06:24:29.000Z</lastmod>
     <data>
@@ -310,6 +327,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python开发环境复制迁移之requirements files</title>
+        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
@@ -333,23 +367,6 @@
         <display>
         <title>Python中print如何刷新缓冲立刻打印输出结果</title>
         <pubTime>2017-08-24T03:36:48.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python开发环境复制迁移之requirements files</title>
-        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -463,23 +480,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>BeautifulSoup删除html文档中所有属性</title>
-        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
-        
-        <tag>BeautifulSoup</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
@@ -514,6 +514,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>BeautifulSoup删除html文档中所有属性</title>
+        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
+        
+        <tag>BeautifulSoup</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
@@ -524,23 +541,6 @@
         <tag>Python</tag>
          
         <tag>Selenium</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
-        
-        <tag>BeautifulSoup</tag>
          
          
            
@@ -569,14 +569,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/useful-online-tools.html</loc>
-    <lastmod>2017-07-08T03:19:36.413Z</lastmod>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>有用的在线工具</title>
-        <pubTime>2016-05-06T08:58:10.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
-        <tag>Tools</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -586,14 +586,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
+    <loc>http://www.revotu.com/useful-online-tools.html</loc>
+    <lastmod>2017-07-08T03:19:36.413Z</lastmod>
     <data>
         <display>
-        <title>Python编码规范</title>
-        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
+        <title>有用的在线工具</title>
+        <pubTime>2016-05-06T08:58:10.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Tools</tag>
          
          
            
@@ -620,14 +620,33 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
+    <data>
+        <display>
+        <title>Python编码规范</title>
+        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python处理Windows环境下文件路径问题解决方案</title>
-        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
+        <title>Python Selenium WebDriver简明指南</title>
+        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
         
         <tag>Python</tag>
+         
+        <tag>WebDriver</tag>
          
          
            
@@ -1035,6 +1054,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python处理Windows环境下文件路径问题解决方案</title>
+        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1102,25 +1138,6 @@
         <tag>Python</tag>
          
         <tag>Script</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python Selenium WebDriver简明指南</title>
-        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>WebDriver</tag>
          
          
            

@@ -1,0 +1,948 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="VJ7u1Rk8AsItho1RK1UogeREqK4APImsLIlM666xHJQ" />
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="CnxwXUNDQ1" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="构造方法123456789101112class dict(object):    &quot;&quot;&quot;    dict() -&amp;gt; new empty dictionary    dict(mapping) -&amp;gt; new dictionary initialized from a mapping object&apos;s        (key, value) pairs    dict(iterable)">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="全面剖析Python字典dict的各方法及各操作的内部实现">
+<meta property="og:url" content="http://www.revotu.com/python-dict-methods-and-examples.html">
+<meta property="og:site_name" content="大师兄">
+<meta property="og:description" content="构造方法123456789101112class dict(object):    &quot;&quot;&quot;    dict() -&amp;gt; new empty dictionary    dict(mapping) -&amp;gt; new dictionary initialized from a mapping object&apos;s        (key, value) pairs    dict(iterable)">
+<meta property="og:updated_time" content="2017-09-03T09:20:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="全面剖析Python字典dict的各方法及各操作的内部实现">
+<meta name="twitter:description" content="构造方法123456789101112class dict(object):    &quot;&quot;&quot;    dict() -&amp;gt; new empty dictionary    dict(mapping) -&amp;gt; new dictionary initialized from a mapping object&apos;s        (key, value) pairs    dict(iterable)">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'X0Q23NWE6W',
+      apiKey: '64de3bc2222318122adfc37a1817ed02',
+      indexName: 'revotu',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.revotu.com/python-dict-methods-and-examples.html"/>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3305323367133642",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+  <title>全面剖析Python字典dict的各方法及各操作的内部实现 | 大师兄</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1262023471&web_id=1262023471" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">大师兄</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">心有猛虎 , 细嗅蔷薇</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-dict-methods-and-examples.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大师兄">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大师兄">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">全面剖析Python字典dict的各方法及各操作的内部实现</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-03T15:25:09+08:00">
+                2017-09-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/python-dict-methods-and-examples.html" class="leancloud_visitors" data-flag-title="全面剖析Python字典dict的各方法及各操作的内部实现">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">dict</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    dict() -&gt; new empty dictionary</div><div class="line">    dict(mapping) -&gt; new dictionary initialized from a mapping object's</div><div class="line">        (key, value) pairs</div><div class="line">    dict(iterable) -&gt; new dictionary initialized as if via:</div><div class="line">        d = &#123;&#125;</div><div class="line">        for k, v in iterable:</div><div class="line">            d[k] = v</div><div class="line">    dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs</div><div class="line">        in the keyword argument list.  For example:  dict(one=1, two=2)</div><div class="line">    """</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p>除了字面量的语法<code>{}</code>构造字典，也可以用<code>dict()</code>构造字典。参数有几种，示例如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict(&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict([(<span class="string">'A'</span>, <span class="number">1</span>), (<span class="string">'B'</span>, <span class="number">2</span>), (<span class="string">'C'</span>, <span class="number">3</span>)])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict(A=<span class="number">1</span>, B=<span class="number">2</span>, C=<span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'A'</span>: <span class="number">1</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="清空字典-删除字典中所有元素"><a href="#清空字典-删除字典中所有元素" class="headerlink" title="清空字典(删除字典中所有元素)"></a>清空字典(删除字典中所有元素)</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">clear</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" D.clear() -&gt; None.  Remove all items from D. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.clear()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="字典浅复制"><a href="#字典浅复制" class="headerlink" title="字典浅复制"></a>字典浅复制</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">copy</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" D.copy() -&gt; a shallow copy of D """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = D.copy()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="由键组成的可迭代对象创建新字典"><a href="#由键组成的可迭代对象创建新字典" class="headerlink" title="由键组成的可迭代对象创建新字典"></a>由键组成的可迭代对象创建新字典</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@staticmethod</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">fromkeys</span><span class="params">(*args, **kwargs)</span>:</span> <span class="comment"># real signature unknown</span></div><div class="line">    <span class="string">""" Returns a new dict with keys from iterable and values equal to value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>dict.fromkeys(&#123;<span class="string">'name'</span>, <span class="string">'age'</span>, <span class="string">'sex'</span>&#125;)</div><div class="line">&#123;<span class="string">'age'</span>: <span class="keyword">None</span>, <span class="string">'sex'</span>: <span class="keyword">None</span>, <span class="string">'name'</span>: <span class="keyword">None</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>dict.fromkeys(&#123;<span class="string">'name'</span>, <span class="string">'age'</span>, <span class="string">'sex'</span>&#125;, <span class="number">10</span>)</div><div class="line">&#123;<span class="string">'age'</span>: <span class="number">10</span>, <span class="string">'sex'</span>: <span class="number">10</span>, <span class="string">'name'</span>: <span class="number">10</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="返回指定键的值，如果键不存在返回默认值"><a href="#返回指定键的值，如果键不存在返回默认值" class="headerlink" title="返回指定键的值，如果键不存在返回默认值"></a>返回指定键的值，如果键不存在返回默认值</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">get</span><span class="params">(self, k, d=None)</span>:</span></div><div class="line">    <span class="string">""" D.get(k[,d]) -&gt; D[k] if k in D, else d.  d defaults to None. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.get(<span class="string">'A'</span>)</div><div class="line"><span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.get(<span class="string">'D'</span>, <span class="number">0</span>)</div><div class="line"><span class="number">0</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="得到字典中所有元素的可迭代对象"><a href="#得到字典中所有元素的可迭代对象" class="headerlink" title="得到字典中所有元素的可迭代对象"></a>得到字典中所有元素的可迭代对象</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">items</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" D.items() -&gt; a set-like object providing a view on D's items """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.items()</div><div class="line">dict_items([(<span class="string">'A'</span>, <span class="number">1</span>), (<span class="string">'B'</span>, <span class="number">2</span>), (<span class="string">'C'</span>, <span class="number">3</span>)])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> k, v <span class="keyword">in</span> D.items():</div><div class="line"><span class="meta">... </span>    print(k, v)</div><div class="line"><span class="meta">... </span></div><div class="line">A <span class="number">1</span></div><div class="line">B <span class="number">2</span></div><div class="line">C <span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(D.items())</div><div class="line">[(<span class="string">'A'</span>, <span class="number">1</span>), (<span class="string">'B'</span>, <span class="number">2</span>), (<span class="string">'C'</span>, <span class="number">3</span>)]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="得到字典中所有键的可迭代对象"><a href="#得到字典中所有键的可迭代对象" class="headerlink" title="得到字典中所有键的可迭代对象"></a>得到字典中所有键的可迭代对象</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">keys</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" D.keys() -&gt; a set-like object providing a view on D's keys """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.keys()</div><div class="line">dict_keys([<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> k <span class="keyword">in</span> D.keys():</div><div class="line"><span class="meta">... </span>    print(k)</div><div class="line"><span class="meta">... </span></div><div class="line">A</div><div class="line">B</div><div class="line">C</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(D.keys())</div><div class="line">[<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="删除指定键，并返回对应的值"><a href="#删除指定键，并返回对应的值" class="headerlink" title="删除指定键，并返回对应的值"></a>删除指定键，并返回对应的值</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">pop</span><span class="params">(self, k, d=None)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    D.pop(k[,d]) -&gt; v, remove specified key and return the corresponding value.</div><div class="line">    If key is not found, d is returned if given, otherwise KeyError is raised</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.pop(<span class="string">'A'</span>)</div><div class="line"><span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.pop(<span class="string">'D'</span>, <span class="number">0</span>)</div><div class="line"><span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="删除并返回键值对所组成的元组"><a href="#删除并返回键值对所组成的元组" class="headerlink" title="删除并返回键值对所组成的元组"></a>删除并返回键值对所组成的元组</h2><p>方法：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">def popitem(self):</div><div class="line">    D.popitem() -&gt; (k, v), remove and return some (key, value) pair as a</div><div class="line">    2-tuple; but raise KeyError if D is empty.</div><div class="line">    """</div><div class="line">    pass</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.popitem()</div><div class="line">(<span class="string">'A'</span>, <span class="number">1</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.popitem()</div><div class="line">(<span class="string">'B'</span>, <span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.popitem()</div><div class="line">(<span class="string">'C'</span>, <span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="键存在则返回对应的值，不存在则设置值并返回值"><a href="#键存在则返回对应的值，不存在则设置值并返回值" class="headerlink" title="键存在则返回对应的值，不存在则设置值并返回值"></a>键存在则返回对应的值，不存在则设置值并返回值</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">setdefault</span><span class="params">(self, k, d=None)</span>:</span></div><div class="line">    <span class="string">""" D.setdefault(k[,d]) -&gt; D.get(k,d), also set D[k]=d if k not in D """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.setdefault(<span class="string">'A'</span>, <span class="number">0</span>)</div><div class="line"><span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.setdefault(<span class="string">'D'</span>, <span class="number">0</span>)</div><div class="line"><span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'D'</span>: <span class="number">0</span>, <span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="用另一个可迭代对象更新字典"><a href="#用另一个可迭代对象更新字典" class="headerlink" title="用另一个可迭代对象更新字典"></a>用另一个可迭代对象更新字典</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">update</span><span class="params">(self, E=None, **F)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    D.update([E, ]**F) -&gt; None.  Update D from dict/iterable E and F.</div><div class="line">    If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]</div><div class="line">    If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v</div><div class="line">    In either case, this is followed by: for k in F:  D[k] = F[k]</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.update(&#123;<span class="string">'A'</span>: <span class="number">0</span>, <span class="string">'D'</span>: <span class="number">1</span>&#125;)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'D'</span>: <span class="number">1</span>, <span class="string">'A'</span>: <span class="number">0</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.update(&#123;<span class="string">'A'</span>: <span class="number">0</span>, <span class="string">'D'</span>: <span class="number">1</span>&#125;, A=<span class="number">1</span>, D=<span class="number">4</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'D'</span>: <span class="number">4</span>, <span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="得到字典中所有值的可迭代对象"><a href="#得到字典中所有值的可迭代对象" class="headerlink" title="得到字典中所有值的可迭代对象"></a>得到字典中所有值的可迭代对象</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">values</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" D.values() -&gt; an object providing a view on D's values """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D.values()</div><div class="line">dict_values([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> v <span class="keyword">in</span> D.values():</div><div class="line"><span class="meta">... </span>    print(v)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(D.values())</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="字典对外接口的内部实现"><a href="#字典对外接口的内部实现" class="headerlink" title="字典对外接口的内部实现"></a>字典对外接口的内部实现</h2><h3 id="in语句检测字典中是否有某键"><a href="#in语句检测字典中是否有某键" class="headerlink" title="in语句检测字典中是否有某键"></a>in语句检测字典中是否有某键</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__contains__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" True if D has a key k, else False. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'A'</span> <span class="keyword">in</span> D</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="string">'D'</span> <span class="keyword">in</span> D</div><div class="line"><span class="keyword">False</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="len-函数返回字典长度"><a href="#len-函数返回字典长度" class="headerlink" title="len()函数返回字典长度"></a>len()函数返回字典长度</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return len(self). """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>len(D)</div><div class="line"><span class="number">3</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="repr-返回字典对象字符串表示形式"><a href="#repr-返回字典对象字符串表示形式" class="headerlink" title="repr()返回字典对象字符串表示形式"></a>repr()返回字典对象字符串表示形式</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return repr(self). """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>repr(D)</div><div class="line"><span class="string">"&#123;'A': 1, 'B': 2, 'C': 3&#125;"</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="dict-构造字典"><a href="#dict-构造字典" class="headerlink" title="dict()构造字典"></a>dict()构造字典</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, seq=None, **kwargs)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    dict() -&gt; new empty dictionary</div><div class="line">    dict(mapping) -&gt; new dictionary initialized from a mapping object's</div><div class="line">        (key, value) pairs</div><div class="line">    dict(iterable) -&gt; new dictionary initialized as if via:</div><div class="line">        d = &#123;&#125;</div><div class="line">        for k, v in iterable:</div><div class="line">            d[k] = v</div><div class="line">    dict(**kwargs) -&gt; new dictionary initialized with the name=value pairs</div><div class="line">        in the keyword argument list.  For example:  dict(one=1, two=2)</div><div class="line">    # (copied from class doc)</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div><div class="line"> </div><div class="line"><span class="meta">@staticmethod</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__new__</span><span class="params">(*args, **kwargs)</span>:</span> <span class="comment"># real signature unknown</span></div><div class="line">    <span class="string">""" Create and return a new object.  See help(type) for accurate signature. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict(&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict([(<span class="string">'A'</span>, <span class="number">1</span>), (<span class="string">'B'</span>, <span class="number">2</span>), (<span class="string">'C'</span>, <span class="number">3</span>)])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = dict(A=<span class="number">1</span>, B=<span class="number">2</span>, C=<span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'A'</span>: <span class="number">1</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="通过比较运算符比较字典"><a href="#通过比较运算符比较字典" class="headerlink" title="通过比较运算符比较字典"></a>通过比较运算符比较字典</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self==value. """</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__ne__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self!=value. """</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__ge__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&gt;=value. """</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__gt__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&gt;value. """</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__le__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&lt;=value. """</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__lt__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&lt;value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D1 = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D2 = &#123;<span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'A'</span>: <span class="number">1</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D1 == D2</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="通过键的方式访问、设置、删除元素"><a href="#通过键的方式访问、设置、删除元素" class="headerlink" title="通过键的方式访问、设置、删除元素"></a>通过键的方式访问、设置、删除元素</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, y)</span>:</span></div><div class="line">    <span class="string">""" x.__getitem__(y) &lt;==&gt; x[y] """</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__setitem__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Set self[key] to value. """</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__delitem__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Delete self[key]. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D[<span class="string">'A'</span>]</div><div class="line"><span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D[<span class="string">'B'</span>] = <span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">0</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> D[<span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>D</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">0</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="getattr-得到字典某属性"><a href="#getattr-得到字典某属性" class="headerlink" title="getattr()得到字典某属性"></a>getattr()得到字典某属性</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__getattribute__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return getattr(self, name). """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>getattr(D, <span class="string">'__hash__'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>getattr(D, <span class="string">'sss'</span>)</div><div class="line">Traceback (most recent call last):</div><div class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">AttributeError: <span class="string">'dict'</span> object has no attribute <span class="string">'sss'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="实现iter-函数的接口"><a href="#实现iter-函数的接口" class="headerlink" title="实现iter()函数的接口"></a>实现iter()函数的接口</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__iter__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Implement iter(self). """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>D = &#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>iter(D)</div><div class="line">&lt;dict_keyiterator object at <span class="number">0x7f0f1f0f9e08</span>&gt;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/python-list-methods-and-examples.html" rel="next" title="全面剖析Python列表(list)的各方法及各操作的内部实现">
+                <i class="fa fa-chevron-left"></i> 全面剖析Python列表(list)的各方法及各操作的内部实现
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar/avatar.jpg"
+               alt="大师兄" />
+          <p class="site-author-name" itemprop="name">大师兄</p>
+           
+              <p class="site-description motion-element" itemprop="description">心有猛虎,细嗅蔷薇</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">65</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#构造方法"><span class="nav-number">1.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清空字典-删除字典中所有元素"><span class="nav-number">2.</span> <span class="nav-text">清空字典(删除字典中所有元素)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典浅复制"><span class="nav-number">3.</span> <span class="nav-text">字典浅复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#由键组成的可迭代对象创建新字典"><span class="nav-number">4.</span> <span class="nav-text">由键组成的可迭代对象创建新字典</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#返回指定键的值，如果键不存在返回默认值"><span class="nav-number">5.</span> <span class="nav-text">返回指定键的值，如果键不存在返回默认值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#得到字典中所有元素的可迭代对象"><span class="nav-number">6.</span> <span class="nav-text">得到字典中所有元素的可迭代对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#得到字典中所有键的可迭代对象"><span class="nav-number">7.</span> <span class="nav-text">得到字典中所有键的可迭代对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除指定键，并返回对应的值"><span class="nav-number">8.</span> <span class="nav-text">删除指定键，并返回对应的值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除并返回键值对所组成的元组"><span class="nav-number">9.</span> <span class="nav-text">删除并返回键值对所组成的元组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#键存在则返回对应的值，不存在则设置值并返回值"><span class="nav-number">10.</span> <span class="nav-text">键存在则返回对应的值，不存在则设置值并返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用另一个可迭代对象更新字典"><span class="nav-number">11.</span> <span class="nav-text">用另一个可迭代对象更新字典</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#得到字典中所有值的可迭代对象"><span class="nav-number">12.</span> <span class="nav-text">得到字典中所有值的可迭代对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字典对外接口的内部实现"><span class="nav-number">13.</span> <span class="nav-text">字典对外接口的内部实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#in语句检测字典中是否有某键"><span class="nav-number">13.1.</span> <span class="nav-text">in语句检测字典中是否有某键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#len-函数返回字典长度"><span class="nav-number">13.2.</span> <span class="nav-text">len()函数返回字典长度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#repr-返回字典对象字符串表示形式"><span class="nav-number">13.3.</span> <span class="nav-text">repr()返回字典对象字符串表示形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dict-构造字典"><span class="nav-number">13.4.</span> <span class="nav-text">dict()构造字典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过比较运算符比较字典"><span class="nav-number">13.5.</span> <span class="nav-text">通过比较运算符比较字典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过键的方式访问、设置、删除元素"><span class="nav-number">13.6.</span> <span class="nav-text">通过键的方式访问、设置、删除元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#getattr-得到字典某属性"><span class="nav-number">13.7.</span> <span class="nav-text">getattr()得到字典某属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现iter-函数的接口"><span class="nav-number">13.8.</span> <span class="nav-text">实现iter()函数的接口</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大师兄</span>
+</div>
+<p style="margin:0 0;">Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true">&nbsp;&nbsp;</i><span id="busuanzi_value_site_uv"></span>
+</span>
+<span id="busuanzi_container_site_pv">
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.1"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("IlmGP7aH9xu294jm6VN5qu8y-gzGzoHsz", "dakwPOhyIgLXTFYrsNQWyiqR");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
