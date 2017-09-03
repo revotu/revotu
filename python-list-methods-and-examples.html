@@ -1,0 +1,969 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="VJ7u1Rk8AsItho1RK1UogeREqK4APImsLIlM666xHJQ" />
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="CnxwXUNDQ1" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="构造方法方法：12345class list(object):    &quot;&quot;&quot;    list() -&amp;gt; new empty list    list(iterable) -&amp;gt; new list initialized from iterable&apos;s items    &quot;&quot;&quot; 除了字面量的语法[]构造列表，也可以用list()创建空列表，list(iterable)由可迭代对象初始化一个">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="全面剖析Python列表(list)的各方法及各操作的内部实现">
+<meta property="og:url" content="http://www.revotu.com/python-list-methods-and-examples.html">
+<meta property="og:site_name" content="大师兄">
+<meta property="og:description" content="构造方法方法：12345class list(object):    &quot;&quot;&quot;    list() -&amp;gt; new empty list    list(iterable) -&amp;gt; new list initialized from iterable&apos;s items    &quot;&quot;&quot; 除了字面量的语法[]构造列表，也可以用list()创建空列表，list(iterable)由可迭代对象初始化一个">
+<meta property="og:updated_time" content="2017-09-03T06:24:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="全面剖析Python列表(list)的各方法及各操作的内部实现">
+<meta name="twitter:description" content="构造方法方法：12345class list(object):    &quot;&quot;&quot;    list() -&amp;gt; new empty list    list(iterable) -&amp;gt; new list initialized from iterable&apos;s items    &quot;&quot;&quot; 除了字面量的语法[]构造列表，也可以用list()创建空列表，list(iterable)由可迭代对象初始化一个">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'X0Q23NWE6W',
+      apiKey: '64de3bc2222318122adfc37a1817ed02',
+      indexName: 'revotu',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.revotu.com/python-list-methods-and-examples.html"/>
+
+
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3305323367133642",
+    enable_page_level_ads: true
+  });
+</script>
+
+
+  <title>全面剖析Python列表(list)的各方法及各操作的内部实现 | 大师兄</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1262023471&web_id=1262023471" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">大师兄</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">心有猛虎 , 细嗅蔷薇</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-list-methods-and-examples.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大师兄">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大师兄">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">全面剖析Python列表(list)的各方法及各操作的内部实现</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-03T12:45:42+08:00">
+                2017-09-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/python-list-methods-and-examples.html" class="leancloud_visitors" data-flag-title="全面剖析Python列表(list)的各方法及各操作的内部实现">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">list</span><span class="params">(object)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    list() -&gt; new empty list</div><div class="line">    list(iterable) -&gt; new list initialized from iterable's items</div><div class="line">    """</div></pre></td></tr></table></figure></p>
+<p>除了字面量的语法<code>[]</code>构造列表，也可以用<code>list()</code>创建空列表，<code>list(iterable)</code>由可迭代对象初始化一个列表。<br><a id="more"></a><br>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = []</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = list()</div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = list(&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = list((<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>))</div></pre></td></tr></table></figure></p>
+<h2 id="向列表尾部添加元素"><a href="#向列表尾部添加元素" class="headerlink" title="向列表尾部添加元素"></a>向列表尾部添加元素</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">append</span><span class="params">(self, p_object)</span>:</span> </div><div class="line">    <span class="string">""" L.append(object) -&gt; None -- append object to end """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = []</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.append(<span class="number">1</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.append((<span class="number">2</span>, <span class="number">3</span>))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, (<span class="number">2</span>, <span class="number">3</span>)]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.append(&#123;<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>&#125;)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, (<span class="number">2</span>, <span class="number">3</span>), &#123;<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>&#125;]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="清空列表-删除列表中所有元素"><a href="#清空列表-删除列表中所有元素" class="headerlink" title="清空列表(删除列表中所有元素)"></a>清空列表(删除列表中所有元素)</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">clear</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" L.clear() -&gt; None -- remove all items from L """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.clear()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[]</div></pre></td></tr></table></figure></p>
+<h2 id="列表的浅复制"><a href="#列表的浅复制" class="headerlink" title="列表的浅复制"></a>列表的浅复制</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">copy</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" L.copy() -&gt; list -- a shallow copy of L """</span></div><div class="line">    <span class="keyword">return</span> []</div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.copy()</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="列表中某个值出现的次数"><a href="#列表中某个值出现的次数" class="headerlink" title="列表中某个值出现的次数"></a>列表中某个值出现的次数</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">count</span><span class="params">(self, value)</span>:</span></div><div class="line">    <span class="string">""" L.count(value) -&gt; integer -- return number of occurrences of value """</span></div><div class="line">    <span class="keyword">return</span> <span class="number">0</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.count(<span class="number">1</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.count(<span class="number">5</span>)</div><div class="line"><span class="number">0</span></div></pre></td></tr></table></figure></p>
+<h2 id="用迭代器中元素扩展列表"><a href="#用迭代器中元素扩展列表" class="headerlink" title="用迭代器中元素扩展列表"></a>用迭代器中元素扩展列表</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">extend</span><span class="params">(self, iterable)</span>:</span></div><div class="line">    <span class="string">""" L.extend(iterable) -&gt; None -- extend list by appending elements from the iterable """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.extend(&#123;<span class="number">4</span>, <span class="number">5</span>&#125;)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.extend([<span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="查找某个值在列表中第一次出现的索引"><a href="#查找某个值在列表中第一次出现的索引" class="headerlink" title="查找某个值在列表中第一次出现的索引"></a>查找某个值在列表中第一次出现的索引</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(self, value, start=None, stop=None)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    L.index(value, [start, [stop]]) -&gt; integer -- return first index of value.</div><div class="line">    Raises ValueError if the value is not present.</div><div class="line">    """</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">1</span>, <span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.index(<span class="number">2</span>)</div><div class="line"><span class="number">1</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.index(<span class="number">5</span>)</div><div class="line">Traceback (most recent call last):</div><div class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">ValueError: <span class="number">5</span> <span class="keyword">is</span> <span class="keyword">not</span> <span class="keyword">in</span> list</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="向列表中指定索引前面的位置插入元素"><a href="#向列表中指定索引前面的位置插入元素" class="headerlink" title="向列表中指定索引前面的位置插入元素"></a>向列表中指定索引前面的位置插入元素</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">insert</span><span class="params">(self, index, p_object)</span>:</span></div><div class="line">    <span class="string">""" L.insert(index, object) -- insert object before index """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.insert(<span class="number">0</span>, <span class="number">0</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.insert(<span class="number">2</span>, <span class="number">1.5</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">1.5</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="删除并返回指定索引处的值"><a href="#删除并返回指定索引处的值" class="headerlink" title="删除并返回指定索引处的值"></a>删除并返回指定索引处的值</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">pop</span><span class="params">(self, index=None)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    L.pop([index]) -&gt; item -- remove and return item at index (default last).</div><div class="line">    Raises IndexError if list is empty or index is out of range.</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.pop()</div><div class="line"><span class="string">'E'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.pop(<span class="number">2</span>)</div><div class="line"><span class="string">'C'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'D'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.pop(<span class="number">3</span>)</div><div class="line">Traceback (most recent call last):</div><div class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">IndexError: pop index out of range</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="删除列表中第一次出现的指定值"><a href="#删除列表中第一次出现的指定值" class="headerlink" title="删除列表中第一次出现的指定值"></a>删除列表中第一次出现的指定值</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">remove</span><span class="params">(self, value)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    L.remove(value) -&gt; None -- remove first occurrence of value.</div><div class="line">    Raises ValueError if the value is not present.</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.remove(<span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.remove(<span class="number">4</span>)</div><div class="line">Traceback (most recent call last):</div><div class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">ValueError: list.remove(x): x <span class="keyword">not</span> <span class="keyword">in</span> list</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="原地反转列表-列表中所有元素反序"><a href="#原地反转列表-列表中所有元素反序" class="headerlink" title="原地反转列表(列表中所有元素反序)"></a>原地反转列表(列表中所有元素反序)</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">reverse</span><span class="params">(self)</span>:</span></div><div class="line">    <span class="string">""" L.reverse() -- reverse *IN PLACE* """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.reverse()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="原地排序列表"><a href="#原地排序列表" class="headerlink" title="原地排序列表"></a>原地排序列表</h2><p>方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">sort</span><span class="params">(self, key=None, reverse=False)</span>:</span></div><div class="line">    <span class="string">""" L.sort(key=None, reverse=False) -&gt; None -- stable sort *IN PLACE* """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">4</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.sort()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.sort(reverse=<span class="keyword">True</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [&#123;<span class="string">'x'</span>: <span class="number">1</span>, <span class="string">'y'</span>: <span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>: <span class="number">2</span>, <span class="string">'y'</span>: <span class="number">1</span>&#125;, &#123;<span class="string">'x'</span>: <span class="number">1</span>, <span class="string">'y'</span>: <span class="number">3</span>&#125;]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L.sort(key=<span class="keyword">lambda</span> d : (d[<span class="string">'x'</span>], d[<span class="string">'y'</span>]))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[&#123;<span class="string">'y'</span>: <span class="number">2</span>, <span class="string">'x'</span>: <span class="number">1</span>&#125;, &#123;<span class="string">'y'</span>: <span class="number">3</span>, <span class="string">'x'</span>: <span class="number">1</span>&#125;, &#123;<span class="string">'y'</span>: <span class="number">1</span>, <span class="string">'x'</span>: <span class="number">2</span>&#125;]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="列表对外接口的内部实现"><a href="#列表对外接口的内部实现" class="headerlink" title="列表对外接口的内部实现"></a>列表对外接口的内部实现</h2><h3 id="列表相加"><a href="#列表相加" class="headerlink" title="列表相加"></a>列表相加</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__add__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self+value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L3 = L1 + L2</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L3</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="in语句检测值列表中是否含有某值"><a href="#in语句检测值列表中是否含有某值" class="headerlink" title="in语句检测值列表中是否含有某值"></a>in语句检测值列表中是否含有某值</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__contains__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return key in self. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">1</span> <span class="keyword">in</span> L</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">4</span> <span class="keyword">in</span> L</div><div class="line"><span class="keyword">False</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="del语句删除指定索引处的值"><a href="#del语句删除指定索引处的值" class="headerlink" title="del语句删除指定索引处的值"></a>del语句删除指定索引处的值</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__delitem__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Delete self[key]. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> L[<span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="比较运算符判断两个列表是否相等"><a href="#比较运算符判断两个列表是否相等" class="headerlink" title="==比较运算符判断两个列表是否相等"></a>==比较运算符判断两个列表是否相等</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__eq__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self==value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = list((<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 == L2</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L3 = [<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 == L3</div><div class="line"><span class="keyword">False</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="getattr-得到list对象的指定属性"><a href="#getattr-得到list对象的指定属性" class="headerlink" title="getattr()得到list对象的指定属性"></a>getattr()得到list对象的指定属性</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__getattribute__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return getattr(self, name). """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>getattr(L, <span class="string">'__hash__'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>getattr(L, <span class="string">'a'</span>)</div><div class="line">Traceback (most recent call last):</div><div class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">AttributeError: <span class="string">'list'</span> object has no attribute <span class="string">'a'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="通过索引下标的方式访问元素"><a href="#通过索引下标的方式访问元素" class="headerlink" title="通过索引下标的方式访问元素"></a>通过索引下标的方式访问元素</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__getitem__</span><span class="params">(self, y)</span>:</span></div><div class="line">    <span class="string">""" x.__getitem__(y) &lt;==&gt; x[y] """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L[<span class="number">1</span>]</div><div class="line"><span class="number">2</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L[<span class="number">0</span>]</div><div class="line"><span class="number">1</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="gt-比较运算符比较列表"><a href="#gt-比较运算符比较列表" class="headerlink" title="&gt;=比较运算符比较列表"></a>&gt;=比较运算符比较列表</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__ge__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&gt;=value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = [<span class="number">2</span>, <span class="number">0</span>, <span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 &gt;= L1</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="gt-比较运算符比较列表-1"><a href="#gt-比较运算符比较列表-1" class="headerlink" title="&gt;比较运算符比较列表"></a>&gt;比较运算符比较列表</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__gt__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&gt;value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = [<span class="number">2</span>, <span class="number">0</span>, <span class="number">1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 &gt; L1</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="增量运算符增加列表元素"><a href="#增量运算符增加列表元素" class="headerlink" title="+=增量运算符增加列表元素"></a>+=增量运算符增加列表元素</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__iadd__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Implement self+=value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 += [<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="增量运算符增加列表元素-1"><a href="#增量运算符增加列表元素-1" class="headerlink" title="*=增量运算符增加列表元素"></a>*=增量运算符增加列表元素</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__imul__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Implement self*=value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L *= <span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="list-类构造函数始化列表"><a href="#list-类构造函数始化列表" class="headerlink" title="list()类构造函数始化列表"></a>list()类构造函数始化列表</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self, seq=<span class="params">()</span>)</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line">    list() -&gt; new empty list</div><div class="line">    list(iterable) -&gt; new list initialized from iterable's items</div><div class="line">    """</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = list()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1</div><div class="line">[]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = list([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L3 = list(&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>&#125;)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L3</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="实现iter-函数的接口"><a href="#实现iter-函数的接口" class="headerlink" title="实现iter()函数的接口"></a>实现iter()函数的接口</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__iter__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Implement iter(self). """</span></div><div class="line">    pas</div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>iter(L)</div><div class="line">&lt;list_iterator object at <span class="number">0x7fbe4cbe5080</span>&gt;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="len-函数返回列表长度"><a href="#len-函数返回列表长度" class="headerlink" title="len()函数返回列表长度"></a>len()函数返回列表长度</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__len__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return len(self). """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>len(L)</div><div class="line"><span class="number">3</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="lt-比较运算符比较列表"><a href="#lt-比较运算符比较列表" class="headerlink" title="&lt;=比较运算符比较列表"></a>&lt;=比较运算符比较列表</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__le__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&lt;=value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = [<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 &lt;= L2</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="lt-比较运算符比较列表-1"><a href="#lt-比较运算符比较列表-1" class="headerlink" title="&lt;比较运算符比较列表"></a>&lt;比较运算符比较列表</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__lt__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self&lt;value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = [<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 &lt; L2</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="运算符重复列表元素多少次"><a href="#运算符重复列表元素多少次" class="headerlink" title="*运算符重复列表元素多少次"></a>*运算符重复列表元素多少次</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__mul__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self*value.n """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = L * <span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="比较运算符比较列表"><a href="#比较运算符比较列表" class="headerlink" title="!=比较运算符比较列表"></a>!=比较运算符比较列表</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__ne__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return self!=value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L2 = [<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L1 != L2</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="repr-返回列表对象字符串表示形式"><a href="#repr-返回列表对象字符串表示形式" class="headerlink" title="repr()返回列表对象字符串表示形式"></a>repr()返回列表对象字符串表示形式</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__repr__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Return repr(self). """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>repr(L)</div><div class="line"><span class="string">'[1, 2, 3]'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="通过索引下标给元素赋值"><a href="#通过索引下标给元素赋值" class="headerlink" title="通过索引下标给元素赋值"></a>通过索引下标给元素赋值</h3><p>内部实现方法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">__setitem__</span><span class="params">(self, *args, **kwargs)</span>:</span></div><div class="line">    <span class="string">""" Set self[key] to value. """</span></div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
+<p>对外接口示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>L = [<span class="number">1</span>, <span class="number">3</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L[<span class="number">1</span>] = <span class="number">2</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>L</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/getting-a-directory-listing.html" rel="next" title="Python获取目录内容的列表">
+                <i class="fa fa-chevron-left"></i> Python获取目录内容的列表
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar/avatar.jpg"
+               alt="大师兄" />
+          <p class="site-author-name" itemprop="name">大师兄</p>
+           
+              <p class="site-description motion-element" itemprop="description">心有猛虎,细嗅蔷薇</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">64</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#构造方法"><span class="nav-number">1.</span> <span class="nav-text">构造方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向列表尾部添加元素"><span class="nav-number">2.</span> <span class="nav-text">向列表尾部添加元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#清空列表-删除列表中所有元素"><span class="nav-number">3.</span> <span class="nav-text">清空列表(删除列表中所有元素)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表的浅复制"><span class="nav-number">4.</span> <span class="nav-text">列表的浅复制</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表中某个值出现的次数"><span class="nav-number">5.</span> <span class="nav-text">列表中某个值出现的次数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用迭代器中元素扩展列表"><span class="nav-number">6.</span> <span class="nav-text">用迭代器中元素扩展列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找某个值在列表中第一次出现的索引"><span class="nav-number">7.</span> <span class="nav-text">查找某个值在列表中第一次出现的索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#向列表中指定索引前面的位置插入元素"><span class="nav-number">8.</span> <span class="nav-text">向列表中指定索引前面的位置插入元素</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除并返回指定索引处的值"><span class="nav-number">9.</span> <span class="nav-text">删除并返回指定索引处的值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除列表中第一次出现的指定值"><span class="nav-number">10.</span> <span class="nav-text">删除列表中第一次出现的指定值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原地反转列表-列表中所有元素反序"><span class="nav-number">11.</span> <span class="nav-text">原地反转列表(列表中所有元素反序)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#原地排序列表"><span class="nav-number">12.</span> <span class="nav-text">原地排序列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表对外接口的内部实现"><span class="nav-number">13.</span> <span class="nav-text">列表对外接口的内部实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表相加"><span class="nav-number">13.1.</span> <span class="nav-text">列表相加</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#in语句检测值列表中是否含有某值"><span class="nav-number">13.2.</span> <span class="nav-text">in语句检测值列表中是否含有某值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#del语句删除指定索引处的值"><span class="nav-number">13.3.</span> <span class="nav-text">del语句删除指定索引处的值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较运算符判断两个列表是否相等"><span class="nav-number">13.4.</span> <span class="nav-text">==比较运算符判断两个列表是否相等</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#getattr-得到list对象的指定属性"><span class="nav-number">13.5.</span> <span class="nav-text">getattr()得到list对象的指定属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过索引下标的方式访问元素"><span class="nav-number">13.6.</span> <span class="nav-text">通过索引下标的方式访问元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-比较运算符比较列表"><span class="nav-number">13.7.</span> <span class="nav-text">>=比较运算符比较列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#gt-比较运算符比较列表-1"><span class="nav-number">13.8.</span> <span class="nav-text">>比较运算符比较列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增量运算符增加列表元素"><span class="nav-number">13.9.</span> <span class="nav-text">+=增量运算符增加列表元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增量运算符增加列表元素-1"><span class="nav-number">13.10.</span> <span class="nav-text">*=增量运算符增加列表元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#list-类构造函数始化列表"><span class="nav-number">13.11.</span> <span class="nav-text">list()类构造函数始化列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现iter-函数的接口"><span class="nav-number">13.12.</span> <span class="nav-text">实现iter()函数的接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#len-函数返回列表长度"><span class="nav-number">13.13.</span> <span class="nav-text">len()函数返回列表长度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-比较运算符比较列表"><span class="nav-number">13.14.</span> <span class="nav-text"><=比较运算符比较列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#lt-比较运算符比较列表-1"><span class="nav-number">13.15.</span> <span class="nav-text"><比较运算符比较列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#运算符重复列表元素多少次"><span class="nav-number">13.16.</span> <span class="nav-text">*运算符重复列表元素多少次</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#比较运算符比较列表"><span class="nav-number">13.17.</span> <span class="nav-text">!=比较运算符比较列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#repr-返回列表对象字符串表示形式"><span class="nav-number">13.18.</span> <span class="nav-text">repr()返回列表对象字符串表示形式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过索引下标给元素赋值"><span class="nav-number">13.19.</span> <span class="nav-text">通过索引下标给元素赋值</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大师兄</span>
+</div>
+<p style="margin:0 0;">Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true">&nbsp;&nbsp;</i><span id="busuanzi_value_site_uv"></span>
+</span>
+<span id="busuanzi_container_site_pv">
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.1"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("IlmGP7aH9xu294jm6VN5qu8y-gzGzoHsz", "dakwPOhyIgLXTFYrsNQWyiqR");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
