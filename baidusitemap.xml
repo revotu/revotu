@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-dict-methods-and-examples.html</loc>
-    <lastmod>2017-09-03T09:20:28.000Z</lastmod>
+    <loc>http://www.revotu.com/python-list-methods-and-examples.html</loc>
+    <lastmod>2017-09-03T10:13:49.000Z</lastmod>
     <data>
         <display>
-        <title>全面剖析Python字典dict的各方法及各操作的内部实现</title>
-        <pubTime>2017-09-03T07:25:09.000Z</pubTime>
+        <title>全面剖析Python列表(list)的各方法及各操作的内部实现</title>
+        <pubTime>2017-09-03T04:45:42.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -21,12 +21,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-list-methods-and-examples.html</loc>
-    <lastmod>2017-09-03T06:24:29.000Z</lastmod>
+    <loc>http://www.revotu.com/python-dict-methods-and-examples.html</loc>
+    <lastmod>2017-09-03T10:12:56.000Z</lastmod>
     <data>
         <display>
-        <title>全面剖析Python列表(list)的各方法及各操作的内部实现</title>
-        <pubTime>2017-09-03T04:45:42.000Z</pubTime>
+        <title>全面剖析Python字典dict的各方法及各操作的内部实现</title>
+        <pubTime>2017-09-03T07:25:09.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -293,12 +293,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -310,12 +310,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python中json转成html table</title>
-        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
+        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -344,12 +344,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -361,12 +361,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
-        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
+        <title>Python中json转成html table</title>
+        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
         
         <tag>Python</tag>
          
