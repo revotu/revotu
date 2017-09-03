@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python-set-methods-and-examples.html</loc>
+    
+    <lastmod>2017-09-03T16:18:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/python-list-methods-and-examples.html</loc>
     
     <lastmod>2017-09-03T11:09:14.000Z</lastmod>
@@ -128,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
@@ -157,6 +157,13 @@
   
   <url>
     <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -226,7 +233,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -240,7 +247,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -254,13 +261,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
-    
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
@@ -268,9 +268,9 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     
   </url>
   
@@ -429,14 +429,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -458,6 +458,13 @@
   
   <url>
     <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
