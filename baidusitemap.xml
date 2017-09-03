@@ -5,10 +5,10 @@
     
   <url>
     <loc>http://www.revotu.com/python-list-methods-and-examples.html</loc>
-    <lastmod>2017-09-03T10:13:49.000Z</lastmod>
+    <lastmod>2017-09-03T11:09:14.000Z</lastmod>
     <data>
         <display>
-        <title>全面剖析Python列表(list)的各方法及各操作的内部实现</title>
+        <title>全面剖析Python列表list的各方法及各操作的内部实现</title>
         <pubTime>2017-09-03T04:45:42.000Z</pubTime>
         
         <tag>Python</tag>
@@ -21,8 +21,25 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-tuple-methods-and-examples.html</loc>
+    <lastmod>2017-09-03T11:08:45.000Z</lastmod>
+    <data>
+        <display>
+        <title>全面剖析Python元组tuple的各方法及各操作的内部实现</title>
+        <pubTime>2017-09-03T10:17:57.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-dict-methods-and-examples.html</loc>
-    <lastmod>2017-09-03T10:12:56.000Z</lastmod>
+    <lastmod>2017-09-03T11:05:58.000Z</lastmod>
     <data>
         <display>
         <title>全面剖析Python字典dict的各方法及各操作的内部实现</title>
@@ -293,23 +310,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
@@ -367,6 +367,23 @@
         <display>
         <title>Python中json转成html table</title>
         <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -628,25 +645,6 @@
         <pubTime>2017-07-06T01:40:36.000Z</pubTime>
         
         <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python Selenium WebDriver简明指南</title>
-        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>WebDriver</tag>
          
          
            
@@ -1138,6 +1136,25 @@
         <tag>Python</tag>
          
         <tag>Script</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python Selenium WebDriver简明指南</title>
+        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>WebDriver</tag>
          
          
            
