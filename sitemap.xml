@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python-built-in-function-any-and-all.html</loc>
+    
+    <lastmod>2017-09-04T17:01:54.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-iterate-more-iterators-with-zip-function.html</loc>
+    
+    <lastmod>2017-09-04T06:48:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/get-iterable-index-with-enumerate-funtion.html</loc>
     
     <lastmod>2017-09-04T04:22:34.000Z</lastmod>
@@ -142,20 +156,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
@@ -171,6 +171,20 @@
   
   <url>
     <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -219,7 +233,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -233,14 +247,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -254,7 +268,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -268,13 +282,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
-    
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
@@ -282,16 +289,9 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
+    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     
   </url>
   
@@ -436,14 +436,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -472,6 +472,20 @@
   
   <url>
     <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     

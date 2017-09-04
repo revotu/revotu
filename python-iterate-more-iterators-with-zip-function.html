@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="time模块（low level）语法:12import timetime.strftime(format) 获取当前时间：123456import time## 24 hour formattime.strftime(&quot;%H:%M:%S&quot;) # 输出 18:58:17## 12 hour formattime.strftime(&quot;%I:%M:%S&quot;) # 输出 06:58:17##">
+<meta name="description" content="Python的内置zip函数能轻松地并行迭代两个或者更多可迭代对象，它返回的元组可以拆包成变量，分别对应各个并行输入中的一个元素。注意，Python2中zip函数返回的是列表，而在Python3中返回的是生成器。">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python获取当前时间">
-<meta property="og:url" content="http://www.revotu.com/how-to-get-current-time-in-python.html">
+<meta property="og:title" content="Python用zip函数并行迭代两个或更多可迭代对象">
+<meta property="og:url" content="http://www.revotu.com/python-iterate-more-iterators-with-zip-function.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="time模块（low level）语法:12import timetime.strftime(format) 获取当前时间：123456import time## 24 hour formattime.strftime(&quot;%H:%M:%S&quot;) # 输出 18:58:17## 12 hour formattime.strftime(&quot;%I:%M:%S&quot;) # 输出 06:58:17##">
-<meta property="og:updated_time" content="2017-07-08T03:12:38.600Z">
+<meta property="og:description" content="Python的内置zip函数能轻松地并行迭代两个或者更多可迭代对象，它返回的元组可以拆包成变量，分别对应各个并行输入中的一个元素。注意，Python2中zip函数返回的是列表，而在Python3中返回的是生成器。">
+<meta property="og:updated_time" content="2017-09-04T06:48:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python获取当前时间">
-<meta name="twitter:description" content="time模块（low level）语法:12import timetime.strftime(format) 获取当前时间：123456import time## 24 hour formattime.strftime(&quot;%H:%M:%S&quot;) # 输出 18:58:17## 12 hour formattime.strftime(&quot;%I:%M:%S&quot;) # 输出 06:58:17##">
+<meta name="twitter:title" content="Python用zip函数并行迭代两个或更多可迭代对象">
+<meta name="twitter:description" content="Python的内置zip函数能轻松地并行迭代两个或者更多可迭代对象，它返回的元组可以拆包成变量，分别对应各个并行输入中的一个元素。注意，Python2中zip函数返回的是列表，而在Python3中返回的是生成器。">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/how-to-get-current-time-in-python.html"/>
+  <link rel="canonical" href="http://www.revotu.com/python-iterate-more-iterators-with-zip-function.html"/>
 
 
 
 
 
-  <title>Python获取当前时间 | 大师兄</title>
+  <title>Python用zip函数并行迭代两个或更多可迭代对象 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/how-to-get-current-time-in-python.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-iterate-more-iterators-with-zip-function.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python获取当前时间</h1>
+          <h1 class="post-title" itemprop="name headline">Python用zip函数并行迭代两个或更多可迭代对象</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-23T18:43:17+08:00">
-                2017-06-23
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-04T13:48:09+08:00">
+                2017-09-04
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/how-to-get-current-time-in-python.html" class="leancloud_visitors" data-flag-title="Python获取当前时间">
+             <span id="/python-iterate-more-iterators-with-zip-function.html" class="leancloud_visitors" data-flag-title="Python用zip函数并行迭代两个或更多可迭代对象">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,14 +379,17 @@
       
 
       
-        <h2 id="time模块（low-level）"><a href="#time模块（low-level）" class="headerlink" title="time模块（low level）"></a>time模块（low level）</h2><p>语法:<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> time</div><div class="line">time.strftime(format)</div></pre></td></tr></table></figure></p>
-<p>获取当前时间：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> time</div><div class="line"><span class="comment">## 24 hour format</span></div><div class="line">time.strftime(<span class="string">"%H:%M:%S"</span>) <span class="comment"># 输出 18:58:17</span></div><div class="line"><span class="comment">## 12 hour format</span></div><div class="line">time.strftime(<span class="string">"%I:%M:%S"</span>) <span class="comment"># 输出 06:58:17</span></div><div class="line"><span class="comment">##</span></div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>获取当前日期：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> time</div><div class="line"><span class="comment">## yyyy-mm-dd format</span></div><div class="line">time.strftime(<span class="string">"%Y-%m-%d"</span>) <span class="comment"># 输出 2017-06-23</span></div></pre></td></tr></table></figure></p>
-<h2 id="datetime模块（high-level-Object-oriented-interface-to-dates-and-times）"><a href="#datetime模块（high-level-Object-oriented-interface-to-dates-and-times）" class="headerlink" title="datetime模块（high level Object-oriented interface to dates and times）"></a>datetime模块（high level Object-oriented interface to dates and times）</h2><p>语法：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> datetime</div><div class="line"></div><div class="line">datetime.datetime.now().strftime(<span class="string">"%Y-%m-%d %H:%M:%S"</span>) <span class="comment"># 输出 2017-06-23 18:58:17</span></div></pre></td></tr></table></figure></p>
-<p>获取年/月/日/时/分/秒<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> datetime</div><div class="line"></div><div class="line">now = datetime.datetime.now() <span class="comment"># 当前datetime，输出 datetime.datetime(2017, 6, 23, 19, 13, 43, 555000)</span></div><div class="line">now.year                      <span class="comment"># 年</span></div><div class="line">now.month                     <span class="comment"># 月</span></div><div class="line">now.day                       <span class="comment"># 日</span></div><div class="line">now.hour                      <span class="comment"># 时</span></div><div class="line">now.minute                    <span class="comment"># 分</span></div><div class="line">now.second                    <span class="comment"># 秒</span></div><div class="line">now.isoformat() <span class="comment"># Date and time in ISO format，输出 2017-06-23T19:16:21.835000</span></div></pre></td></tr></table></figure></p>
-<p>strftime()参数含义对照表：<a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior" target="_blank" rel="external">strftime() format codes</a></p>
-
+        <p>Python的内置<code>zip</code>函数能轻松地并行迭代两个或者更多可迭代对象，它返回的元组可以拆包成变量，分别对应各个并行输入中的一个元素。注意，Python2中<code>zip</code>函数返回的是列表，而在Python3中返回的是生成器。<br><a id="more"></a></p>
+<h2 id="zip函数名称的由来"><a href="#zip函数名称的由来" class="headerlink" title="zip函数名称的由来"></a>zip函数名称的由来</h2><p>zip函数的名字取自拉链系结物（zipper fastener），因为这个物品用于把两个拉链边的链牙咬合在一起，这形象说明了<code>zip(left, right)</code>的作用，zip函数与文件压缩没有关系。</p>
+<h2 id="zip内置函数的使用示例"><a href="#zip内置函数的使用示例" class="headerlink" title="zip内置函数的使用示例"></a>zip内置函数的使用示例</h2><p><code>zip</code>函数返回一个生成器，按需生成元组。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>zip(range(<span class="number">3</span>), <span class="string">'ABC'</span>)</div><div class="line">&lt;zip object at <span class="number">0x7fe606376208</span>&gt;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>为了输出，构建一个列表，通常，我们会迭代生成器。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(zip(range(<span class="number">3</span>), <span class="string">'ABC'</span>))</div><div class="line">[(<span class="number">0</span>, <span class="string">'A'</span>), (<span class="number">1</span>, <span class="string">'B'</span>), (<span class="number">2</span>, <span class="string">'C'</span>)]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>返回值的长度，以参数中最短的可迭代对象为准。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(zip(range(<span class="number">3</span>), <span class="string">'ABC'</span>, [<span class="number">0.0</span>, <span class="number">1.1</span>, <span class="number">2.2</span>, <span class="number">3.3</span>]))</div><div class="line">[(<span class="number">0</span>, <span class="string">'A'</span>, <span class="number">0.0</span>), (<span class="number">1</span>, <span class="string">'B'</span>, <span class="number">1.1</span>), (<span class="number">2</span>, <span class="string">'C'</span>, <span class="number">2.2</span>)]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p><code>itertools.zip_longest</code>函数的作用是以参数中最长的可迭代对象为准，使用可选的<code>fillvalue</code>（默认值为None）填充缺失的值。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> itertools <span class="keyword">import</span> zip_longest</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(zip_longest(range(<span class="number">3</span>), <span class="string">'ABC'</span>, [<span class="number">0.0</span>, <span class="number">1.1</span>, <span class="number">2.2</span>, <span class="number">3.3</span>], fillvalue=<span class="number">-1</span>))</div><div class="line">[(<span class="number">0</span>, <span class="string">'A'</span>, <span class="number">0.0</span>), (<span class="number">1</span>, <span class="string">'B'</span>, <span class="number">1.1</span>), (<span class="number">2</span>, <span class="string">'C'</span>, <span class="number">2.2</span>), (<span class="number">-1</span>, <span class="number">-1</span>, <span class="number">3.3</span>)]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>zip函数与<code>*</code>运算符结合，实现将结果拆分成元组的功能。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>x = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>zipped = zip(x, y)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>zipped</div><div class="line">&lt;zip object at <span class="number">0x7fe6063763c8</span>&gt;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(zipped)</div><div class="line">[(<span class="number">1</span>, <span class="string">'A'</span>), (<span class="number">2</span>, <span class="string">'B'</span>), (<span class="number">3</span>, <span class="string">'C'</span>)]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x2, y2 = zip(*zip(x, y))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x == list(x2) <span class="keyword">and</span> y == list(y2)</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x2</div><div class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y2</div><div class="line">(<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>)</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="zip函数的实际应用场景"><a href="#zip函数的实际应用场景" class="headerlink" title="zip函数的实际应用场景"></a>zip函数的实际应用场景</h2><h3 id="zip函数由两个列表分别作为键和值生成字典"><a href="#zip函数由两个列表分别作为键和值生成字典" class="headerlink" title="zip函数由两个列表分别作为键和值生成字典"></a>zip函数由两个列表分别作为键和值生成字典</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>keys = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>values = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = dict(zip(keys, values))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d</div><div class="line">&#123;<span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'A'</span>: <span class="number">1</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
+<h3 id="zip函数返回值是生成器的相关陷阱"><a href="#zip函数返回值是生成器的相关陷阱" class="headerlink" title="zip函数返回值是生成器的相关陷阱"></a>zip函数返回值是生成器的相关陷阱</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;<span class="string">'Book1'</span>: <span class="number">6.66</span>, <span class="string">'Book2'</span>: <span class="number">3.33</span>, <span class="string">'Book3'</span>: <span class="number">9.99</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>prices_and_names = zip(d.values(), d.keys())</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>print(min(prices_and_names))</div><div class="line">(<span class="number">3.33</span>, <span class="string">'Book2'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>print(max(prices_and_names))</div><div class="line">Traceback (most recent call last):</div><div class="line">  File <span class="string">"&lt;stdin&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</div><div class="line">ValueError: max() arg <span class="keyword">is</span> an empty sequence</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure>
+<p>由于zip函数返回的是生成器，因此它的内容只能被消费一次。如需解决这个问题，可以使用<code>list()</code>将生成器转成列表。示例如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;<span class="string">'Book1'</span>: <span class="number">6.66</span>, <span class="string">'Book2'</span>: <span class="number">3.33</span>, <span class="string">'Book3'</span>: <span class="number">9.99</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>prices_and_names = list(zip(d.values(), d.keys()))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>print(min(prices_and_names))</div><div class="line">(<span class="number">3.33</span>, <span class="string">'Book2'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>print(max(prices_and_names))</div><div class="line">(<span class="number">9.99</span>, <span class="string">'Book3'</span>)</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="zip函数的等价代码实现"><a href="#zip函数的等价代码实现" class="headerlink" title="zip函数的等价代码实现"></a>zip函数的等价代码实现</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">zip</span><span class="params">(*iterables)</span>:</span></div><div class="line">    sentinel = object()</div><div class="line">    iterators = [iter(it) <span class="keyword">for</span> it <span class="keyword">in</span> iterables]</div><div class="line">    <span class="keyword">while</span> iterators:</div><div class="line">        result = []</div><div class="line">        <span class="keyword">for</span> it <span class="keyword">in</span> iterators:</div><div class="line">            elem  = next(it, sentinel)</div><div class="line">            <span class="keyword">if</span> elem <span class="keyword">is</span> sentinel:</div><div class="line">                <span class="keyword">return</span></div><div class="line">            result.append(elem)</div><div class="line">        <span class="keyword">yield</span> tuple(result)</div></pre></td></tr></table></figure>
       
     </div>
 
@@ -428,8 +431,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/scrapy-reptile-faq.html" rel="next" title="Scrapy爬虫常见问题总结">
-                <i class="fa fa-chevron-left"></i> Scrapy爬虫常见问题总结
+              <a href="/get-iterable-index-with-enumerate-funtion.html" rel="next" title="Python用enumerate函数在遍历迭代器时获得元素的索引">
+                <i class="fa fa-chevron-left"></i> Python用enumerate函数在遍历迭代器时获得元素的索引
               </a>
             
           </div>
@@ -438,8 +441,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/mysql-date-and-time-functions.html" rel="prev" title="MySQL时间处理相关函数">
-                MySQL时间处理相关函数 <i class="fa fa-chevron-right"></i>
+              <a href="/python-built-in-function-any-and-all.html" rel="prev" title="Python内置函数any和all的用法及示例">
+                Python内置函数any和all的用法及示例 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -583,7 +586,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#time模块（low-level）"><span class="nav-number">1.</span> <span class="nav-text">time模块（low level）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#datetime模块（high-level-Object-oriented-interface-to-dates-and-times）"><span class="nav-number">2.</span> <span class="nav-text">datetime模块（high level Object-oriented interface to dates and times）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#zip函数名称的由来"><span class="nav-number">1.</span> <span class="nav-text">zip函数名称的由来</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip内置函数的使用示例"><span class="nav-number">2.</span> <span class="nav-text">zip内置函数的使用示例</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip函数的实际应用场景"><span class="nav-number">3.</span> <span class="nav-text">zip函数的实际应用场景</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#zip函数由两个列表分别作为键和值生成字典"><span class="nav-number">3.1.</span> <span class="nav-text">zip函数由两个列表分别作为键和值生成字典</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#zip函数返回值是生成器的相关陷阱"><span class="nav-number">3.2.</span> <span class="nav-text">zip函数返回值是生成器的相关陷阱</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip函数的等价代码实现"><span class="nav-number">4.</span> <span class="nav-text">zip函数的等价代码实现</span></a></li></ol></div>
             
 
           </div>

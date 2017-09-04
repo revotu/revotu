@@ -4,6 +4,40 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-built-in-function-any-and-all.html</loc>
+    <lastmod>2017-09-04T17:01:54.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python内置函数any和all的用法及示例</title>
+        <pubTime>2017-09-04T16:14:20.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-iterate-more-iterators-with-zip-function.html</loc>
+    <lastmod>2017-09-04T06:48:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python用zip函数并行迭代两个或更多可迭代对象</title>
+        <pubTime>2017-09-04T05:48:09.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/get-iterable-index-with-enumerate-funtion.html</loc>
     <lastmod>2017-09-04T04:22:34.000Z</lastmod>
     <data>
@@ -344,40 +378,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python开发环境复制迁移之requirements files</title>
-        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
-        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
@@ -418,6 +418,40 @@
         <display>
         <title>Python join列表时报错TypeError sequence item 0 expected string</title>
         <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
+        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python开发环境复制迁移之requirements files</title>
+        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -531,14 +565,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python之list、dict、json等常见操作</title>
-        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -556,23 +590,6 @@
         <pubTime>2017-07-14T10:16:31.000Z</pubTime>
         
         <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>BeautifulSoup删除html文档中所有属性</title>
-        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
-        
-        <tag>BeautifulSoup</tag>
          
          
            
@@ -601,6 +618,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>Python之list、dict、json等常见操作</title>
+        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
@@ -620,12 +654,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        <title>BeautifulSoup删除html文档中所有属性</title>
+        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
         
         <tag>BeautifulSoup</tag>
          
@@ -654,23 +688,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    <data>
-        <display>
-        <title>Git常见问题指南</title>
-        <pubTime>2016-05-26T02:49:37.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
@@ -688,35 +705,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
         <display>
-        <title>Redis下批量删除特定pattern的keys</title>
-        <pubTime>2015-04-23T14:51:35.000Z</pubTime>
+        <title>Git常见问题指南</title>
+        <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
-        <tag>Redis</tag>
-         
-        <tag>NoSQL</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>ubuntu修改主机名</title>
-        <pubTime>2016-06-08T02:30:51.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>ubuntu</tag>
+        <tag>Git</tag>
          
          
            
@@ -1082,6 +1078,25 @@
 
     
   <url>
+    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下常见任务指南</title>
+        <pubTime>2016-01-07T08:30:37.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>Shell</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1094,25 +1109,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下常见任务指南</title>
-        <pubTime>2016-01-07T08:30:37.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>Shell</tag>
          
          
            
@@ -1189,6 +1185,44 @@
         <tag>SQL</tag>
          
         <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Redis下批量删除特定pattern的keys</title>
+        <pubTime>2015-04-23T14:51:35.000Z</pubTime>
+        
+        <tag>Redis</tag>
+         
+        <tag>NoSQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/change-the-ubuntu-hostname.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>ubuntu修改主机名</title>
+        <pubTime>2016-06-08T02:30:51.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>ubuntu</tag>
          
          
            
