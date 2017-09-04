@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="问题我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。 解决方案要控制字典中元素顺序，可以使用collections模块中的OrderedDict类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：">
+<meta name="description" content="for循环可以遍历可迭代对象，得到的是每个元素的值，无法得到每个值所对应的索引下标，与内置的range函数结合，可以得到元素值的同时，得到其索引下标。后面将说明使用内置的enumerate函数才是解决这个问题的pythonic方法。 使用range函数遍历时得到索引123seasons = [&apos;Spring&apos;, &apos;Summer&apos;, &apos;Fall&apos;, &apos;Winter&apos;]for i in range(l">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python让字典保持有序">
-<meta property="og:url" content="http://www.revotu.com/keeping-dictionaries-in-order.html">
+<meta property="og:title" content="Python用enumerate函数在遍历迭代器时获得元素的索引">
+<meta property="og:url" content="http://www.revotu.com/get-iterable-index-with-enumerate-funtion.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="问题我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。 解决方案要控制字典中元素顺序，可以使用collections模块中的OrderedDict类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：">
-<meta property="og:updated_time" content="2017-08-28T16:10:38.000Z">
+<meta property="og:description" content="for循环可以遍历可迭代对象，得到的是每个元素的值，无法得到每个值所对应的索引下标，与内置的range函数结合，可以得到元素值的同时，得到其索引下标。后面将说明使用内置的enumerate函数才是解决这个问题的pythonic方法。 使用range函数遍历时得到索引123seasons = [&apos;Spring&apos;, &apos;Summer&apos;, &apos;Fall&apos;, &apos;Winter&apos;]for i in range(l">
+<meta property="og:updated_time" content="2017-09-04T04:22:34.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python让字典保持有序">
-<meta name="twitter:description" content="问题我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。 解决方案要控制字典中元素顺序，可以使用collections模块中的OrderedDict类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：">
+<meta name="twitter:title" content="Python用enumerate函数在遍历迭代器时获得元素的索引">
+<meta name="twitter:description" content="for循环可以遍历可迭代对象，得到的是每个元素的值，无法得到每个值所对应的索引下标，与内置的range函数结合，可以得到元素值的同时，得到其索引下标。后面将说明使用内置的enumerate函数才是解决这个问题的pythonic方法。 使用range函数遍历时得到索引123seasons = [&apos;Spring&apos;, &apos;Summer&apos;, &apos;Fall&apos;, &apos;Winter&apos;]for i in range(l">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/keeping-dictionaries-in-order.html"/>
+  <link rel="canonical" href="http://www.revotu.com/get-iterable-index-with-enumerate-funtion.html"/>
 
 
 
 
 
-  <title>Python让字典保持有序 | 大师兄</title>
+  <title>Python用enumerate函数在遍历迭代器时获得元素的索引 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/keeping-dictionaries-in-order.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/get-iterable-index-with-enumerate-funtion.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python让字典保持有序</h1>
+          <h1 class="post-title" itemprop="name headline">Python用enumerate函数在遍历迭代器时获得元素的索引</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-28T23:46:35+08:00">
-                2017-08-28
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-04T11:44:44+08:00">
+                2017-09-04
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/keeping-dictionaries-in-order.html" class="leancloud_visitors" data-flag-title="Python让字典保持有序">
+             <span id="/get-iterable-index-with-enumerate-funtion.html" class="leancloud_visitors" data-flag-title="Python用enumerate函数在遍历迭代器时获得元素的索引">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,11 +379,18 @@
       
 
       
-        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>我们想创建一个字典，同时当对字典做迭代或序列化操作时，也能控制其中元素的顺序。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>要控制字典中元素顺序，可以使用collections模块中的<code>OrderedDict</code>类。当对字典做迭代时，它会严格按照元素初始添加的顺序进行。例如：<br><a id="more"></a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> OrderedDict</div><div class="line"></div><div class="line">print(<span class="string">'Regular dictionary:'</span>)</div><div class="line">d = &#123;&#125;</div><div class="line">d[<span class="string">'A'</span>] = <span class="number">1</span></div><div class="line">d[<span class="string">'B'</span>] = <span class="number">2</span></div><div class="line">d[<span class="string">'C'</span>] = <span class="number">3</span></div><div class="line">d[<span class="string">'D'</span>] = <span class="number">4</span></div><div class="line"></div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> d.items():</div><div class="line">    print(k, v)</div><div class="line"></div><div class="line">print(<span class="string">'OrderedDict:'</span>)</div><div class="line">d = OrderedDict()</div><div class="line">d[<span class="string">'A'</span>] = <span class="number">1</span></div><div class="line">d[<span class="string">'B'</span>] = <span class="number">2</span></div><div class="line">d[<span class="string">'C'</span>] = <span class="number">3</span></div><div class="line">d[<span class="string">'D'</span>] = <span class="number">4</span></div><div class="line"></div><div class="line"><span class="keyword">for</span> k, v <span class="keyword">in</span> d.items():</div><div class="line">    print(k, v)</div></pre></td></tr></table></figure></p>
-<p>输出结果，其中正常创建的字典，迭代时顺序是不确定的，但是用<code>OrderedDict</code>创建的字典迭代时会严格按照元素初始添加的顺序进行：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Regular dictionary:</div><div class="line">A <span class="number">1</span></div><div class="line">B <span class="number">2</span></div><div class="line">D <span class="number">4</span></div><div class="line">C <span class="number">3</span></div><div class="line">OrderedDict:</div><div class="line">A <span class="number">1</span></div><div class="line">B <span class="number">2</span></div><div class="line">C <span class="number">3</span></div><div class="line">D <span class="number">4</span></div></pre></td></tr></table></figure></p>
-<p>当想构建一个映射结构以便稍后对其做序列化或编码成另一种格式时，<code>OrderedDict</code>就显得特别有用。例如，想对json编码时精确控制各字段的顺序，那么只要先在OrderedDict中构建数据就可以了：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> json</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>json.dumps(d)</div><div class="line">&#123;<span class="string">"A"</span>: <span class="number">1</span>, <span class="string">"B"</span>: <span class="number">2</span>, <span class="string">"C"</span>: <span class="number">3</span>, <span class="string">"D"</span>: <span class="number">4</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
-<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><p><code>OrderedDict</code>内部维护了一个双向链表，它会根据元素加入的顺序来排列键的位置。第一个新添加的元素放置在链表的末尾。接下来对已存在的键做重新赋值时不会改变键的顺序。<br>请注意<code>OrderedDict</code>的大小是普通字典的2倍多，这是由于它额外创建的链表所致。因此，如果打算构建一个涉及大量OrderedDict字典的数据结构（例如从CSV文件中读取100000行内容到OrderedDict中），那么需要认真对应用做需求分析，从而使用<code>OrderedDict</code>所带来的好处是否能超越因额外的内存开销所带来的缺点。</p>
+        <p>for循环可以遍历可迭代对象，得到的是每个元素的值，无法得到每个值所对应的索引下标，与内置的<code>range</code>函数结合，可以得到元素值的同时，得到其索引下标。后面将说明使用内置的<code>enumerate</code>函数才是解决这个问题的pythonic方法。</p>
+<h2 id="使用range函数遍历时得到索引"><a href="#使用range函数遍历时得到索引" class="headerlink" title="使用range函数遍历时得到索引"></a>使用range函数遍历时得到索引</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">seasons = [<span class="string">'Spring'</span>, <span class="string">'Summer'</span>, <span class="string">'Fall'</span>, <span class="string">'Winter'</span>]</div><div class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(seasons)):</div><div class="line">    print(i, seasons[i])</div></pre></td></tr></table></figure>
+<p>输出结果：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="number">0</span> Spring</div><div class="line"><span class="number">1</span> Summer</div><div class="line"><span class="number">2</span> Fall</div><div class="line"><span class="number">3</span> Winter</div></pre></td></tr></table></figure></p>
+<p>但是，上述代码有些生硬，我们必须获取列表长度，并且通过下标的方式访问每个元素，这种代码不便于理解。<br><a id="more"></a></p>
+<h2 id="使用enumerate函数遍历时得到索引"><a href="#使用enumerate函数遍历时得到索引" class="headerlink" title="使用enumerate函数遍历时得到索引"></a>使用enumerate函数遍历时得到索引</h2><p>Python提供了内置<code>enumerate</code>函数，以解决遍历时同时要得到对应元素的索引这个问题。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">seasons = [<span class="string">'Spring'</span>, <span class="string">'Summer'</span>, <span class="string">'Fall'</span>, <span class="string">'Winter'</span>]</div><div class="line"><span class="keyword">for</span> i, season <span class="keyword">in</span> enumerate(seasons):</div><div class="line">    print(i , season)</div></pre></td></tr></table></figure></p>
+<p>输出结果：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="number">0</span> Spring</div><div class="line"><span class="number">1</span> Summer</div><div class="line"><span class="number">2</span> Fall</div><div class="line"><span class="number">3</span> Winter</div></pre></td></tr></table></figure></p>
+<p>很明显，使用<code>enumerate</code>函数遍历迭代器时同时得到每个元素的索引是更加pythonic的方式。</p>
+<h2 id="enumerate函数原理"><a href="#enumerate函数原理" class="headerlink" title="enumerate函数原理"></a>enumerate函数原理</h2><p>enumerate函数本质是一个生成器函数，可以把各种迭代器（也包括序列及各种支持迭代的对象）包装为生成器，以便稍后产生输出值。生成器每次产生一对输出值，值为元组：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="number">0</span>, seq[<span class="number">0</span>]), (<span class="number">1</span>, seq[<span class="number">1</span>]), (<span class="number">2</span>, seq[<span class="number">2</span>]), ...</div></pre></td></tr></table></figure></p>
+<p>其中，前者表示循环下标，后者表示从迭代器中获取到的对应元素。示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>seasons = [<span class="string">'Spring'</span>, <span class="string">'Summer'</span>, <span class="string">'Fall'</span>, <span class="string">'Winter'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>enumerate(seasons)</div><div class="line">&lt;enumerate object at <span class="number">0x7fe606b51090</span>&gt;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(enumerate(seasons))</div><div class="line">[(<span class="number">0</span>, <span class="string">'Spring'</span>), (<span class="number">1</span>, <span class="string">'Summer'</span>), (<span class="number">2</span>, <span class="string">'Fall'</span>), (<span class="number">3</span>, <span class="string">'Winter'</span>)]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(enumerate(seasons, start=<span class="number">1</span>))</div><div class="line">[(<span class="number">1</span>, <span class="string">'Spring'</span>), (<span class="number">2</span>, <span class="string">'Summer'</span>), (<span class="number">3</span>, <span class="string">'Fall'</span>), (<span class="number">4</span>, <span class="string">'Winter'</span>)]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="enumerate函数指定第二个参数（初始值）"><a href="#enumerate函数指定第二个参数（初始值）" class="headerlink" title="enumerate函数指定第二个参数（初始值）"></a>enumerate函数指定第二个参数（初始值）</h2><p>可以给enumerate函数指定第二个参数，以指定开始计数时所用到的值（默认是0）。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">seasons = [<span class="string">'Spring'</span>, <span class="string">'Summer'</span>, <span class="string">'Fall'</span>, <span class="string">'Winter'</span>]</div><div class="line"><span class="keyword">for</span> i, season <span class="keyword">in</span> enumerate(seasons, start=<span class="number">1</span>):</div><div class="line">    print(i , season)</div></pre></td></tr></table></figure></p>
+<p>输出结果：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="number">1</span> Spring</div><div class="line"><span class="number">2</span> Summer</div><div class="line"><span class="number">3</span> Fall</div><div class="line"><span class="number">4</span> Winter</div></pre></td></tr></table></figure></p>
+<h2 id="enumerate函数等价实现"><a href="#enumerate函数等价实现" class="headerlink" title="enumerate函数等价实现"></a>enumerate函数等价实现</h2><p>enumerate函数等价于如下实现代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">enumerate</span><span class="params">(iterable, start=<span class="number">0</span>)</span>:</span></div><div class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> iterable:</div><div class="line">        <span class="keyword">yield</span> start, item</div><div class="line">        start +=<span class="number">1</span></div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -426,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/mapping-keys-to-multiple-values-in-a-dictionary.html" rel="next" title="Python在字典中将键映射到多个值上">
-                <i class="fa fa-chevron-left"></i> Python在字典中将键映射到多个值上
+              <a href="/python-set-methods-and-examples.html" rel="next" title="全面剖析Python集合set的各方法及各操作的内部实现">
+                <i class="fa fa-chevron-left"></i> 全面剖析Python集合set的各方法及各操作的内部实现
               </a>
             
           </div>
@@ -435,10 +442,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-convert-base64-string-to-image.html" rel="prev" title="Python处理base64编码图片">
-                Python处理base64编码图片 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -581,7 +584,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论"><span class="nav-number">3.</span> <span class="nav-text">讨论</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用range函数遍历时得到索引"><span class="nav-number">1.</span> <span class="nav-text">使用range函数遍历时得到索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用enumerate函数遍历时得到索引"><span class="nav-number">2.</span> <span class="nav-text">使用enumerate函数遍历时得到索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enumerate函数原理"><span class="nav-number">3.</span> <span class="nav-text">enumerate函数原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enumerate函数指定第二个参数（初始值）"><span class="nav-number">4.</span> <span class="nav-text">enumerate函数指定第二个参数（初始值）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enumerate函数等价实现"><span class="nav-number">5.</span> <span class="nav-text">enumerate函数等价实现</span></a></li></ol></div>
             
 
           </div>

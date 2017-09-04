@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/get-iterable-index-with-enumerate-funtion.html</loc>
+    <lastmod>2017-09-04T04:22:34.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python用enumerate函数在遍历迭代器时获得元素的索引</title>
+        <pubTime>2017-09-04T03:44:44.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-set-methods-and-examples.html</loc>
     <lastmod>2017-09-03T16:18:18.000Z</lastmod>
     <data>
@@ -344,29 +361,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python中json转成html table</title>
-        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
+        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -395,12 +395,29 @@
 
     
   <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
-        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
+        <title>Python中json转成html table</title>
+        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -514,12 +531,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        <title>Python之list、dict、json等常见操作</title>
+        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -531,12 +548,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python之list、dict、json等常见操作</title>
-        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -565,14 +582,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
+        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
         
-        <tag>BeautifulSoup</tag>
+        <tag>Python</tag>
+         
+        <tag>Selenium</tag>
          
          
            
@@ -601,16 +620,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
-        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
-        <tag>Python</tag>
-         
-        <tag>Selenium</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -637,23 +654,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    <data>
-        <display>
-        <title>Python编码规范</title>
-        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
@@ -671,16 +671,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
         <display>
-        <title>MySQL之一道关于GROUP BY的经典面试题</title>
-        <pubTime>2016-05-09T01:27:31.000Z</pubTime>
+        <title>Python编码规范</title>
+        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
         
-        <tag>SQL</tag>
-         
-        <tag>MySQL</tag>
+        <tag>Python</tag>
          
          
            
@@ -1172,6 +1170,25 @@
         <tag>Linux</tag>
          
         <tag>C</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL之一道关于GROUP BY的经典面试题</title>
+        <pubTime>2016-05-09T01:27:31.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+        <tag>MySQL</tag>
          
          
            
