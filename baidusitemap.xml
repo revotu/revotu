@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/get-python-version-in-command-line-or-code.html</loc>
+    <lastmod>2017-09-05T11:50:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>在命令行中或程序代码中得到python版本号</title>
+        <pubTime>2017-09-05T11:28:20.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/difference-dict-keys-values-items-between-python2-and-python3.html</loc>
     <lastmod>2017-09-05T07:43:11.000Z</lastmod>
     <data>
@@ -599,14 +616,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
         
-        <tag>BeautifulSoup</tag>
+        <tag>Python</tag>
          
          
            
@@ -688,14 +705,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -747,23 +764,6 @@
         <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
         <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>npm install时的--save选项有什么用</title>
-        <pubTime>2016-09-07T07:49:43.000Z</pubTime>
-        
-        <tag>NPM</tag>
          
          
            
@@ -1114,6 +1114,25 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python Selenium WebDriver简明指南</title>
+        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>WebDriver</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1126,25 +1145,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python Selenium WebDriver简明指南</title>
-        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>WebDriver</tag>
          
          
            
@@ -1257,6 +1257,23 @@
         <pubTime>2016-08-16T10:50:04.000Z</pubTime>
         
         <tag>Composer</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>npm install时的--save选项有什么用</title>
+        <pubTime>2016-09-07T07:49:43.000Z</pubTime>
+        
+        <tag>NPM</tag>
          
          
            

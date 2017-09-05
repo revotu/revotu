@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/get-python-version-in-command-line-or-code.html</loc>
+    
+    <lastmod>2017-09-05T11:50:07.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/difference-dict-keys-values-items-between-python2-and-python3.html</loc>
     
     <lastmod>2017-09-05T07:43:11.000Z</lastmod>
@@ -247,7 +254,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -282,7 +289,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -306,13 +313,6 @@
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
@@ -450,14 +450,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -500,6 +500,13 @@
   
   <url>
     <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
