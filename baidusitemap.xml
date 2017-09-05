@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/pythonic-method-merge-two-list-to-one-dict.html</loc>
+    <lastmod>2017-09-05T12:45:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>用pythonic的方法合并两个列表成一个字典</title>
+        <pubTime>2017-09-05T12:17:49.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/get-python-version-in-command-line-or-code.html</loc>
     <lastmod>2017-09-05T11:50:07.000Z</lastmod>
     <data>
@@ -429,23 +446,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
@@ -514,6 +514,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/ubuntu-change-source-to-sove-download-too-slow-problem.html</loc>
     <lastmod>2017-08-12T14:38:13.000Z</lastmod>
     <data>
@@ -531,14 +548,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>Python如何递归删除空文件夹</title>
-        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
+        <title>修改crontab默认编辑器</title>
+        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Crontab</tag>
          
          
            
@@ -548,14 +565,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>修改crontab默认编辑器</title>
-        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
+        <title>Python如何递归删除空文件夹</title>
+        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
         
-        <tag>Crontab</tag>
+        <tag>Python</tag>
          
          
            
@@ -616,12 +633,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        <title>Python之list、dict、json等常见操作</title>
+        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -669,14 +686,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python之list、dict、json等常见操作</title>
-        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -705,14 +722,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
         
-        <tag>BeautifulSoup</tag>
+        <tag>Python</tag>
          
          
            
@@ -739,23 +756,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    <data>
-        <display>
-        <title>Python编码规范</title>
-        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
@@ -773,14 +773,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/a-visual-explanation-of-sql-joins.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
         <display>
-        <title>可视化理解SQL的JOIN用法</title>
-        <pubTime>2016-11-15T09:37:53.000Z</pubTime>
+        <title>Python编码规范</title>
+        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
         
-        <tag>SQL</tag>
+        <tag>Python</tag>
          
          
            
@@ -1274,6 +1274,23 @@
         <pubTime>2016-09-07T07:49:43.000Z</pubTime>
         
         <tag>NPM</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/a-visual-explanation-of-sql-joins.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>可视化理解SQL的JOIN用法</title>
+        <pubTime>2016-11-15T09:37:53.000Z</pubTime>
+        
+        <tag>SQL</tag>
          
          
            

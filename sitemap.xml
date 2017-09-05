@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/pythonic-method-merge-two-list-to-one-dict.html</loc>
+    
+    <lastmod>2017-09-05T12:45:10.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/get-python-version-in-command-line-or-code.html</loc>
     
     <lastmod>2017-09-05T11:50:07.000Z</lastmod>
@@ -177,13 +184,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
-    
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
@@ -212,6 +212,13 @@
   </url>
   
   <url>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/ubuntu-change-source-to-sove-download-too-slow-problem.html</loc>
     
     <lastmod>2017-08-12T14:38:13.000Z</lastmod>
@@ -219,14 +226,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
@@ -254,7 +261,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -275,7 +282,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -289,7 +296,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -303,13 +310,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
-    
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
@@ -317,9 +317,9 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/a-visual-explanation-of-sql-joins.html</loc>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     
   </url>
   
@@ -507,6 +507,13 @@
   
   <url>
     <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/a-visual-explanation-of-sql-joins.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
