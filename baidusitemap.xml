@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/three-pythonic-ways-to-swap-dict-keys-and-values.html</loc>
+    <lastmod>2017-09-05T05:42:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>三种pythonic的方法交换字典的键keys和值values</title>
+        <pubTime>2017-09-05T05:32:33.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-built-in-function-any-and-all.html</loc>
     <lastmod>2017-09-04T17:01:54.000Z</lastmod>
     <data>
@@ -582,14 +599,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        <title>BeautifulSoup删除html文档中所有属性</title>
+        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -654,14 +671,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除html文档中所有属性</title>
-        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
         
-        <tag>BeautifulSoup</tag>
+        <tag>Python</tag>
          
          
            
@@ -713,25 +730,6 @@
         <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
         <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Ubuntu apt-get时出现Segmentation faults... 0%错误</title>
-        <pubTime>2016-06-27T03:24:41.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>ubuntu</tag>
          
          
            
@@ -1097,6 +1095,25 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python实用脚本清单</title>
+        <pubTime>2016-03-06T09:59:56.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Script</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1109,25 +1126,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python实用脚本清单</title>
-        <pubTime>2016-03-06T09:59:56.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Script</tag>
          
          
            
@@ -1219,6 +1217,25 @@
         <display>
         <title>ubuntu修改主机名</title>
         <pubTime>2016-06-08T02:30:51.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>ubuntu</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Ubuntu apt-get时出现Segmentation faults... 0%错误</title>
+        <pubTime>2016-06-27T03:24:41.000Z</pubTime>
         
         <tag>Linux</tag>
          
