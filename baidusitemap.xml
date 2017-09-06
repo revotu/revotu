@@ -4,8 +4,25 @@
 
     
   <url>
+    <loc>http://www.revotu.com/reverse-sequence-list-tuple-str-in-python.html</loc>
+    <lastmod>2017-09-06T03:21:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python反转序列(列表、元组、字符串)的几种方法</title>
+        <pubTime>2017-09-06T02:49:15.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/pythonic-method-merge-two-list-to-one-dict.html</loc>
-    <lastmod>2017-09-05T12:45:10.000Z</lastmod>
+    <lastmod>2017-09-05T12:58:34.000Z</lastmod>
     <data>
         <display>
         <title>用pythonic的方法合并两个列表成一个字典</title>
@@ -446,6 +463,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
@@ -469,23 +503,6 @@
         <display>
         <title>Python中print如何刷新缓冲立刻打印输出结果</title>
         <pubTime>2017-08-24T03:36:48.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -548,14 +565,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>修改crontab默认编辑器</title>
-        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
+        <title>Python如何递归删除空文件夹</title>
+        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
         
-        <tag>Crontab</tag>
+        <tag>Python</tag>
          
          
            
@@ -565,14 +582,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>Python如何递归删除空文件夹</title>
-        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
+        <title>修改crontab默认编辑器</title>
+        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Crontab</tag>
          
          
            
@@ -633,12 +650,29 @@
 
     
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python之list、dict、json等常见操作</title>
-        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        
+        <tag>BeautifulSoup</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    <data>
+        <display>
+        <title>Python文件路径查找之glob模块</title>
+        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -686,23 +720,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    <data>
-        <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
-        
-        <tag>BeautifulSoup</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
@@ -722,12 +739,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-find-filepath-with-glob-module.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python文件路径查找之glob模块</title>
-        <pubTime>2017-07-14T10:16:31.000Z</pubTime>
+        <title>Python之list、dict、json等常见操作</title>
+        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -756,23 +773,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    <data>
-        <display>
-        <title>Git常见问题指南</title>
-        <pubTime>2016-05-26T02:49:37.000Z</pubTime>
-        
-        <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
@@ -790,14 +790,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
         <display>
-        <title>Python学习之路上的几个经典问题</title>
-        <pubTime>2016-12-26T06:34:01.000Z</pubTime>
+        <title>Git常见问题指南</title>
+        <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Git</tag>
          
          
            
@@ -1133,6 +1133,25 @@
 
     
   <url>
+    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下C语言的几道经典面试题</title>
+        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
+        
+        <tag>Linux</tag>
+         
+        <tag>C</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1145,25 +1164,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下C语言的几道经典面试题</title>
-        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>C</tag>
          
          
            
@@ -1291,6 +1291,23 @@
         <pubTime>2016-11-15T09:37:53.000Z</pubTime>
         
         <tag>SQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python学习之路上的几个经典问题</title>
+        <pubTime>2016-12-26T06:34:01.000Z</pubTime>
+        
+        <tag>Python</tag>
          
          
            

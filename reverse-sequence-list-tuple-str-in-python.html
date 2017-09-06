@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="问题我们想去除序列中出现的重复元素，但仍然保持剩下的元素顺序不变。 解决方案如果序列中的值是可哈希的（hashable: 如果一个对象是可哈希的，那么在它的生存期内必须是不可变的，它需要有一个__hash__()方法。整数、浮点数、字符串、元组都是不可变的），那么这个问题可以通过使用集合和生成器轻松解决。示例如下：">
+<meta name="description" content="使用reversed(seq)内置函数reversed(seq)是将序列（seq）反转，返回一个迭代器。123456789101112131415161718# reverse list&amp;gt;&amp;gt;&amp;gt; l = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]&amp;gt;&amp;gt;&amp;gt; x  = list(reversed(l))&amp;gt;&amp;gt;&amp;gt; x[&apos;C&apos;, &apos;B&apos;, &apos;A&apos;]# reverse t">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python从序列中移除重复项且保持元素间顺序不变">
-<meta property="og:url" content="http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html">
+<meta property="og:title" content="Python反转序列(列表、元组、字符串)的几种方法">
+<meta property="og:url" content="http://www.revotu.com/reverse-sequence-list-tuple-str-in-python.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="问题我们想去除序列中出现的重复元素，但仍然保持剩下的元素顺序不变。 解决方案如果序列中的值是可哈希的（hashable: 如果一个对象是可哈希的，那么在它的生存期内必须是不可变的，它需要有一个__hash__()方法。整数、浮点数、字符串、元组都是不可变的），那么这个问题可以通过使用集合和生成器轻松解决。示例如下：">
-<meta property="og:updated_time" content="2017-08-30T16:44:40.000Z">
+<meta property="og:description" content="使用reversed(seq)内置函数reversed(seq)是将序列（seq）反转，返回一个迭代器。123456789101112131415161718# reverse list&amp;gt;&amp;gt;&amp;gt; l = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]&amp;gt;&amp;gt;&amp;gt; x  = list(reversed(l))&amp;gt;&amp;gt;&amp;gt; x[&apos;C&apos;, &apos;B&apos;, &apos;A&apos;]# reverse t">
+<meta property="og:updated_time" content="2017-09-06T03:21:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python从序列中移除重复项且保持元素间顺序不变">
-<meta name="twitter:description" content="问题我们想去除序列中出现的重复元素，但仍然保持剩下的元素顺序不变。 解决方案如果序列中的值是可哈希的（hashable: 如果一个对象是可哈希的，那么在它的生存期内必须是不可变的，它需要有一个__hash__()方法。整数、浮点数、字符串、元组都是不可变的），那么这个问题可以通过使用集合和生成器轻松解决。示例如下：">
+<meta name="twitter:title" content="Python反转序列(列表、元组、字符串)的几种方法">
+<meta name="twitter:description" content="使用reversed(seq)内置函数reversed(seq)是将序列（seq）反转，返回一个迭代器。123456789101112131415161718# reverse list&amp;gt;&amp;gt;&amp;gt; l = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]&amp;gt;&amp;gt;&amp;gt; x  = list(reversed(l))&amp;gt;&amp;gt;&amp;gt; x[&apos;C&apos;, &apos;B&apos;, &apos;A&apos;]# reverse t">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html"/>
+  <link rel="canonical" href="http://www.revotu.com/reverse-sequence-list-tuple-str-in-python.html"/>
 
 
 
 
 
-  <title>Python从序列中移除重复项且保持元素间顺序不变 | 大师兄</title>
+  <title>Python反转序列(列表、元组、字符串)的几种方法 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/reverse-sequence-list-tuple-str-in-python.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python从序列中移除重复项且保持元素间顺序不变</h1>
+          <h1 class="post-title" itemprop="name headline">Python反转序列(列表、元组、字符串)的几种方法</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-30T23:43:32+08:00">
-                2017-08-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T10:49:15+08:00">
+                2017-09-06
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/removing-duplicates-from-a-sequence-while-maintaining-order.html" class="leancloud_visitors" data-flag-title="Python从序列中移除重复项且保持元素间顺序不变">
+             <span id="/reverse-sequence-list-tuple-str-in-python.html" class="leancloud_visitors" data-flag-title="Python反转序列(列表、元组、字符串)的几种方法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,15 +379,12 @@
       
 
       
-        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>我们想去除序列中出现的重复元素，但仍然保持剩下的元素顺序不变。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>如果序列中的值是可哈希的（hashable: 如果一个对象是可哈希的，那么在它的生存期内必须是不可变的，它需要有一个<code>__hash__()</code>方法。整数、浮点数、字符串、元组都是不可变的），那么这个问题可以通过使用集合和生成器轻松解决。示例如下：<br><a id="more"></a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">dedupe</span><span class="params">(items)</span>:</span></div><div class="line">    seen = set()</div><div class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> items:</div><div class="line">        <span class="keyword">if</span> item <span class="keyword">not</span> <span class="keyword">in</span> seen:</div><div class="line">            <span class="keyword">yield</span> item</div><div class="line">            seen.add(item)</div></pre></td></tr></table></figure></p>
-<p>这里是如何使用这个函数的例子：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(dedupe(data))</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = (<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'D'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(dedupe(data))</div><div class="line">[<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>]</div></pre></td></tr></table></figure></p>
-<p>只有当序列中的元素时可哈希的时候才能这么做。如果想在不可哈希的对象（比如列表）序列中去除重复项，需要对上述代码稍作修改：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">dedupe</span><span class="params">(items, key=None)</span>:</span></div><div class="line">    seen = set()</div><div class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> items:</div><div class="line">        value = item <span class="keyword">if</span> key <span class="keyword">is</span> <span class="keyword">None</span> <span class="keyword">else</span> key(item)</div><div class="line">        <span class="keyword">if</span> value <span class="keyword">not</span> <span class="keyword">in</span> seen:</div><div class="line">            <span class="keyword">yield</span> item</div><div class="line">            seen.add(value)</div></pre></td></tr></table></figure></p>
-<p>这里参数<code>key</code>的作用是指定一个函数用来将序列中的元素转换为可哈希的类型，这么做的目的是为了检测重复项（in语句要求必须是可哈希的），它可以像这样工作：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = [&#123;<span class="string">'x'</span>:<span class="number">1</span>, <span class="string">'y'</span>:<span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">1</span>, <span class="string">'y'</span>:<span class="number">3</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">1</span>, <span class="string">'y'</span>:<span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">2</span>, <span class="string">'y'</span>:<span class="number">4</span>&#125;]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(dedupe(data, key=<span class="keyword">lambda</span> d: (d[<span class="string">'x'</span>], d[<span class="string">'y'</span>])))</div><div class="line">[&#123;<span class="string">'x'</span>: <span class="number">1</span>, <span class="string">'y'</span>: <span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>: <span class="number">1</span>, <span class="string">'y'</span>: <span class="number">3</span>&#125;, &#123;<span class="string">'x'</span>: <span class="number">2</span>, <span class="string">'y'</span>: <span class="number">4</span>&#125;]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(dedupe(data, key=<span class="keyword">lambda</span> d: d[<span class="string">'x'</span>]))</div><div class="line">[&#123;<span class="string">'x'</span>: <span class="number">1</span>, <span class="string">'y'</span>: <span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>: <span class="number">2</span>, <span class="string">'y'</span>: <span class="number">4</span>&#125;]</div></pre></td></tr></table></figure></p>
-<p>如果希望在一个较复杂的数据结构中，只根据对象的某个字段或属性来去除重复项，那么后一种解决方案同样能完美工作。</p>
-<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><p>如果想要做的只是去除重复项，那么通常足够简单的办法就是构建一个集合。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>data = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>set(data)</div><div class="line">&#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(set(data))</div><div class="line">[<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>]</div></pre></td></tr></table></figure></p>
-<p>但是这种方法不能保证元素间顺序不变（集合的特点就是集合中的元素是唯一的，但不保证它们之间的顺序），因此得到的结果会被打乱。前面展示的解决方案可避免这个问题。<br>本文中对生成器的使用反映出一个事实，那就是我们可能会希望这个函数尽可能的通用，不必绑定在只能对列表进行处理。比如，如果读一个文件，去除其中重复的文本行，可以只需这样处理：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>) <span class="keyword">as</span> f:</div><div class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> dedupe(f):</div><div class="line">        ...</div></pre></td></tr></table></figure></p>
-<p>我们的dedupe函数也模仿了内置函数sorted()、min()、max()对<code>key</code>函数的使用方式。</p>
+        <h2 id="使用reversed-seq-内置函数"><a href="#使用reversed-seq-内置函数" class="headerlink" title="使用reversed(seq)内置函数"></a>使用reversed(seq)内置函数</h2><p>reversed(seq)是将序列（seq）反转，返回一个迭代器。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># reverse list</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x  = list(reversed(l))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x</div><div class="line">[<span class="string">'C'</span>, <span class="string">'B'</span>, <span class="string">'A'</span>]</div><div class="line"></div><div class="line"><span class="comment"># reverse tuple</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y = tuple(reversed(t))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y</div><div class="line">(<span class="string">'C'</span>, <span class="string">'B'</span>, <span class="string">'A'</span>)</div><div class="line"></div><div class="line"><span class="comment"># reverse str</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'ABC'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>z = <span class="string">''</span>.join(reversed(s))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>z</div><div class="line"><span class="string">'CBA'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>注意一点，reversed(seq)函数并没有改变seq序列本身，如需改动seq序列本身，将结果赋值给seq即可。以列表为例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># reverse list in place</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l  = list(reversed(l))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l</div><div class="line">[<span class="string">'C'</span>, <span class="string">'B'</span>, <span class="string">'A'</span>]</div></pre></td></tr></table></figure></p>
+<h2 id="使用切片操作-1"><a href="#使用切片操作-1" class="headerlink" title="使用切片操作[::-1]"></a>使用切片操作[::-1]</h2><p>切片用法<code>[&lt;start&gt;:&lt;end&gt;:&lt;step&gt;]</code>，其中start默认值是0，end默认值是len(seq)，step默认值是1。此处省略了start和end，步长为-1代表反向切片（从右向左每次前进1步）。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># reverse list</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x = l[::<span class="number">-1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>x</div><div class="line">[<span class="string">'C'</span>, <span class="string">'B'</span>, <span class="string">'A'</span>]</div><div class="line"></div><div class="line"><span class="comment"># reverse tuple</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>t = (<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y = t[::<span class="number">-1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>y</div><div class="line">(<span class="string">'C'</span>, <span class="string">'B'</span>, <span class="string">'A'</span>)</div><div class="line"></div><div class="line"><span class="comment"># reverse str</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'ABC'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>z = s[::<span class="number">-1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>z</div><div class="line"><span class="string">'CBA'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>由于切片操作返回的是与序列类型相同的新对象，也不会改变原始的序列，如需改变，将结果赋值原始序列。以字符串为例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># reverse str in place</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'ABC'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = s[::<span class="number">-1</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s</div><div class="line"><span class="string">'CBA'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="列表的原地反转reverse-方法"><a href="#列表的原地反转reverse-方法" class="headerlink" title="列表的原地反转reverse()方法"></a>列表的原地反转reverse()方法</h2><p>由于列表是可变类型，其reverse()方法可以原地反转列表中元素，无返回值（通常来讲原地改变对象的方法都没有返回值或是说返回值都是None），元组和字符串都是不可变类型，因此都没有reverse()方法。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># reverse list in place</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l.reverse()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l</div><div class="line">[<span class="string">'C'</span>, <span class="string">'B'</span>, <span class="string">'A'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -430,8 +427,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/calculating-with-dictionaries.html" rel="next" title="Python与字典有关的计算问题">
-                <i class="fa fa-chevron-left"></i> Python与字典有关的计算问题
+              <a href="/pythonic-method-merge-two-list-to-one-dict.html" rel="next" title="用pythonic的方法合并两个列表成一个字典">
+                <i class="fa fa-chevron-left"></i> 用pythonic的方法合并两个列表成一个字典
               </a>
             
           </div>
@@ -439,10 +436,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/removing-the-leading-and-trailing-characters-from-string.html" rel="prev" title="Python去除字符串前后指定字符方法strip() lstrip() rstrip()">
-                Python去除字符串前后指定字符方法strip() lstrip() rstrip() <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -585,7 +578,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论"><span class="nav-number">3.</span> <span class="nav-text">讨论</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用reversed-seq-内置函数"><span class="nav-number">1.</span> <span class="nav-text">使用reversed(seq)内置函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用切片操作-1"><span class="nav-number">2.</span> <span class="nav-text">使用切片操作[::-1]</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#列表的原地反转reverse-方法"><span class="nav-number">3.</span> <span class="nav-text">列表的原地反转reverse()方法</span></a></li></ol></div>
             
 
           </div>

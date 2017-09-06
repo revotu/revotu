@@ -104,7 +104,7 @@
 <meta property="og:url" content="http://www.revotu.com/pythonic-method-merge-two-list-to-one-dict.html">
 <meta property="og:site_name" content="大师兄">
 <meta property="og:description" content="两个列表长度相等如下，两个长度相等的列表：12&amp;gt;&amp;gt;&amp;gt; keys = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]&amp;gt;&amp;gt;&amp;gt; values = [1, 2, 3] 合并后的字典：12&amp;gt;&amp;gt;&amp;gt; d&amp;#123;&apos;A&apos;: 1, &apos;B&apos;: 2, &apos;C&apos;: 3&amp;#125;">
-<meta property="og:updated_time" content="2017-09-05T12:45:10.000Z">
+<meta property="og:updated_time" content="2017-09-05T12:58:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用pythonic的方法合并两个列表成一个字典">
 <meta name="twitter:description" content="两个列表长度相等如下，两个长度相等的列表：12&amp;gt;&amp;gt;&amp;gt; keys = [&apos;A&apos;, &apos;B&apos;, &apos;C&apos;]&amp;gt;&amp;gt;&amp;gt; values = [1, 2, 3] 合并后的字典：12&amp;gt;&amp;gt;&amp;gt; d&amp;#123;&apos;A&apos;: 1, &apos;B&apos;: 2, &apos;C&apos;: 3&amp;#125;">
@@ -383,6 +383,7 @@
 <p>合并后的字典：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>&#125;</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <p>方法如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>keys = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>values = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = dict(zip(keys, values))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'B'</span>: <span class="number">2</span>&#125;</div></pre></td></tr></table></figure></p>
+<p>或是：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>keys = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>values = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;k:v <span class="keyword">for</span> k,v <span class="keyword">in</span> zip(keys, values)&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d</div><div class="line">&#123;<span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'A'</span>: <span class="number">1</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
 <p>或是：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>keys = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>values = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = dict(map(<span class="keyword">lambda</span> k,v : (k,v), keys, values))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>d</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'B'</span>: <span class="number">2</span>&#125;</div></pre></td></tr></table></figure></p>
 <h2 id="两个列表长度不等"><a href="#两个列表长度不等" class="headerlink" title="两个列表长度不等"></a>两个列表长度不等</h2><p>如下，两个长度不等的列表：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>keys = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>, <span class="string">'E'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>values = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div></pre></td></tr></table></figure></p>
 <p>希望可以为多出来的（key，value）对指定个默认值，如0：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d</div><div class="line">&#123;<span class="string">'A'</span>: <span class="number">1</span>, <span class="string">'C'</span>: <span class="number">3</span>, <span class="string">'B'</span>: <span class="number">2</span>, <span class="string">'E'</span>: <span class="number">0</span>, <span class="string">'D'</span>: <span class="number">0</span>&#125;</div></pre></td></tr></table></figure></p>
@@ -439,6 +440,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/reverse-sequence-list-tuple-str-in-python.html" rel="prev" title="Python反转序列(列表、元组、字符串)的几种方法">
+                Python反转序列(列表、元组、字符串)的几种方法 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -533,7 +538,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">74</span>
+                <span class="site-state-item-count">75</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
