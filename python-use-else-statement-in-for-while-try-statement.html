@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="问题我们希望在迭代或是其他形式的处理过程中对最后几项记录做一个有限的历史记录统计。 解决方案保存有限的历史记录可算是collections.deque的完美应用场景了。例如，下面的代码对一系列文本行做简单的文本匹配操作，当发现有匹配时就输出当前的匹配行以及最后检查过的N行文本。">
+<meta name="description" content="Python提供了一种很多编程语言都不支持的功能，那就是：else子句不仅能在if语句中使用，还能在for、while、和try语句中使用。for/else、while/else和try/else的语义关系紧密，不过与if/else差别很大。">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python保存最后N个元素">
-<meta property="og:url" content="http://www.revotu.com/keeping-the-last-n-items.html">
+<meta property="og:title" content="Python在for、while和try语句中else子句的使用">
+<meta property="og:url" content="http://www.revotu.com/python-use-else-statement-in-for-while-try-statement.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="问题我们希望在迭代或是其他形式的处理过程中对最后几项记录做一个有限的历史记录统计。 解决方案保存有限的历史记录可算是collections.deque的完美应用场景了。例如，下面的代码对一系列文本行做简单的文本匹配操作，当发现有匹配时就输出当前的匹配行以及最后检查过的N行文本。">
-<meta property="og:updated_time" content="2017-08-27T14:00:46.000Z">
+<meta property="og:description" content="Python提供了一种很多编程语言都不支持的功能，那就是：else子句不仅能在if语句中使用，还能在for、while、和try语句中使用。for/else、while/else和try/else的语义关系紧密，不过与if/else差别很大。">
+<meta property="og:updated_time" content="2017-09-06T08:19:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python保存最后N个元素">
-<meta name="twitter:description" content="问题我们希望在迭代或是其他形式的处理过程中对最后几项记录做一个有限的历史记录统计。 解决方案保存有限的历史记录可算是collections.deque的完美应用场景了。例如，下面的代码对一系列文本行做简单的文本匹配操作，当发现有匹配时就输出当前的匹配行以及最后检查过的N行文本。">
+<meta name="twitter:title" content="Python在for、while和try语句中else子句的使用">
+<meta name="twitter:description" content="Python提供了一种很多编程语言都不支持的功能，那就是：else子句不仅能在if语句中使用，还能在for、while、和try语句中使用。for/else、while/else和try/else的语义关系紧密，不过与if/else差别很大。">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/keeping-the-last-n-items.html"/>
+  <link rel="canonical" href="http://www.revotu.com/python-use-else-statement-in-for-while-try-statement.html"/>
 
 
 
 
 
-  <title>Python保存最后N个元素 | 大师兄</title>
+  <title>Python在for、while和try语句中else子句的使用 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/keeping-the-last-n-items.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-use-else-statement-in-for-while-try-statement.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python保存最后N个元素</h1>
+          <h1 class="post-title" itemprop="name headline">Python在for、while和try语句中else子句的使用</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-27T21:26:36+08:00">
-                2017-08-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-06T15:15:38+08:00">
+                2017-09-06
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/keeping-the-last-n-items.html" class="leancloud_visitors" data-flag-title="Python保存最后N个元素">
+             <span id="/python-use-else-statement-in-for-while-try-statement.html" class="leancloud_visitors" data-flag-title="Python在for、while和try语句中else子句的使用">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,11 +379,17 @@
       
 
       
-        <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>我们希望在迭代或是其他形式的处理过程中对最后几项记录做一个有限的历史记录统计。</p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>保存有限的历史记录可算是<code>collections.deque</code>的完美应用场景了。例如，下面的代码对一系列文本行做简单的文本匹配操作，当发现有匹配时就输出当前的匹配行以及最后检查过的N行文本。<br><a id="more"></a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">search</span><span class="params">(lines, pattern, history=<span class="number">5</span>)</span>:</span></div><div class="line">    previous_lines = deque(maxlen=history)</div><div class="line">    <span class="keyword">for</span> line <span class="keyword">in</span> lines:</div><div class="line">        <span class="keyword">if</span> pattern <span class="keyword">in</span> line:</div><div class="line">            <span class="keyword">yield</span> line, previous_lines</div><div class="line">        previous_lines.append(line)</div><div class="line"></div><div class="line"><span class="comment"># Example use on a file</span></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    <span class="keyword">with</span> open(<span class="string">'somefile.txt'</span>) <span class="keyword">as</span> f:</div><div class="line">        <span class="keyword">for</span> line, prevlines <span class="keyword">in</span> search(f, <span class="string">'python'</span>, <span class="number">5</span>):</div><div class="line">            <span class="keyword">for</span> pline <span class="keyword">in</span> prevlines:</div><div class="line">                print(pline, end=<span class="string">''</span>)</div><div class="line">            print(line, end=<span class="string">''</span>)</div><div class="line">            print(<span class="string">'-'</span>*<span class="number">20</span>)</div></pre></td></tr></table></figure></p>
-<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><p>如同上面的代码片段中所做的一样，当编写搜索某项记录的代码时，通常会用到含有<code>yield</code>关键字的生成器函数。这将处理搜索过程的代码和使用搜索结果的代码成功解耦出来。<br><code>deque(maxlen=N)</code>创建了一个固定长度的队列。当有新纪录加入而队列已满时会自动移除最老的那条记录（符合队列的先进先出原则）。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> deque</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q = deque(maxlen=<span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">1</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], maxlen=<span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">4</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>], maxlen=<span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">5</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>], maxlen=<span class="number">3</span>)</div></pre></td></tr></table></figure></p>
-<p>尽管可以在列表上手动完成这样的操作（append、del），但队列的这种解决方案要优雅得多，运行速度也快得多。<br>更普遍的是，当需要一个简单的队列结构时，<code>deque</code>可助你一臂之力。如果不指定队列的大小，也就得到了一个无限长度的队列，可以在两端执行添加和弹出操作。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> collections <span class="keyword">import</span> deque</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q = deque()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">1</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.append(<span class="number">3</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.appendleft(<span class="number">4</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="number">4</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>])</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.pop()</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q.popleft()</div><div class="line"><span class="number">4</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>q</div><div class="line">deque([<span class="number">1</span>, <span class="number">2</span>])</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
-<p>从队列两端添加或弹出元素的时间复杂度是O(1)。这和列表不同，当从列表的头部插入或移除元素时，时间复杂度是O(N)。</p>
+        <p>Python提供了一种很多编程语言都不支持的功能，那就是：else子句不仅能在if语句中使用，还能在for、while、和try语句中使用。<br><code>for/else</code>、<code>while/else</code>和<code>try/else</code>的语义关系紧密，不过与<code>if/else</code>差别很大。<br><a id="more"></a></p>
+<h2 id="for-else和while-else语句"><a href="#for-else和while-else语句" class="headerlink" title="for/else和while/else语句"></a><code>for/else</code>和<code>while/else</code>语句</h2><p>在for循环或是while循环正常运行完毕时（而不是通过break语句或是return语句或是异常退出循环），才会运行else块。<br>举个例子：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>):</div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span><span class="keyword">else</span>:</div><div class="line"><span class="meta">... </span>    print(<span class="string">'Iterated over everything'</span>)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">0</span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line">Iterated over everything</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>如上，for循环正常结束，所以运行了后面的else块。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>):</div><div class="line"><span class="meta">... </span>    <span class="keyword">if</span> i == <span class="number">2</span>:</div><div class="line"><span class="meta">... </span>        <span class="keyword">break</span></div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span><span class="keyword">else</span>:</div><div class="line"><span class="meta">... </span>    print(<span class="string">'Iterated over everything'</span>)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">0</span></div><div class="line"><span class="number">1</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>由此可以看出，for循环如果没有正常运行完毕（如上面是break结束循环的），是不会运行后面的else块。<br>当循环所迭代的对象是空的时候，else分支依然会被执行，毕竟循环仍然是正常完成的。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> []:</div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span><span class="keyword">else</span>:</div><div class="line"><span class="meta">... </span>    print(<span class="string">'Still iterated over everything (i.e. nothing)'</span>)</div><div class="line"><span class="meta">... </span></div><div class="line">Still iterated over everything (i.e. nothing)</div></pre></td></tr></table></figure></p>
+<p>同样不要忘记，以上所有也适用于<code>while/else</code>：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">while</span> i &lt; <span class="number">3</span>:</div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span>    i += <span class="number">1</span></div><div class="line"><span class="meta">... </span><span class="keyword">else</span>:</div><div class="line"><span class="meta">... </span>    print(<span class="string">'Iterated over everything'</span>)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">0</span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line">Iterated over everything</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>但是，我们为什么要在循环后面要用到else语句，有什么好处呢？<br>举个例子：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">images = [<span class="string">'a.jpg'</span>, <span class="string">'b.png'</span>, <span class="string">'c.gif'</span>, <span class="string">'d.bmp'</span>]</div><div class="line">found = <span class="keyword">False</span></div><div class="line"><span class="keyword">for</span> v <span class="keyword">in</span> images:</div><div class="line">    <span class="keyword">if</span> v.endswith(<span class="string">'.gif'</span>):</div><div class="line">        print(<span class="string">'Found gif image'</span>)</div><div class="line">        found = <span class="keyword">True</span></div><div class="line"><span class="keyword">if</span> <span class="keyword">not</span> found:</div><div class="line">    print(<span class="string">'Not found gif image'</span>)</div></pre></td></tr></table></figure></p>
+<p>使用<code>for/else</code>语句：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">images = [<span class="string">'a.jpg'</span>, <span class="string">'b.png'</span>, <span class="string">'c.gif'</span>, <span class="string">'d.bmp'</span>]</div><div class="line"><span class="keyword">for</span> v <span class="keyword">in</span> images:</div><div class="line">    <span class="keyword">if</span> v.endswith(<span class="string">'.gif'</span>):</div><div class="line">        print(<span class="string">'Found gif image'</span>)</div><div class="line">        <span class="keyword">break</span></div><div class="line"><span class="keyword">else</span>:</div><div class="line">    print(<span class="string">'Not found gif image'</span>)</div></pre></td></tr></table></figure></p>
+<p>由此可以看出，在这种循环时检测是否符合某个条件以便设置一个额外的标志变量的问题上，使用<code>for/else</code>语句可以更加pythonic的解决此问题。</p>
+<h2 id="try-else语句"><a href="#try-else语句" class="headerlink" title="try/else语句"></a><code>try/else</code>语句</h2><p>仅当try块中没有异常抛出时才运行else块。一开始，你可能觉得没必要在<code>try/except</code>块中使用<code>else</code>子句。毕竟，在下述代码片段中，只有dangerous_call()不抛出异常，after_call()才会执行，对吧？<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>：</div><div class="line">    dangerous_call()</div><div class="line">    after_call()</div><div class="line"><span class="keyword">except</span> OSError:</div><div class="line">    log(<span class="string">'OSError...'</span>)</div></pre></td></tr></table></figure></p>
+<p>然而，after_call()不应该放在try块中。为了清晰明确，try块中应该只包括抛出预期异常的语句。因此，向下面这样写更好：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">    dangerous_call()</div><div class="line"><span class="keyword">except</span> OSError:</div><div class="line">    log(<span class="string">'OSError...'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    after_call()</div></pre></td></tr></table></figure></p>
+<p>现在很明确，try块防守的是dangerous_call()可能出现的错误，而不是after_call()。而且很明显，只有try块不抛出异常，才会执行after_call()。但要注意一点，else子句抛出的异常不会由前面的except子句处理，也就是说此时after_call()如果抛出异常，将不会被捕获到。</p>
 
       
     </div>
@@ -426,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/unpacking-a-sequence-into-separate-variables.html" rel="next" title="Python将序列分解为单独的变量">
-                <i class="fa fa-chevron-left"></i> Python将序列分解为单独的变量
+              <a href="/reverse-sequence-list-tuple-str-in-python.html" rel="next" title="Python反转序列(列表、元组、字符串)的几种方法">
+                <i class="fa fa-chevron-left"></i> Python反转序列(列表、元组、字符串)的几种方法
               </a>
             
           </div>
@@ -435,10 +441,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/finding-the-largest-or-smallest-n-items.html" rel="prev" title="Python找到最大或最小的N个元素">
-                Python找到最大或最小的N个元素 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -581,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论"><span class="nav-number">3.</span> <span class="nav-text">讨论</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#for-else和while-else语句"><span class="nav-number">1.</span> <span class="nav-text">for/else和while/else语句</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#try-else语句"><span class="nav-number">2.</span> <span class="nav-text">try/else语句</span></a></li></ol></div>
             
 
           </div>
