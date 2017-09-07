@@ -104,7 +104,7 @@
 <meta property="og:url" content="http://www.revotu.com/python=merge-two-dicts-into-one-dict.html">
 <meta property="og:site_name" content="大师兄">
 <meta property="og:description" content="两个字典如下：12&amp;gt;&amp;gt;&amp;gt; d1 = &amp;#123;&apos;name&apos; : &apos;revotu&apos;, &apos;age&apos; : 99&amp;#125;&amp;gt;&amp;gt;&amp;gt; d2 = &amp;#123;&apos;age&apos; : 24, &apos;sex&apos; : &apos;male&apos;&amp;#125; 合并后的结果如下（即，key相同时后面字典值覆盖前面字典）：12&amp;gt;&amp;gt;&amp;gt; d&amp;#123;&apos;sex&apos;: &apos;male&apos;, &apos;name&apos;:">
-<meta property="og:updated_time" content="2017-09-07T11:17:14.000Z">
+<meta property="og:updated_time" content="2017-09-07T11:18:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python合并两个字典成一个新字典的几种方法分析比较">
 <meta name="twitter:description" content="两个字典如下：12&amp;gt;&amp;gt;&amp;gt; d1 = &amp;#123;&apos;name&apos; : &apos;revotu&apos;, &apos;age&apos; : 99&amp;#125;&amp;gt;&amp;gt;&amp;gt; d2 = &amp;#123;&apos;age&apos; : 24, &apos;sex&apos; : &apos;male&apos;&amp;#125; 合并后的结果如下（即，key相同时后面字典值覆盖前面字典）：12&amp;gt;&amp;gt;&amp;gt; d&amp;#123;&apos;sex&apos;: &apos;male&apos;, &apos;name&apos;:">
@@ -426,8 +426,8 @@
 <h2 id="方法十：字典拆分"><a href="#方法十：字典拆分" class="headerlink" title="方法十：字典拆分"></a>方法十：字典拆分</h2><p>在Python3.5+中，可以使用一种全新的字典合并方式：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;**d1, **d2&#125;</div></pre></td></tr></table></figure></p>
 <blockquote>
 <p>这行代码很pythonic，如果是你的python版本是3.5+，用这种方法是很不错的选择。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>上面说了十种可以合并两个字典成一个新字典的方式，具体用哪个取决于你。<br>如果使用的是Python3.5+的版本，那么字典拆分这种新语法应该很适合你：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;**d1, **d2&#125;</div></pre></td></tr></table></figure></p>
 </blockquote>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>上面说了十种可以合并两个字典成一个新字典的方式，具体用哪个取决于你。<br>如果使用的是Python3.5+的版本，那么字典拆分这种新语法应该很适合你：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;**d1, **d2&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
