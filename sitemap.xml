@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python=merge-two-dicts-into-one-dict.html</loc>
+    
+    <lastmod>2017-09-07T11:12:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/matrix-transpose-in-python.html</loc>
     
     <lastmod>2017-09-07T08:50:39.000Z</lastmod>
@@ -352,13 +359,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
@@ -471,14 +471,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/redis-delete-multiple-keys-by-pattern.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -542,6 +542,13 @@
   
   <url>
     <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
