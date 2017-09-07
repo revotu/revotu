@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/matrix-transpose-in-python.html</loc>
+    <lastmod>2017-09-07T08:50:39.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python矩阵转置方法(二维列表行列互换)</title>
+        <pubTime>2017-09-07T08:33:59.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-dict-methods-keys-values-items-return-views.html</loc>
     <lastmod>2017-09-06T16:08:09.000Z</lastmod>
     <data>
@@ -514,6 +531,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
+        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
@@ -554,23 +588,6 @@
         <display>
         <title>Python join列表时报错TypeError sequence item 0 expected string</title>
         <pubTime>2017-08-16T10:31:14.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
-        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -832,27 +849,6 @@
         <pubTime>2017-07-06T01:40:36.000Z</pubTime>
         
         <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>HTML/CSS/JS常见问题清单</title>
-        <pubTime>2015-10-16T07:31:58.000Z</pubTime>
-        
-        <tag>HTML</tag>
-         
-        <tag>CSS</tag>
-         
-        <tag>JS</tag>
          
          
            
@@ -1342,6 +1338,27 @@
         <pubTime>2017-02-05T03:57:09.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>HTML/CSS/JS常见问题清单</title>
+        <pubTime>2015-10-16T07:31:58.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+        <tag>CSS</tag>
+         
+        <tag>JS</tag>
          
          
            
