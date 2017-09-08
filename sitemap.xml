@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python3-convert-number-to-integer.html</loc>
+    
+    <lastmod>2017-09-08T09:01:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/read-file-to-list-by-line.html</loc>
     
     <lastmod>2017-09-08T07:54:57.000Z</lastmod>
@@ -282,14 +289,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
@@ -376,13 +383,6 @@
     <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
@@ -485,14 +485,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -570,6 +570,13 @@
   
   <url>
     <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
