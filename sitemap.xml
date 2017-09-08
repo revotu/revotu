@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/read-file-to-list-by-line.html</loc>
+    
+    <lastmod>2017-09-08T07:54:57.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/read-file-by-line-and-get-line-number.html</loc>
     
     <lastmod>2017-09-08T07:17:51.000Z</lastmod>
@@ -275,14 +282,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     
@@ -369,13 +376,6 @@
     <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
     
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
@@ -563,6 +563,13 @@
   
   <url>
     <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
