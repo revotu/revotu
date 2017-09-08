@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python,WebDriver," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="Google搜索123456789101112from selenium import webdriverCHROME_DRIVER_PATH = &apos;../resources/chromedriver.exe&apos;driver = webdriver.Chrome(CHROME_DRIVER_PATH)driver.get(&apos;https://www.google.com&apos;)q = driver.fin">
-<meta name="keywords" content="Python,WebDriver">
+<meta name="description" content="在Python3中，range实际上是不可改变的序列类型，返回的range对象是迭代器，参数只能为整数，通常用在for循环中循环指定的次数。有两种构造方法：  class range(stop)class range(start, stop[, step])">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python Selenium WebDriver简明指南">
-<meta property="og:url" content="http://www.revotu.com/python-selenium-webdriver-concise-guide.html">
+<meta property="og:title" content="详解Python3中range()用法">
+<meta property="og:url" content="http://www.revotu.com/python3-range-usage.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="Google搜索123456789101112from selenium import webdriverCHROME_DRIVER_PATH = &apos;../resources/chromedriver.exe&apos;driver = webdriver.Chrome(CHROME_DRIVER_PATH)driver.get(&apos;https://www.google.com&apos;)q = driver.fin">
-<meta property="og:updated_time" content="2017-07-08T03:12:38.600Z">
+<meta property="og:description" content="在Python3中，range实际上是不可改变的序列类型，返回的range对象是迭代器，参数只能为整数，通常用在for循环中循环指定的次数。有两种构造方法：  class range(stop)class range(start, stop[, step])">
+<meta property="og:updated_time" content="2017-09-08T02:36:18.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python Selenium WebDriver简明指南">
-<meta name="twitter:description" content="Google搜索123456789101112from selenium import webdriverCHROME_DRIVER_PATH = &apos;../resources/chromedriver.exe&apos;driver = webdriver.Chrome(CHROME_DRIVER_PATH)driver.get(&apos;https://www.google.com&apos;)q = driver.fin">
+<meta name="twitter:title" content="详解Python3中range()用法">
+<meta name="twitter:description" content="在Python3中，range实际上是不可改变的序列类型，返回的range对象是迭代器，参数只能为整数，通常用在for循环中循环指定的次数。有两种构造方法：  class range(stop)class range(start, stop[, step])">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/python-selenium-webdriver-concise-guide.html"/>
+  <link rel="canonical" href="http://www.revotu.com/python3-range-usage.html"/>
 
 
 
 
 
-  <title>Python Selenium WebDriver简明指南 | 大师兄</title>
+  <title>详解Python3中range()用法 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-selenium-webdriver-concise-guide.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python3-range-usage.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python Selenium WebDriver简明指南</h1>
+          <h1 class="post-title" itemprop="name headline">详解Python3中range()用法</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-09T18:59:37+08:00">
-                2016-04-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-08T09:47:17+08:00">
+                2017-09-08
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/python-selenium-webdriver-concise-guide.html" class="leancloud_visitors" data-flag-title="Python Selenium WebDriver简明指南">
+             <span id="/python3-range-usage.html" class="leancloud_visitors" data-flag-title="详解Python3中range()用法">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,15 +379,20 @@
       
 
       
-        <h2 id="Google搜索"><a href="#Google搜索" class="headerlink" title="Google搜索"></a>Google搜索</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</div><div class="line"></div><div class="line">CHROME_DRIVER_PATH = <span class="string">'../resources/chromedriver.exe'</span></div><div class="line">driver = webdriver.Chrome(CHROME_DRIVER_PATH)</div><div class="line">driver.get(<span class="string">'https://www.google.com'</span>)</div><div class="line"></div><div class="line">q = driver.find_element_by_name(<span class="string">'q'</span>)</div><div class="line">q.send_keys(<span class="string">'webdriver'</span>)</div><div class="line">q.submit()</div><div class="line"></div><div class="line"><span class="keyword">print</span> driver.title</div><div class="line">driver.close()</div></pre></td></tr></table></figure>
+        <p>在Python3中，range实际上是不可改变的序列类型，返回的range对象是迭代器，参数只能为整数，通常用在for循环中循环指定的次数。有两种构造方法：</p>
+<blockquote>
+<p>class range(stop)<br>class range(start, stop[, step])</p>
+</blockquote>
 <a id="more"></a>
-<h2 id="刷新页面"><a href="#刷新页面" class="headerlink" title="刷新页面"></a>刷新页面</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">driver.refresh()</div></pre></td></tr></table></figure>
-<h2 id="获得当前页面URL"><a href="#获得当前页面URL" class="headerlink" title="获得当前页面URL"></a>获得当前页面URL</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">driver.current_url</div></pre></td></tr></table></figure>
-<h2 id="获取标签-如：p、div、span等-包含的文本"><a href="#获取标签-如：p、div、span等-包含的文本" class="headerlink" title="获取标签(如：p、div、span等)包含的文本"></a>获取标签(如：p、div、span等)包含的文本</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">element.text</div></pre></td></tr></table></figure>
-<h2 id="等待元素动态加载完成"><a href="#等待元素动态加载完成" class="headerlink" title="等待元素动态加载完成"></a>等待元素动态加载完成</h2><p><strong>显式方法：</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</div><div class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</div><div class="line"><span class="keyword">from</span> selenium.webdriver.support.ui <span class="keyword">import</span> WebDriverWait</div><div class="line"><span class="keyword">from</span> selenium.webdriver.support <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</div><div class="line"></div><div class="line">driver = webdriver.Firefox()</div><div class="line">driver.get(<span class="string">"http://somedomain/url_that_delays_loading"</span>)</div><div class="line"><span class="keyword">try</span>:</div><div class="line">    element = WebDriverWait(driver, <span class="number">10</span>).until(</div><div class="line">        EC.presence_of_element_located((By.ID, <span class="string">"myDynamicElement"</span>))</div><div class="line">    )</div><div class="line"><span class="keyword">finally</span>:</div><div class="line">    driver.quit()</div></pre></td></tr></table></figure></p>
-<p><strong>隐式方法：</strong><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</div><div class="line"></div><div class="line">driver = webdriver.Firefox()</div><div class="line">driver.implicitly_wait(<span class="number">10</span>) <span class="comment"># seconds</span></div><div class="line">driver.get(<span class="string">"http://somedomain/url_that_delays_loading"</span>)</div><div class="line">myDynamicElement = driver.find_element_by_id(<span class="string">"myDynamicElement"</span>)</div></pre></td></tr></table></figure></p>
-<h2 id="处理alert弹框"><a href="#处理alert弹框" class="headerlink" title="处理alert弹框"></a>处理alert弹框</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">    WebDriverWait(driver, <span class="number">3</span>).until(EC.alert_is_present())</div><div class="line">    alert = driver.switch_to_alert()</div><div class="line">    alert.dismiss() <span class="comment">#选择"否"，选择"是"的方法是alert.accept()</span></div><div class="line"><span class="keyword">except</span>:</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure>
-<p><strong><em>参考文档：<a href="http://selenium-python.readthedocs.io/" target="_blank" rel="external">Selenium with Python</a></em></strong></p>
+<p>参数只能为整数，start默认值是0，step默认值是1，如果step为0，则抛出 <code>ValueError</code>异常。</p>
+<blockquote>
+<p>当step为正数时，range对象r内容是这么确定的：<code>r[i] = start + step*i</code> 并且 <code>i &gt;= 0</code> 和 <code>r[i] &lt; stop</code><br>当step为负数时，range对象r内容是这么确定的：<code>r[i] = start + step*i</code> 并且 <code>i &gt;= 0</code> 和 <code>r[i] &gt; stop</code><br>如果r[0]的值不满足上述约束条件，则range对象将是空的。</p>
+</blockquote>
+<p>只有一个参数stop的情况（第一种构造方法）：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>range(<span class="number">5</span>)</div><div class="line">range(<span class="number">0</span>, <span class="number">5</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">5</span>):</div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">0</span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div><div class="line"><span class="number">4</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(range(<span class="number">5</span>))</div><div class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(range(<span class="number">0</span>))</div><div class="line">[]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>有两个参数或三个参数的情况（第二种构造方法）：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, <span class="number">5</span>):</div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line"><span class="number">3</span></div><div class="line"><span class="number">4</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(range(<span class="number">0</span>, <span class="number">30</span>, <span class="number">5</span>))</div><div class="line">[<span class="number">0</span>, <span class="number">5</span>, <span class="number">10</span>, <span class="number">15</span>, <span class="number">20</span>, <span class="number">25</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(range(<span class="number">0</span>, <span class="number">10</span>, <span class="number">3</span>))</div><div class="line">[<span class="number">0</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">9</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(range(<span class="number">0</span>, <span class="number">-10</span>, <span class="number">-1</span>))</div><div class="line">[<span class="number">0</span>, <span class="number">-1</span>, <span class="number">-2</span>, <span class="number">-3</span>, <span class="number">-4</span>, <span class="number">-5</span>, <span class="number">-6</span>, <span class="number">-7</span>, <span class="number">-8</span>, <span class="number">-9</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>list(range(<span class="number">1</span>, <span class="number">0</span>))</div><div class="line">[]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>相比list和tuple，range对象总会占用固定的内存，不管range对象代表的是多大数量的元素（因为其只需存储start、stop、step三个值，按需生成每一个元素或是子序列）。</p>
+<p>range对象实现了序列的基本操作，比如，成员检测，索引查找，切片及支持负数索引（但不支持拼接+和重复*操作，原因就是range对象中的值要满足特定模式）。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>r = range(<span class="number">0</span>, <span class="number">20</span>, <span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>r</div><div class="line">range(<span class="number">0</span>, <span class="number">20</span>, <span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">11</span> <span class="keyword">in</span> r</div><div class="line"><span class="keyword">False</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="number">10</span> <span class="keyword">in</span> r</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>r.index(<span class="number">10</span>)</div><div class="line"><span class="number">5</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>r[<span class="number">5</span>]</div><div class="line"><span class="number">10</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>r[:<span class="number">5</span>]</div><div class="line">range(<span class="number">0</span>, <span class="number">10</span>, <span class="number">2</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>r[<span class="number">-1</span>]</div><div class="line"><span class="number">18</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>range对象作为序列，比较是否相等使用<code>==</code>和<code>!=</code>，即比较的是序列的值而不是标识（is 和 is not）。注意，两个range对象比较相等可能会含有不同的start、stop、step属性：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>range(<span class="number">0</span>) == range(<span class="number">2</span>, <span class="number">1</span>, <span class="number">3</span>)</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>range(<span class="number">0</span>, <span class="number">3</span>, <span class="number">2</span>) == range(<span class="number">0</span>, <span class="number">4</span>, <span class="number">2</span>)</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -419,8 +424,6 @@
           
             <a href="/tags/Python/" rel="tag"># Python</a>
           
-            <a href="/tags/WebDriver/" rel="tag"># WebDriver</a>
-          
         </div>
       
 
@@ -432,8 +435,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-practical-script-list.html" rel="next" title="Python实用脚本清单">
-                <i class="fa fa-chevron-left"></i> Python实用脚本清单
+              <a href="/python=merge-two-dicts-into-one-dict.html" rel="next" title="Python合并两个字典成一个新字典的几种方法分析比较">
+                <i class="fa fa-chevron-left"></i> Python合并两个字典成一个新字典的几种方法分析比较
               </a>
             
           </div>
@@ -441,10 +444,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/useful-online-tools.html" rel="prev" title="有用的在线工具">
-                有用的在线工具 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -514,17 +513,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar/avatar.jpg"
@@ -577,22 +567,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Google搜索"><span class="nav-number">1.</span> <span class="nav-text">Google搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刷新页面"><span class="nav-number">2.</span> <span class="nav-text">刷新页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获得当前页面URL"><span class="nav-number">3.</span> <span class="nav-text">获得当前页面URL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#获取标签-如：p、div、span等-包含的文本"><span class="nav-number">4.</span> <span class="nav-text">获取标签(如：p、div、span等)包含的文本</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#等待元素动态加载完成"><span class="nav-number">5.</span> <span class="nav-text">等待元素动态加载完成</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#处理alert弹框"><span class="nav-number">6.</span> <span class="nav-text">处理alert弹框</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
