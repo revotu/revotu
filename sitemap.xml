@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/coding-interviews-python-solutions.html</loc>
+    
+    <lastmod>2017-09-09T06:08:46.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/python3-convert-number-to-integer.html</loc>
     
     <lastmod>2017-09-08T09:01:04.000Z</lastmod>
@@ -387,13 +394,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/calling-python-script-from-crontab-with-activate.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
@@ -577,6 +577,13 @@
   
   <url>
     <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
