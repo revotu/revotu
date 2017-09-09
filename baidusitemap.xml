@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-get-fibonacci-n-number.html</loc>
+    <lastmod>2017-09-09T15:19:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python求斐波那契数列的第n项几种方法</title>
+        <pubTime>2017-09-09T07:33:34.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/coding-interviews-python-solutions.html</loc>
     <lastmod>2017-09-09T06:08:46.000Z</lastmod>
     <data>
@@ -960,25 +977,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/calling-python-script-from-crontab-with-activate.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Crontab激活virtualenv的python环境运行脚本</title>
-        <pubTime>2017-06-15T07:07:02.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>Virtualenv</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1220,6 +1218,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>两张图搞清composer install与composer update区别</title>
+        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
+        
+        <tag>Composer</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1232,23 +1247,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>两张图搞清composer install与composer update区别</title>
-        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
-        
-        <tag>Composer</tag>
          
          
            
@@ -1461,6 +1459,25 @@
         <tag>XPATH</tag>
          
         <tag>Scrapy</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/calling-python-script-from-crontab-with-activate.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Crontab激活virtualenv的python环境运行脚本</title>
+        <pubTime>2017-06-15T07:07:02.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>Virtualenv</tag>
          
          
            
