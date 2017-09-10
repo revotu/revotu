@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python3-random-module-most-common-methods.html</loc>
+    
+    <lastmod>2017-09-10T04:45:17.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/python-get-fibonacci-n-number.html</loc>
     
     <lastmod>2017-09-09T15:19:50.000Z</lastmod>
@@ -352,21 +359,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -380,16 +373,23 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/useful-online-tools.html</loc>
+    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
     
-    <lastmod>2017-07-08T03:19:36.413Z</lastmod>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/useful-online-tools.html</loc>
+    
+    <lastmod>2017-07-08T03:19:36.413Z</lastmod>
     
   </url>
   
@@ -401,9 +401,9 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
+    <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     
   </url>
   
@@ -591,6 +591,13 @@
   
   <url>
     <loc>http://www.revotu.com/calling-python-script-from-crontab-with-activate.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     

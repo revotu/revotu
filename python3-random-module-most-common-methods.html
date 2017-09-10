@@ -1,0 +1,913 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="VJ7u1Rk8AsItho1RK1UogeREqK4APImsLIlM666xHJQ" />
+
+
+
+
+
+
+
+  <meta name="baidu-site-verification" content="CnxwXUNDQ1" />
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Python," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+<meta name="description" content="python中random模块是用来生成伪随机数的，其常用函数及示例如下： 实数相关的函数random.random()用于生成一个0到1区间的随机浮点数n，0.0 &amp;lt;= n &amp;lt; 1.0123456&amp;gt;&amp;gt;&amp;gt; import random&amp;gt;&amp;gt;&amp;gt; random.random()          # 0.0 &amp;lt;= n &amp;lt; 1.00.7609624">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python3中random模块常用函数用法及示例">
+<meta property="og:url" content="http://www.revotu.com/python3-random-module-most-common-methods.html">
+<meta property="og:site_name" content="大师兄">
+<meta property="og:description" content="python中random模块是用来生成伪随机数的，其常用函数及示例如下： 实数相关的函数random.random()用于生成一个0到1区间的随机浮点数n，0.0 &amp;lt;= n &amp;lt; 1.0123456&amp;gt;&amp;gt;&amp;gt; import random&amp;gt;&amp;gt;&amp;gt; random.random()          # 0.0 &amp;lt;= n &amp;lt; 1.00.7609624">
+<meta property="og:updated_time" content="2017-09-10T04:45:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python3中random模块常用函数用法及示例">
+<meta name="twitter:description" content="python中random模块是用来生成伪随机数的，其常用函数及示例如下： 实数相关的函数random.random()用于生成一个0到1区间的随机浮点数n，0.0 &amp;lt;= n &amp;lt; 1.0123456&amp;gt;&amp;gt;&amp;gt; import random&amp;gt;&amp;gt;&amp;gt; random.random()          # 0.0 &amp;lt;= n &amp;lt; 1.00.7609624">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: 'X0Q23NWE6W',
+      apiKey: '64de3bc2222318122adfc37a1817ed02',
+      indexName: 'revotu',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.revotu.com/python3-random-module-most-common-methods.html"/>
+
+
+
+
+
+  <title>Python3中random模块常用函数用法及示例 | 大师兄</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <div style="display: none;">
+    <script src="//s95.cnzz.com/z_stat.php?id=1262023471&web_id=1262023471" language="JavaScript"></script>
+  </div>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">大师兄</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">心有猛虎 , 细嗅蔷薇</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python3-random-module-most-common-methods.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大师兄">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大师兄">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python3中random模块常用函数用法及示例</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-10T11:50:36+08:00">
+                2017-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/python3-random-module-most-common-methods.html" class="leancloud_visitors" data-flag-title="Python3中random模块常用函数用法及示例">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>python中<code>random</code>模块是用来生成伪随机数的，其常用函数及示例如下：</p>
+<h2 id="实数相关的函数"><a href="#实数相关的函数" class="headerlink" title="实数相关的函数"></a>实数相关的函数</h2><h3 id="random-random"><a href="#random-random" class="headerlink" title="random.random()"></a>random.random()</h3><p>用于生成一个0到1区间的随机浮点数n，0.0 &lt;= n &lt; 1.0<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.random()          <span class="comment"># 0.0 &lt;= n &lt; 1.0</span></div><div class="line"><span class="number">0.7609624449125756</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.random() * <span class="number">100</span>    <span class="comment"># 0.0 &lt;= n &lt; 100.0</span></div><div class="line"><span class="number">37.96152233237278</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h3 id="random-uniform-a-b"><a href="#random-uniform-a-b" class="headerlink" title="random.uniform(a, b)"></a>random.uniform(a, b)</h3><p>用于生成一个指定范围内的随机浮点数n，如果 a &lt;= b，则a &lt;= n &lt;= b，如果b &lt; a，则b &lt;= n &lt;= a<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.uniform(<span class="number">1</span>, <span class="number">10</span>)</div><div class="line"><span class="number">2.889593257343294</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.uniform(<span class="number">2.5</span>, <span class="number">10.0</span>)</div><div class="line"><span class="number">6.158924923931107</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="整数相关的函数"><a href="#整数相关的函数" class="headerlink" title="整数相关的函数"></a>整数相关的函数</h2><h3 id="random-randrange"><a href="#random-randrange" class="headerlink" title="random.randrange"></a>random.randrange</h3><p>函数原型：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">random.randrange(stop)</div><div class="line">random.randrange(start, stop[, step])</div></pre></td></tr></table></figure></p>
+<p>返回来自<code>range(start, stop, step)</code>中的一个随机元素，等价于<code>random.choice(range(start, stop, strp))</code>，但实际上并没有创建一个range对象。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.randrange(<span class="number">10</span>)        <span class="comment"># Integer from 0 to 9 inclusive</span></div><div class="line"><span class="number">7</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.randrange(<span class="number">0</span>, <span class="number">101</span>, <span class="number">2</span>) <span class="comment"># Even integer from 0 to 100 inclusive</span></div><div class="line"><span class="number">34</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="random-randint-a-b"><a href="#random-randint-a-b" class="headerlink" title="random.randint(a, b)"></a>random.randint(a, b)</h3><p>用于生成一个指定范围内的整数n，a &lt;= n &lt;= b，等价于<code>random.randrange(a, b+1)</code>。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.randint(<span class="number">1</span>, <span class="number">20</span>)</div><div class="line"><span class="number">8</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.randint(<span class="number">1</span>, <span class="number">20</span>)</div><div class="line"><span class="number">19</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="序列相关的函数"><a href="#序列相关的函数" class="headerlink" title="序列相关的函数"></a>序列相关的函数</h2><h3 id="random-choice-seq"><a href="#random-choice-seq" class="headerlink" title="random.choice(seq)"></a>random.choice(seq)</h3><p>从序列中随机选取一个元素，如果序列为空，则抛出<code>IndexError</code>异常。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.choice([<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>])</div><div class="line"><span class="string">'C'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.choice(<span class="string">'ABCD'</span>)</div><div class="line"><span class="string">'A'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.choice((<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>))</div><div class="line"><span class="string">'B'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="random-shuffle-x-random"><a href="#random-shuffle-x-random" class="headerlink" title="random.shuffle(x[, random])"></a>random.shuffle(x[, random])</h3><p>原地打乱一个序列（可变序列类型如列表），如果要打乱的是一个不可变序列类型如字符串、元组等，则要用<code>random.sample(x, k=len(x))</code>创建一个新的打乱后的列表。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l = [<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.shuffle(l)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l</div><div class="line">[<span class="string">'B'</span>, <span class="string">'A'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="random-sample-population-k"><a href="#random-sample-population-k" class="headerlink" title="random.sample(population, k)"></a>random.sample(population, k)</h3><p>从序列或集合中返回指定长度的列表，不会改变原序列或原集合。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.sample([<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>], k=<span class="number">2</span>)</div><div class="line">[<span class="string">'B'</span>, <span class="string">'D'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.sample(<span class="string">'ABCD'</span>, k=<span class="number">2</span>)</div><div class="line">[<span class="string">'D'</span>, <span class="string">'C'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.sample(set([<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>]), k=<span class="number">2</span>)</div><div class="line">[<span class="string">'C'</span>, <span class="string">'B'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="初始化随机数生成器"><a href="#初始化随机数生成器" class="headerlink" title="初始化随机数生成器"></a>初始化随机数生成器</h2><p><code>random.seed(a=None, version=2)</code>用来作为一个种子初始化随机数生成器，如果a被省略或是为None，则用当前的系统时间作为值。<br>之所以说<code>radnom</code>模块是用来生成伪随机数，就是当初始化的种子相同时，则生成的随机数是相同的，同样随机序列也都是相同的。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.seed(<span class="number">100</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.random()</div><div class="line"><span class="number">0.1456692551041303</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.random()</div><div class="line"><span class="number">0.45492700451402135</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.randint(<span class="number">1</span>, <span class="number">10</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.choice([<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>])</div><div class="line"><span class="string">'D'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>第二次如果用相同的种子初始化随机数生成器，则相应的结果是不变的：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> random</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.seed(<span class="number">100</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.random()</div><div class="line"><span class="number">0.1456692551041303</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.random()</div><div class="line"><span class="number">0.45492700451402135</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.randint(<span class="number">1</span>, <span class="number">10</span>)</div><div class="line"><span class="number">3</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>random.choice([<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>])</div><div class="line"><span class="string">'D'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>这就是<code>random</code>模块伪随机数生成器的意思。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/python-get-fibonacci-n-number.html" rel="next" title="Python求斐波那契数列的第n项几种方法">
+                <i class="fa fa-chevron-left"></i> Python求斐波那契数列的第n项几种方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar/avatar.jpg"
+               alt="大师兄" />
+          <p class="site-author-name" itemprop="name">大师兄</p>
+           
+              <p class="site-description motion-element" itemprop="description">心有猛虎,细嗅蔷薇</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">86</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#实数相关的函数"><span class="nav-number">1.</span> <span class="nav-text">实数相关的函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#random-random"><span class="nav-number">1.1.</span> <span class="nav-text">random.random()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-uniform-a-b"><span class="nav-number">1.2.</span> <span class="nav-text">random.uniform(a, b)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#整数相关的函数"><span class="nav-number">2.</span> <span class="nav-text">整数相关的函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#random-randrange"><span class="nav-number">2.1.</span> <span class="nav-text">random.randrange</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-randint-a-b"><span class="nav-number">2.2.</span> <span class="nav-text">random.randint(a, b)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#序列相关的函数"><span class="nav-number">3.</span> <span class="nav-text">序列相关的函数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#random-choice-seq"><span class="nav-number">3.1.</span> <span class="nav-text">random.choice(seq)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-shuffle-x-random"><span class="nav-number">3.2.</span> <span class="nav-text">random.shuffle(x[, random])</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#random-sample-population-k"><span class="nav-number">3.3.</span> <span class="nav-text">random.sample(population, k)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化随机数生成器"><span class="nav-number">4.</span> <span class="nav-text">初始化随机数生成器</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">大师兄</span>
+</div>
+<p style="margin:0 0;">Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv">
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user" aria-hidden="true">&nbsp;&nbsp;</i><span id="busuanzi_value_site_uv"></span>
+</span>
+<span id="busuanzi_container_site_pv">
+&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-eye" aria-hidden="true"></i>&nbsp;&nbsp;<span id="busuanzi_value_site_pv"></span>
+</span>
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.1"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("IlmGP7aH9xu294jm6VN5qu8y-gzGzoHsz", "dakwPOhyIgLXTFYrsNQWyiqR");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
