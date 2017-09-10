@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/coding-interviews-python-solutions.html</loc>
+    <lastmod>2017-09-10T12:46:05.000Z</lastmod>
+    <data>
+        <display>
+        <title>剑指offer-Python版答案</title>
+        <pubTime>2017-09-09T04:08:59.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python3-random-module-most-common-methods.html</loc>
     <lastmod>2017-09-10T04:45:17.000Z</lastmod>
     <data>
@@ -27,23 +44,6 @@
         <display>
         <title>Python求斐波那契数列的第n项几种方法</title>
         <pubTime>2017-09-09T07:33:34.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/coding-interviews-python-solutions.html</loc>
-    <lastmod>2017-09-09T06:08:46.000Z</lastmod>
-    <data>
-        <display>
-        <title>剑指offer-Python版答案</title>
-        <pubTime>2017-09-09T04:08:59.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -650,12 +650,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python开发环境复制迁移之requirements files</title>
-        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -684,12 +684,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -718,12 +718,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        <title>Python开发环境复制迁移之requirements files</title>
+        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -752,14 +752,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>Python如何递归删除空文件夹</title>
-        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
+        <title>修改crontab默认编辑器</title>
+        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Crontab</tag>
          
          
            
@@ -769,14 +769,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>修改crontab默认编辑器</title>
-        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
+        <title>Python如何递归删除空文件夹</title>
+        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
         
-        <tag>Crontab</tag>
+        <tag>Python</tag>
          
          
            
@@ -888,14 +888,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除自动添加的html和body标签</title>
-        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
+        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
+        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
         
-        <tag>BeautifulSoup</tag>
+        <tag>Python</tag>
+         
+        <tag>Selenium</tag>
          
          
            
@@ -924,16 +926,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/remove-html-and-body-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
-        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
+        <title>BeautifulSoup删除自动添加的html和body标签</title>
+        <pubTime>2017-07-21T02:54:54.000Z</pubTime>
         
-        <tag>Python</tag>
-         
-        <tag>Selenium</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -960,23 +960,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
-    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
-    <data>
-        <display>
-        <title>Python编码规范</title>
-        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/common-questions-about-git.html</loc>
     <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
@@ -994,12 +977,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <loc>http://www.revotu.com/python-code-style-guideline.html</loc>
+    <lastmod>2017-07-08T03:13:08.595Z</lastmod>
     <data>
         <display>
-        <title>Python获取当前时间</title>
-        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
+        <title>Python编码规范</title>
+        <pubTime>2017-07-06T01:40:36.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -1021,6 +1004,23 @@
         <tag>SQL</tag>
          
         <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python获取当前时间</title>
+        <pubTime>2017-06-23T10:43:17.000Z</pubTime>
+        
+        <tag>Python</tag>
          
          
            
@@ -1288,23 +1288,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python学习之路上的几个经典问题</title>
-        <pubTime>2016-12-26T06:34:01.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1339,6 +1322,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python学习之路上的几个经典问题</title>
+        <pubTime>2016-12-26T06:34:01.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1360,12 +1360,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
+    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python编码问题</title>
-        <pubTime>2017-03-13T02:47:33.000Z</pubTime>
+        <title>Python字符串操作相关问题</title>
+        <pubTime>2017-03-15T08:49:29.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -1377,12 +1377,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
+    <loc>http://www.revotu.com/python-encoding-problem.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python字符串操作相关问题</title>
-        <pubTime>2017-03-15T08:49:29.000Z</pubTime>
+        <title>Python编码问题</title>
+        <pubTime>2017-03-13T02:47:33.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -1411,14 +1411,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
+    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Django Admin创建不关联任何model的自定义页面</title>
-        <pubTime>2017-04-16T08:04:34.000Z</pubTime>
+        <title>XPATH简明指南</title>
+        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
         
-        <tag>Django</tag>
+        <tag>XPATH</tag>
          
          
            
@@ -1428,14 +1428,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    <loc>http://www.revotu.com/django-admin-create-a-custom-view-without-a-model.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>XPATH简明指南</title>
-        <pubTime>2017-05-22T06:17:05.000Z</pubTime>
+        <title>Django Admin创建不关联任何model的自定义页面</title>
+        <pubTime>2017-04-16T08:04:34.000Z</pubTime>
         
-        <tag>XPATH</tag>
+        <tag>Django</tag>
          
          
            
