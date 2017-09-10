@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-check-variable-type.html</loc>
+    <lastmod>2017-09-10T15:59:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python判断变量类型的两个内置函数type()和isinstance()</title>
+        <pubTime>2017-09-10T15:05:49.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-check-a-string-is-numeric-value.html</loc>
     <lastmod>2017-09-10T13:34:54.000Z</lastmod>
     <data>
@@ -667,6 +684,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
+    <data>
+        <display>
+        <title>Python中json转成html table</title>
+        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
@@ -724,23 +758,6 @@
         <display>
         <title>Python join列表时报错TypeError sequence item 0 expected string</title>
         <pubTime>2017-08-16T10:31:14.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
-    <lastmod>2017-08-25T10:06:35.787Z</lastmod>
-    <data>
-        <display>
-        <title>Python中json转成html table</title>
-        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -871,14 +888,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
+    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>BeautifulSoup删除html文档中所有属性</title>
-        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
+        <title>Python之list、dict、json等常见操作</title>
+        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
         
-        <tag>BeautifulSoup</tag>
+        <tag>Python</tag>
          
          
            
@@ -888,14 +905,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/common-python-questions-of-list-dict-json.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Python之list、dict、json等常见操作</title>
-        <pubTime>2015-06-24T09:26:31.000Z</pubTime>
+        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
+        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
         
         <tag>Python</tag>
+         
+        <tag>Selenium</tag>
          
          
            
@@ -941,16 +960,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     <data>
         <display>
-        <title>Selenium Chrome 设置带用户名密码的proxy代理</title>
-        <pubTime>2017-07-10T08:37:57.000Z</pubTime>
+        <title>BeautifulSoup删除html文档中所有属性</title>
+        <pubTime>2017-07-14T07:13:19.000Z</pubTime>
         
-        <tag>Python</tag>
-         
-        <tag>Selenium</tag>
+        <tag>BeautifulSoup</tag>
          
          
            
@@ -1002,25 +1019,6 @@
         <pubTime>2016-05-26T02:49:37.000Z</pubTime>
         
         <tag>Git</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>MySQL时间处理相关函数</title>
-        <pubTime>2017-06-28T05:53:17.000Z</pubTime>
-        
-        <tag>SQL</tag>
-         
-        <tag>MySQL</tag>
          
          
            
@@ -1512,6 +1510,25 @@
         <pubTime>2017-06-23T10:43:17.000Z</pubTime>
         
         <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/mysql-date-and-time-functions.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>MySQL时间处理相关函数</title>
+        <pubTime>2017-06-28T05:53:17.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+        <tag>MySQL</tag>
          
          
            

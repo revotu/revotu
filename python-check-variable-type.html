@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="revotu, Python, Redis, Linux, SQL, Programming" />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -97,15 +97,17 @@
 
 
 
-<meta name="description" content="心有猛虎,细嗅蔷薇">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大师兄">
-<meta property="og:url" content="http://www.revotu.com/archives/2015/11/index.html">
+<meta name="description" content="Python中判断对象类型可以用内置函数type()：12345678910111213&amp;gt;&amp;gt;&amp;gt; type([]) is listTrue&amp;gt;&amp;gt;&amp;gt; type(&amp;#123;&amp;#125;) is dictTrue&amp;gt;&amp;gt;&amp;gt; type(&apos;&apos;) is strTrue&amp;gt;&amp;gt;&amp;gt; type(0) is intTrue&amp;gt;&amp;gt;&amp;gt; type">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python判断变量类型的两个内置函数type()和isinstance()">
+<meta property="og:url" content="http://www.revotu.com/python-check-variable-type.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="心有猛虎,细嗅蔷薇">
+<meta property="og:description" content="Python中判断对象类型可以用内置函数type()：12345678910111213&amp;gt;&amp;gt;&amp;gt; type([]) is listTrue&amp;gt;&amp;gt;&amp;gt; type(&amp;#123;&amp;#125;) is dictTrue&amp;gt;&amp;gt;&amp;gt; type(&apos;&apos;) is strTrue&amp;gt;&amp;gt;&amp;gt; type(0) is intTrue&amp;gt;&amp;gt;&amp;gt; type">
+<meta property="og:updated_time" content="2017-09-10T15:59:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大师兄">
-<meta name="twitter:description" content="心有猛虎,细嗅蔷薇">
+<meta name="twitter:title" content="Python判断变量类型的两个内置函数type()和isinstance()">
+<meta name="twitter:description" content="Python中判断对象类型可以用内置函数type()：12345678910111213&amp;gt;&amp;gt;&amp;gt; type([]) is listTrue&amp;gt;&amp;gt;&amp;gt; type(&amp;#123;&amp;#125;) is dictTrue&amp;gt;&amp;gt;&amp;gt; type(&apos;&apos;) is strTrue&amp;gt;&amp;gt;&amp;gt; type(0) is intTrue&amp;gt;&amp;gt;&amp;gt; type">
 
 
 
@@ -133,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/archives/2015/11/"/>
+  <link rel="canonical" href="http://www.revotu.com/python-check-variable-type.html"/>
 
 
 
 
 
-  <title>归档 | 大师兄</title>
+  <title>Python判断变量类型的两个内置函数type()和isinstance() | 大师兄</title>
   
 
 
@@ -170,7 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -292,65 +294,186 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-       
-        
-      很好! 目前共计 88 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-check-variable-type.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="大师兄">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大师兄">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python判断变量类型的两个内置函数type()和isinstance()</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-10T23:05:49+08:00">
+                2017-09-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/python-check-variable-type.html" class="leancloud_visitors" data-flag-title="Python判断变量类型的两个内置函数type()和isinstance()">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <p>Python中判断对象类型可以用内置函数<code>type()</code>：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&gt;&gt;&gt; type([]) is list</div><div class="line">True</div><div class="line">&gt;&gt;&gt; type(&#123;&#125;) is dict</div><div class="line">True</div><div class="line">&gt;&gt;&gt; type('') is str</div><div class="line">True</div><div class="line">&gt;&gt;&gt; type(0) is int</div><div class="line">True</div><div class="line">&gt;&gt;&gt; type([])</div><div class="line">&lt;class 'list'&gt;</div><div class="line">&gt;&gt;&gt; type(&#123;&#125;)</div><div class="line">&lt;class 'dict'&gt;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p><code>type()</code>函数也可以用在自定义的类型上，但是只能得到其本身类型，无法得知其继承自什么类型。<br><a id="more"></a><br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span><span class="params">(A)</span>:</span></div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>a = A()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>b = B()</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>type(a) <span class="keyword">is</span> A</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>type(b) <span class="keyword">is</span> B</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>但是，判断子类B的实例b是否是父类A类型时，则是False：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>type(b) <span class="keyword">is</span> A</div><div class="line"><span class="keyword">False</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>为了解决这个问题，需要使用<code>isinstance()</code>内置函数，用来判断对象是否是类的实例。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(b, A)</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(b, B)</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(a, A)</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(a, B)</div><div class="line"><span class="keyword">False</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance([], list)</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(&#123;&#125;, dict)</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(<span class="number">0</span>, int)</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>因此，通常情况下，判断对象类型用<code>isinstance()</code>是更好的选择，相比<code>type()</code>，它能得到对象继承自什么类型。<br>而且，<code>isinstance()</code>函数中的类型参数还可以是元组，以便检测对象是否是多个类型中的一种。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance([], (tuple, list, dict))</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance((), (tuple, list, dict))</div><div class="line"><span class="keyword">True</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>isinstance(&#123;&#125;, (tuple, list, dict))</div><div class="line"><span class="keyword">True</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2015">2015</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python/" rel="tag"># Python</a>
+          
         </div>
       
+
+      
+      
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/python-check-a-string-is-numeric-value.html" rel="next" title="Python判断字符串是否是数值型数据方法">
+                <i class="fa fa-chevron-left"></i> Python判断字符串是否是数值型数据方法
+              </a>
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <span class="post-nav-divider"></span>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/python-enviroment-variables-and-module-search-paths.html" itemprop="url">
-              
-                <span itemprop="name">Python环境变量及模块搜索路径</span>
-              
-            </a>
-        
-      </h2>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-11-13T11:03:10+08:00"
-              content="2015-11-13" >
-          11-13
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
-  </section>
-
-  
-
+      
+    </div>
+  </div>
 
 
           </div>
@@ -358,6 +481,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -551,11 +678,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
