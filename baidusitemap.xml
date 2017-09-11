@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html</loc>
+    <lastmod>2017-09-11T16:06:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python从序列中移除重复项且保持元素间顺序不变</title>
+        <pubTime>2017-08-30T15:43:32.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-merge-two-dicts-into-one-dict.html</loc>
     <lastmod>2017-09-11T14:42:14.000Z</lastmod>
     <data>
@@ -548,23 +565,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html</loc>
-    <lastmod>2017-08-30T16:44:40.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python从序列中移除重复项且保持元素间顺序不变</title>
-        <pubTime>2017-08-30T15:43:32.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/calculating-with-dictionaries.html</loc>
     <lastmod>2017-08-29T16:25:55.000Z</lastmod>
     <data>
@@ -701,12 +701,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -769,12 +769,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
