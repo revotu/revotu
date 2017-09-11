@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-implement-data-stucture-stack-and-queue-base-on-list.html</loc>
+    <lastmod>2017-09-11T06:40:41.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python基于列表实现数据结构栈stack和队列queue</title>
+        <pubTime>2017-09-11T06:14:37.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-check-variable-type.html</loc>
     <lastmod>2017-09-10T15:59:26.000Z</lastmod>
     <data>
@@ -684,12 +701,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python中json转成html table</title>
-        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -735,12 +752,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        <title>Python中json转成html table</title>
+        <pubTime>2017-08-16T11:25:24.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -752,12 +769,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -786,14 +803,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
+    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>Python如何递归删除空文件夹</title>
-        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
+        <title>修改crontab默认编辑器</title>
+        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
         
-        <tag>Python</tag>
+        <tag>Crontab</tag>
          
          
            
@@ -803,14 +820,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/change-default-editor-crontab-file.html</loc>
+    <loc>http://www.revotu.com/recursively-delete-empty-directories-with-python.html</loc>
     <lastmod>2017-08-12T13:42:03.684Z</lastmod>
     <data>
         <display>
-        <title>修改crontab默认编辑器</title>
-        <pubTime>2017-08-03T06:48:37.000Z</pubTime>
+        <title>Python如何递归删除空文件夹</title>
+        <pubTime>2017-08-09T06:11:30.000Z</pubTime>
         
-        <tag>Crontab</tag>
+        <tag>Python</tag>
          
          
            
@@ -1028,23 +1045,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python处理Windows环境下文件路径问题解决方案</title>
-        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1248,6 +1248,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/a-visual-explanation-of-sql-joins.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>可视化理解SQL的JOIN用法</title>
+        <pubTime>2016-11-15T09:37:53.000Z</pubTime>
+        
+        <tag>SQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1260,23 +1277,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/a-visual-explanation-of-sql-joins.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>可视化理解SQL的JOIN用法</title>
-        <pubTime>2016-11-15T09:37:53.000Z</pubTime>
-        
-        <tag>SQL</tag>
          
          
            
@@ -1529,6 +1529,23 @@
         <tag>SQL</tag>
          
         <tag>MySQL</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python处理Windows环境下文件路径问题解决方案</title>
+        <pubTime>2017-07-04T09:21:52.000Z</pubTime>
+        
+        <tag>Python</tag>
          
          
            
