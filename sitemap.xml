@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python-merge-two-dicts-into-one-dict.html</loc>
+    
+    <lastmod>2017-09-11T14:42:14.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/python-implement-data-stucture-stack-and-queue-base-on-list.html</loc>
     
     <lastmod>2017-09-11T06:40:41.000Z</lastmod>
@@ -68,13 +75,6 @@
     <loc>http://www.revotu.com/python3-range-usage.html</loc>
     
     <lastmod>2017-09-08T02:36:18.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python=merge-two-dicts-into-one-dict.html</loc>
-    
-    <lastmod>2017-09-07T11:18:23.000Z</lastmod>
     
   </url>
   
