@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-get-fibonacci-n-number.html</loc>
+    <lastmod>2017-09-12T04:09:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python求斐波那契数列的第n项几种方法</title>
+        <pubTime>2017-09-09T07:33:34.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html</loc>
     <lastmod>2017-09-11T16:06:01.000Z</lastmod>
     <data>
@@ -112,23 +129,6 @@
         <display>
         <title>Python3中random模块常用函数用法及示例</title>
         <pubTime>2017-09-10T03:50:36.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/python-get-fibonacci-n-number.html</loc>
-    <lastmod>2017-09-09T15:19:50.000Z</lastmod>
-    <data>
-        <display>
-        <title>Python求斐波那契数列的第n项几种方法</title>
-        <pubTime>2017-09-09T07:33:34.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -701,12 +701,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>python判断字符串是否是有效日期的两种方法</title>
-        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
+        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
+        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -769,12 +769,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python join列表时报错TypeError sequence item 0 expected string</title>
-        <pubTime>2017-08-16T10:31:14.000Z</pubTime>
+        <title>python判断字符串是否是有效日期的两种方法</title>
+        <pubTime>2017-08-22T09:02:20.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -1045,23 +1045,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python环境变量及模块搜索路径</title>
-        <pubTime>2015-11-13T03:03:10.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1081,16 +1064,14 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
+    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Python实用脚本清单</title>
-        <pubTime>2016-03-06T09:59:56.000Z</pubTime>
+        <title>Python环境变量及模块搜索路径</title>
+        <pubTime>2015-11-13T03:03:10.000Z</pubTime>
         
         <tag>Python</tag>
-         
-        <tag>Script</tag>
          
          
            
@@ -1119,16 +1100,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Linux下C语言的几道经典面试题</title>
-        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
+        <title>Python实用脚本清单</title>
+        <pubTime>2016-03-06T09:59:56.000Z</pubTime>
         
-        <tag>Linux</tag>
+        <tag>Python</tag>
          
-        <tag>C</tag>
+        <tag>Script</tag>
          
          
            
@@ -1138,16 +1119,18 @@
 
     
   <url>
-    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>MySQL之一道关于GROUP BY的经典面试题</title>
-        <pubTime>2016-05-09T01:27:31.000Z</pubTime>
+        <title>Linux下删除文件中空行的几种方法</title>
+        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
         
-        <tag>SQL</tag>
+        <tag>Linux</tag>
          
-        <tag>MySQL</tag>
+        <tag>grep</tag>
+         
+        <tag>sed</tag>
          
          
            
@@ -1195,50 +1178,16 @@
 
     
   <url>
-    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
+    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Ubuntu apt-get时出现Segmentation faults... 0%错误</title>
-        <pubTime>2016-06-27T03:24:41.000Z</pubTime>
+        <title>MySQL之一道关于GROUP BY的经典面试题</title>
+        <pubTime>2016-05-09T01:27:31.000Z</pubTime>
         
-        <tag>Linux</tag>
+        <tag>SQL</tag>
          
-        <tag>ubuntu</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>两张图搞清composer install与composer update区别</title>
-        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
-        
-        <tag>Composer</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>npm install时的--save选项有什么用</title>
-        <pubTime>2016-09-07T07:49:43.000Z</pubTime>
-        
-        <tag>NPM</tag>
+        <tag>MySQL</tag>
          
          
            
@@ -1265,27 +1214,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Linux下删除文件中空行的几种方法</title>
-        <pubTime>2015-04-29T11:48:19.000Z</pubTime>
-        
-        <tag>Linux</tag>
-         
-        <tag>grep</tag>
-         
-        <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1303,14 +1231,56 @@
 
     
   <url>
-    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
+    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>Nginx Rewrite简明指南</title>
-        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
+        <title>Ubuntu apt-get时出现Segmentation faults... 0%错误</title>
+        <pubTime>2016-06-27T03:24:41.000Z</pubTime>
         
-        <tag>Nginx</tag>
+        <tag>Linux</tag>
+         
+        <tag>ubuntu</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>HTML/CSS/JS常见问题清单</title>
+        <pubTime>2015-10-16T07:31:58.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+        <tag>CSS</tag>
+         
+        <tag>JS</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Linux下C语言的几道经典面试题</title>
+        <pubTime>2015-05-24T02:20:37.000Z</pubTime>
+        
+        <tag>C</tag>
+         
+        <tag>Linux</tag>
          
          
            
@@ -1337,18 +1307,48 @@
 
     
   <url>
-    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
         <display>
-        <title>HTML/CSS/JS常见问题清单</title>
-        <pubTime>2015-10-16T07:31:58.000Z</pubTime>
+        <title>npm install时的--save选项有什么用</title>
+        <pubTime>2016-09-07T07:49:43.000Z</pubTime>
         
-        <tag>HTML</tag>
+        <tag>NPM</tag>
          
-        <tag>CSS</tag>
          
-        <tag>JS</tag>
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>两张图搞清composer install与composer update区别</title>
+        <pubTime>2016-08-16T10:50:04.000Z</pubTime>
+        
+        <tag>Composer</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx Rewrite简明指南</title>
+        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
+        
+        <tag>Nginx</tag>
          
          
            

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python-get-fibonacci-n-number.html</loc>
+    
+    <lastmod>2017-09-12T04:09:21.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/removing-duplicates-from-a-sequence-while-maintaining-order.html</loc>
     
     <lastmod>2017-09-11T16:06:01.000Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>http://www.revotu.com/python3-random-module-most-common-methods.html</loc>
     
     <lastmod>2017-09-10T04:45:17.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-get-fibonacci-n-number.html</loc>
-    
-    <lastmod>2017-09-09T15:19:50.000Z</lastmod>
     
   </url>
   
@@ -289,7 +289,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -317,7 +317,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/validate-a-date-string-format-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -429,13 +429,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
@@ -443,7 +436,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
+    <loc>http://www.revotu.com/python-enviroment-variables-and-module-search-paths.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -457,14 +450,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -485,21 +478,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
+    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -513,13 +492,6 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
@@ -527,7 +499,21 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
+    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -541,7 +527,21 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/difference-between-composer-install-and-composer-update.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
