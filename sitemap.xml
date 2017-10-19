@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.revotu.com/python-sorted-dict-list-by-common-keys.html</loc>
+    
+    <lastmod>2017-10-19T03:53:02.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/python-reverse-iterator-over-sequence.html</loc>
     
     <lastmod>2017-10-10T02:18:11.000Z</lastmod>
@@ -303,7 +310,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
+    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -324,7 +331,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-join-list-type-error.html</loc>
+    <loc>http://www.revotu.com/converting-json-to-html-in-python.html</loc>
     
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     
@@ -394,14 +401,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
-    
-    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
+    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -415,7 +415,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html</loc>
+    <loc>http://www.revotu.com/python-parses-json-note-the-string-single-and-double-quotation-marks.html</loc>
+    
+    <lastmod>2017-07-21T12:54:48.741Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/remove-all-html-attributes-with-beautifulsoup.html</loc>
     
     <lastmod>2017-07-21T12:54:48.741Z</lastmod>
     
@@ -450,14 +457,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
+    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -478,14 +485,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/mysql-groupby-classic-interview-question.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
+    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -499,7 +499,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/apt-get-command-ends-with-segmentation-fault.html</loc>
+    <loc>http://www.revotu.com/what-is-the-save-option-for-npm-install.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -513,14 +513,21 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
+    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
+    <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -534,14 +541,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/most-common-learn-python-questions.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
+    <loc>http://www.revotu.com/html-css-js-common-questions-list.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -555,21 +555,14 @@
   </url>
   
   <url>
+    <loc>http://www.revotu.com/python-string-operation-related-issues.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.revotu.com/mysql-common-functions-guide.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
-    
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -583,7 +576,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
+    <loc>http://www.revotu.com/xpath-concise-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/solve-unicode-erros-using-xpath-in-scrapy.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -597,14 +597,14 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
+    <loc>http://www.revotu.com/scrapy-reptile-faq.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
+    <loc>http://www.revotu.com/how-to-get-current-time-in-python.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -618,7 +618,7 @@
   </url>
   
   <url>
-    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
+    <loc>http://www.revotu.com/python-handles-windows-file-path-solutions.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     
@@ -633,6 +633,13 @@
   
   <url>
     <loc>http://www.revotu.com/linux-common-tasks-guide.html</loc>
+    
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.revotu.com/python-practical-script-list.html</loc>
     
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     

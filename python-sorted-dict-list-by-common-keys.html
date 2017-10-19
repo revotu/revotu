@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python," />
+  <meta name="keywords" content="字典," />
 
 
 
@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="1、修改文件内容并写回原文件1234567with open(filename) as f:    file_str = f.read()# do stuff with file_strwith open(filename, &apos;w&apos;) as f:    f.write(file_str)">
-<meta name="keywords" content="Python">
+<meta name="description" content="问题描述我们有一个字典列表，想根据一个或多个字典中的值来对列表排序。例如，有如下字典列表，根据字典中的x，由大到小排序这个列表：1l = [&amp;#123;&apos;x&apos;:1, &apos;y&apos;:2&amp;#125;, &amp;#123;&apos;x&apos;:2, &apos;y&apos;:3&amp;#125;, &amp;#123;&apos;x&apos;:3, &apos;y&apos;:4&amp;#125;]">
+<meta name="keywords" content="字典">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python文件操作相关问题">
-<meta property="og:url" content="http://www.revotu.com/python-file-operation-related-issues.html">
+<meta property="og:title" content="Python通过公共键对字典列表进行排序">
+<meta property="og:url" content="http://www.revotu.com/python-sorted-dict-list-by-common-keys.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="1、修改文件内容并写回原文件1234567with open(filename) as f:    file_str = f.read()# do stuff with file_strwith open(filename, &apos;w&apos;) as f:    f.write(file_str)">
-<meta property="og:updated_time" content="2017-07-08T03:12:38.600Z">
+<meta property="og:description" content="问题描述我们有一个字典列表，想根据一个或多个字典中的值来对列表排序。例如，有如下字典列表，根据字典中的x，由大到小排序这个列表：1l = [&amp;#123;&apos;x&apos;:1, &apos;y&apos;:2&amp;#125;, &amp;#123;&apos;x&apos;:2, &apos;y&apos;:3&amp;#125;, &amp;#123;&apos;x&apos;:3, &apos;y&apos;:4&amp;#125;]">
+<meta property="og:updated_time" content="2017-10-19T03:53:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python文件操作相关问题">
-<meta name="twitter:description" content="1、修改文件内容并写回原文件1234567with open(filename) as f:    file_str = f.read()# do stuff with file_strwith open(filename, &apos;w&apos;) as f:    f.write(file_str)">
+<meta name="twitter:title" content="Python通过公共键对字典列表进行排序">
+<meta name="twitter:description" content="问题描述我们有一个字典列表，想根据一个或多个字典中的值来对列表排序。例如，有如下字典列表，根据字典中的x，由大到小排序这个列表：1l = [&amp;#123;&apos;x&apos;:1, &apos;y&apos;:2&amp;#125;, &amp;#123;&apos;x&apos;:2, &apos;y&apos;:3&amp;#125;, &amp;#123;&apos;x&apos;:3, &apos;y&apos;:4&amp;#125;]">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/python-file-operation-related-issues.html"/>
+  <link rel="canonical" href="http://www.revotu.com/python-sorted-dict-list-by-common-keys.html"/>
 
 
 
 
 
-  <title>Python文件操作相关问题 | 大师兄</title>
+  <title>Python通过公共键对字典列表进行排序 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-file-operation-related-issues.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-sorted-dict-list-by-common-keys.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python文件操作相关问题</h1>
+          <h1 class="post-title" itemprop="name headline">Python通过公共键对字典列表进行排序</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-05T11:57:09+08:00">
-                2017-02-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-19T11:51:53+08:00">
+                2017-10-19
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/python-file-operation-related-issues.html" class="leancloud_visitors" data-flag-title="Python文件操作相关问题">
+             <span id="/python-sorted-dict-list-by-common-keys.html" class="leancloud_visitors" data-flag-title="Python通过公共键对字典列表进行排序">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,27 +379,14 @@
       
 
       
-        <h2 id="1、修改文件内容并写回原文件"><a href="#1、修改文件内容并写回原文件" class="headerlink" title="1、修改文件内容并写回原文件"></a>1、修改文件内容并写回原文件</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> open(filename) <span class="keyword">as</span> f:</div><div class="line">    file_str = f.read()</div><div class="line"></div><div class="line"><span class="comment"># do stuff with file_str</span></div><div class="line"></div><div class="line"><span class="keyword">with</span> open(filename, <span class="string">'w'</span>) <span class="keyword">as</span> f:</div><div class="line">    f.write(file_str)</div></pre></td></tr></table></figure>
+        <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>我们有一个字典列表，想根据一个或多个字典中的值来对列表排序。<br>例如，有如下字典列表，根据字典中的x，由大到小排序这个列表：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">l = [&#123;<span class="string">'x'</span>:<span class="number">1</span>, <span class="string">'y'</span>:<span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">2</span>, <span class="string">'y'</span>:<span class="number">3</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">3</span>, <span class="string">'y'</span>:<span class="number">4</span>&#125;]</div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h2 id="2、重命名-移动-剪切-文件或文件夹"><a href="#2、重命名-移动-剪切-文件或文件夹" class="headerlink" title="2、重命名(移动/剪切)文件或文件夹"></a>2、重命名(移动/剪切)文件或文件夹</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">os.rename(src, dst)</div><div class="line">shutil.move(src, dst)</div></pre></td></tr></table></figure>
-<h2 id="3、删除文件或文件夹"><a href="#3、删除文件或文件夹" class="headerlink" title="3、删除文件或文件夹"></a>3、删除文件或文件夹</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">os.remove()       <span class="comment"># will remove a file</span></div><div class="line">os.rmdir()        <span class="comment"># will remove an empty directory</span></div><div class="line">shutil.rmtree()   <span class="comment"># will delete a directory and all its contents</span></div></pre></td></tr></table></figure>
-<h2 id="4、检查文件或文件夹是否存在"><a href="#4、检查文件或文件夹是否存在" class="headerlink" title="4、检查文件或文件夹是否存在"></a>4、检查文件或文件夹是否存在</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">os.path.isfile(path) # check file exists</div><div class="line">os.path.isdir(path)  # check directory exsits</div><div class="line">os.path.exists(path) # check file or directory exists</div></pre></td></tr></table></figure>
-<h2 id="5、如果文件夹不存在则创建"><a href="#5、如果文件夹不存在则创建" class="headerlink" title="5、如果文件夹不存在则创建"></a>5、如果文件夹不存在则创建</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(directory):</div><div class="line">    os.makedirs(directory)</div></pre></td></tr></table></figure>
-<h2 id="6、检测文件夹为空则删除"><a href="#6、检测文件夹为空则删除" class="headerlink" title="6、检测文件夹为空则删除"></a>6、检测文件夹为空则删除</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">    os.rmdir(directory)</div><div class="line"><span class="keyword">except</span> OSError:</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure>
-<h2 id="7、从路径中提取文件名和目录名"><a href="#7、从路径中提取文件名和目录名" class="headerlink" title="7、从路径中提取文件名和目录名"></a>7、从路径中提取文件名和目录名</h2><p><code>os.path.dirname(path)</code>从path中提取目录，<code>os.path.basename(path)</code>从path中提取文件名。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>path = <span class="string">'/usr/bin/python'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>os.path.dirname(path)</div><div class="line"><span class="string">'/usr/bin'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>os.path.basename(path)</div><div class="line"><span class="string">'python'</span></div></pre></td></tr></table></figure></p>
-<p><code>os.path.split(path)</code>分割路径成目录(<code>os.path.dirname(path)</code>)和文件(<code>os.path.basename(path)</code>)。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>path = <span class="string">'/usr/bin/python'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>head, tail = os.path.split(path)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>head</div><div class="line"><span class="string">'/usr/bin'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>tail</div><div class="line"><span class="string">'python'</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
-<h2 id="8、复制文件"><a href="#8、复制文件" class="headerlink" title="8、复制文件"></a>8、复制文件</h2><blockquote>
-<p><code>shutil.copyfile(src, dst)</code> : Copy the contents (no metadata) of the file named src to a file named dst and return dst.</p>
-<p><code>shutil.copy(src, dst)</code> : Copies the file src to the file or directory dst.</p>
-<p><code>shutil.copy2(src, dst)</code> : Identical to copy() except that copy2() also attempts to preserve all file metadata.</p>
-<p><code>shutil.copyfileobj(fsrc, fdst)</code> : Copy the contents of the file-like object fsrc to the file-like object fdst.</p>
-</blockquote>
-<h2 id="9、统计某一文件夹下文件数量"><a href="#9、统计某一文件夹下文件数量" class="headerlink" title="9、统计某一文件夹下文件数量"></a>9、统计某一文件夹下文件数量</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> os</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>DIR = <span class="string">'/tmp'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">print</span> len([name <span class="keyword">for</span> name <span class="keyword">in</span> os.listdir(DIR) <span class="keyword">if</span> os.path.isfile(os.path.join(DIR, name))])</div></pre></td></tr></table></figure>
-<p>如统计文件夹数量，用<code>os.path.isdir(path)</code>做判断语句。</p>
-<h2 id="10、递归查找文件"><a href="#10、递归查找文件" class="headerlink" title="10、递归查找文件"></a>10、递归查找文件</h2><p><strong>Python 3.5+</strong><br>从Python 3.5版本起，<code>glob</code>模块支持”**”语法，此时必须设置<code>recursive</code>标志。如果匹配的路径是list，则用<code>glob.glob</code>代替<code>glob.iglob</code>。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> glob</div><div class="line"></div><div class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> glob.iglob(<span class="string">'src/**/*.html'</span>, recursive=<span class="keyword">True</span>)</div><div class="line">    print(filename)</div></pre></td></tr></table></figure></p>
-<p><strong>Python 2.2 to 3.4</strong><br>对于老版本从Python 2.2以上的，用<code>os.walk</code>递归遍历目标文件夹，然后用<code>fnmatch.filter</code>匹配简单的通配符表达式。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> fnmatch</div><div class="line"><span class="keyword">import</span> os</div><div class="line"></div><div class="line"><span class="keyword">for</span> root, dirnames, filenames <span class="keyword">in</span> os.walk(<span class="string">'src'</span>):</div><div class="line">    <span class="keyword">for</span> filename <span class="keyword">in</span> fnmatch.filter(filenames, <span class="string">'*.py'</span>):</div><div class="line">        print(os.path.join(root, filename))</div></pre></td></tr></table></figure></p>
-<h2 id="11、按行读取文件内容到list并去除换行"><a href="#11、按行读取文件内容到list并去除换行" class="headerlink" title="11、按行读取文件内容到list并去除换行"></a>11、按行读取文件内容到list并去除换行</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> open(path) <span class="keyword">as</span> f:</div><div class="line">    lines = f.read().splitlines()</div></pre></td></tr></table></figure>
-<h2 id="12、检查文件夹下是否有文件"><a href="#12、检查文件夹下是否有文件" class="headerlink" title="12、检查文件夹下是否有文件"></a>12、检查文件夹下是否有文件</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">for</span> root, dirnames, filenames <span class="keyword">in</span> os.walk(<span class="string">'.'</span>):</div><div class="line">    <span class="keyword">if</span> filenames:</div><div class="line">        print(root,<span class="string">'has files'</span>)</div><div class="line">    <span class="keyword">if</span> <span class="keyword">not</span> filenames:</div><div class="line">        print(root,<span class="string">'is empty'</span>)</div></pre></td></tr></table></figure>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>排序用sorted内置函数，关键字key参数用lambda表达式取出字典中x值作为排序依据，关键字reverse参数设置为True用来由大到小降序排序。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>l = [&#123;<span class="string">'x'</span>:<span class="number">1</span>, <span class="string">'y'</span>:<span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">2</span>, <span class="string">'y'</span>:<span class="number">3</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">3</span>, <span class="string">'y'</span>:<span class="number">4</span>&#125;]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l1 = sorted(l, key=<span class="keyword">lambda</span> d:d[<span class="string">'x'</span>], reverse=<span class="keyword">True</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l1</div><div class="line">[&#123;<span class="string">'y'</span>: <span class="number">4</span>, <span class="string">'x'</span>: <span class="number">3</span>&#125;, &#123;<span class="string">'y'</span>: <span class="number">3</span>, <span class="string">'x'</span>: <span class="number">2</span>&#125;, &#123;<span class="string">'y'</span>: <span class="number">2</span>, <span class="string">'x'</span>: <span class="number">1</span>&#125;]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>也可以用operator模块中的itemgetter函数取出字典中某个键的值，作为排序依据。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">from</span> operator <span class="keyword">import</span> itemgetter</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l = [&#123;<span class="string">'x'</span>:<span class="number">1</span>, <span class="string">'y'</span>:<span class="number">2</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">2</span>, <span class="string">'y'</span>:<span class="number">3</span>&#125;, &#123;<span class="string">'x'</span>:<span class="number">3</span>, <span class="string">'y'</span>:<span class="number">4</span>&#125;]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l2 = sorted(l, key=itemgetter(<span class="string">'x'</span>), reverse=<span class="keyword">True</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>l2</div><div class="line">[&#123;<span class="string">'y'</span>: <span class="number">4</span>, <span class="string">'x'</span>: <span class="number">3</span>&#125;, &#123;<span class="string">'y'</span>: <span class="number">3</span>, <span class="string">'x'</span>: <span class="number">2</span>&#125;, &#123;<span class="string">'y'</span>: <span class="number">2</span>, <span class="string">'x'</span>: <span class="number">1</span>&#125;]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><p>函数operator.itemgetter()接受的参数可以作为查询的标记，它可以是字典的键名称、用数字表示的列表元素或是任何可以传给对象的<code>__getitem__()</code>方法的值。如果传多个标记给itemgetter()，那么它产生的可调用对象将返回一个包含所有元素在内的元组，然后sorted()将根据对元组的排序结果来排列输出结果。如果想同时针对多个字段做排序（比如x和y），那么这是非常有用的。<br>有时候会用lambda表达式来取代itemgetter()的功能。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">l_by_x = sorted(l, key=<span class="keyword">lambda</span> d:d[<span class="string">'x'</span>])</div><div class="line">l_by_xy = sorted(l, key=<span class="keyword">lambda</span> d:(d[<span class="string">'x'</span>], d[<span class="string">'y'</span>]))</div></pre></td></tr></table></figure></p>
+<p>这种解决方案通常也能正常工作，但是用itemgetter()通常会运行得更快一些。因此如果要考虑性能问题的话，应该使用itemgetter()。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">l_by_x = sorted(l, key=itemgetter(<span class="string">'x'</span>))</div><div class="line">l_by_xy = sorted(l, key=itemgetter(<span class="string">'x'</span>, <span class="string">'y'</span>))</div></pre></td></tr></table></figure></p>
+<p>最后不要忘了本文中展示的技术同样适用于min()和max()函数。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>min(l, key=itemgetter(<span class="string">'x'</span>))</div><div class="line">&#123;<span class="string">'y'</span>: <span class="number">2</span>, <span class="string">'x'</span>: <span class="number">1</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>max(l, key=itemgetter(<span class="string">'x'</span>, <span class="string">'y'</span>))</div><div class="line">&#123;<span class="string">'y'</span>: <span class="number">4</span>, <span class="string">'x'</span>: <span class="number">3</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>max(l, key=itemgetter(<span class="string">'x'</span>))</div><div class="line">&#123;<span class="string">'y'</span>: <span class="number">4</span>, <span class="string">'x'</span>: <span class="number">3</span>&#125;</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -433,7 +420,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" rel="tag"># Python</a>
+            <a href="/tags/字典/" rel="tag"># 字典</a>
           
         </div>
       
@@ -446,8 +433,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-advanced-guide.html" rel="next" title="Python进阶指南">
-                <i class="fa fa-chevron-left"></i> Python进阶指南
+              <a href="/python-reverse-iterator-over-sequence.html" rel="next" title="Python反序迭代一个序列(字符串、元组、列表等)">
+                <i class="fa fa-chevron-left"></i> Python反序迭代一个序列(字符串、元组、列表等)
               </a>
             
           </div>
@@ -455,10 +442,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-parses-json-note-the-string-single-and-double-quotation-marks.html" rel="prev" title="Python解析Json时注意字符串单双引号问题">
-                Python解析Json时注意字符串单双引号问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -601,7 +584,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、修改文件内容并写回原文件"><span class="nav-number">1.</span> <span class="nav-text">1、修改文件内容并写回原文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、重命名-移动-剪切-文件或文件夹"><span class="nav-number">2.</span> <span class="nav-text">2、重命名(移动/剪切)文件或文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、删除文件或文件夹"><span class="nav-number">3.</span> <span class="nav-text">3、删除文件或文件夹</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、检查文件或文件夹是否存在"><span class="nav-number">4.</span> <span class="nav-text">4、检查文件或文件夹是否存在</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、如果文件夹不存在则创建"><span class="nav-number">5.</span> <span class="nav-text">5、如果文件夹不存在则创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、检测文件夹为空则删除"><span class="nav-number">6.</span> <span class="nav-text">6、检测文件夹为空则删除</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7、从路径中提取文件名和目录名"><span class="nav-number">7.</span> <span class="nav-text">7、从路径中提取文件名和目录名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#8、复制文件"><span class="nav-number">8.</span> <span class="nav-text">8、复制文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#9、统计某一文件夹下文件数量"><span class="nav-number">9.</span> <span class="nav-text">9、统计某一文件夹下文件数量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10、递归查找文件"><span class="nav-number">10.</span> <span class="nav-text">10、递归查找文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11、按行读取文件内容到list并去除换行"><span class="nav-number">11.</span> <span class="nav-text">11、按行读取文件内容到list并去除换行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12、检查文件夹下是否有文件"><span class="nav-number">12.</span> <span class="nav-text">12、检查文件夹下是否有文件</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#问题描述"><span class="nav-number">1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#讨论"><span class="nav-number">3.</span> <span class="nav-text">讨论</span></a></li></ol></div>
             
 
           </div>
