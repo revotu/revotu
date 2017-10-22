@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="条件表达式条件语句通常用于在两个值之间进行二选一，例如：12345x, y = 50, 25if x &amp;lt; y:    small = xelse:    small = y 当然数值比较取最小值应该用min函数，此处只作为讲解例子，我们可以用条件表达式化简这个语句：12x, y = 50, 25small = x if x &amp;lt; y else y">
+<meta name="description" content="Python中字符串分割的常用方法是直接调用字符串的str.split方法，但是其只能指定一种分隔符，如果想指定多个分隔符拆分字符串需要用到re.split方法（正则表达式的split方法）。">
 <meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python进阶指南">
-<meta property="og:url" content="http://www.revotu.com/python-advanced-guide.html">
+<meta property="og:title" content="Python字符串分割方法总结">
+<meta property="og:url" content="http://www.revotu.com/python-split-string-methods.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="条件表达式条件语句通常用于在两个值之间进行二选一，例如：12345x, y = 50, 25if x &amp;lt; y:    small = xelse:    small = y 当然数值比较取最小值应该用min函数，此处只作为讲解例子，我们可以用条件表达式化简这个语句：12x, y = 50, 25small = x if x &amp;lt; y else y">
-<meta property="og:updated_time" content="2017-07-29T02:35:29.203Z">
+<meta property="og:description" content="Python中字符串分割的常用方法是直接调用字符串的str.split方法，但是其只能指定一种分隔符，如果想指定多个分隔符拆分字符串需要用到re.split方法（正则表达式的split方法）。">
+<meta property="og:updated_time" content="2017-10-22T14:35:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python进阶指南">
-<meta name="twitter:description" content="条件表达式条件语句通常用于在两个值之间进行二选一，例如：12345x, y = 50, 25if x &amp;lt; y:    small = xelse:    small = y 当然数值比较取最小值应该用min函数，此处只作为讲解例子，我们可以用条件表达式化简这个语句：12x, y = 50, 25small = x if x &amp;lt; y else y">
+<meta name="twitter:title" content="Python字符串分割方法总结">
+<meta name="twitter:description" content="Python中字符串分割的常用方法是直接调用字符串的str.split方法，但是其只能指定一种分隔符，如果想指定多个分隔符拆分字符串需要用到re.split方法（正则表达式的split方法）。">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/python-advanced-guide.html"/>
+  <link rel="canonical" href="http://www.revotu.com/python-split-string-methods.html"/>
 
 
 
 
 
-  <title>Python进阶指南 | 大师兄</title>
+  <title>Python字符串分割方法总结 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-advanced-guide.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-split-string-methods.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python进阶指南</h1>
+          <h1 class="post-title" itemprop="name headline">Python字符串分割方法总结</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-27T11:46:34+08:00">
-                2017-01-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-22T21:49:35+08:00">
+                2017-10-22
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/python-advanced-guide.html" class="leancloud_visitors" data-flag-title="Python进阶指南">
+             <span id="/python-split-string-methods.html" class="leancloud_visitors" data-flag-title="Python字符串分割方法总结">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,31 +379,20 @@
       
 
       
-        <h2 id="条件表达式"><a href="#条件表达式" class="headerlink" title="条件表达式"></a>条件表达式</h2><p>条件语句通常用于在两个值之间进行二选一，例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">x, y = <span class="number">50</span>, <span class="number">25</span></div><div class="line"><span class="keyword">if</span> x &lt; y:</div><div class="line">    small = x</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    small = y</div></pre></td></tr></table></figure></p>
-<p>当然数值比较取最小值应该用<code>min</code>函数，此处只作为讲解例子，我们可以用<strong>条件表达式</strong>化简这个语句：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">x, y = <span class="number">50</span>, <span class="number">25</span></div><div class="line">small = x <span class="keyword">if</span> x &lt; y <span class="keyword">else</span> y</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>条件表达式语法如下：</p>
-<blockquote>
-<p>[on_true] if [expression] else [on_false]<br>如果[expression]为True，则表达式的值为[on_true]，否则为[on_false]。</p>
-</blockquote>
-<p>有时候也可以使用条件表达式改写递归函数。例如，下面是阶乘函数的递归版本：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">factorial</span><span class="params">(n)</span>:</span></div><div class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:</div><div class="line">        <span class="keyword">return</span> <span class="number">1</span></div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">return</span> n * factorial(n<span class="number">-1</span>)</div></pre></td></tr></table></figure></p>
-<p>我们可以像这样重写：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">factorial</span><span class="params">(n)</span>:</span></div><div class="line">    <span class="keyword">return</span> <span class="number">1</span> <span class="keyword">if</span> n == <span class="number">0</span> <span class="keyword">else</span> n * factorial(n<span class="number">-1</span>)</div></pre></td></tr></table></figure></p>
-<p>一般来说，如果条件语句的两个分支中均为简单的表达式，不是被返回就是被赋值给相同的变量，那么此时可以考虑用条件表达式。</p>
-<h2 id="推导式"><a href="#推导式" class="headerlink" title="推导式"></a>推导式</h2><h3 id="列表推导式-list-comprehension"><a href="#列表推导式-list-comprehension" class="headerlink" title="列表推导式(list comprehension)"></a>列表推导式(list comprehension)</h3><p>列表推导式(list comprehension)可以使用非常简洁的方式来快速生成满足特定需求的列表，代码具有非常强的可读性，常用来转换和过滤数据。</p>
-<h4 id="语法如下："><a href="#语法如下：" class="headerlink" title="语法如下："></a>语法如下：</h4><blockquote>
-<p>[表达式 for 变量 in 列表 if 条件]</p>
-</blockquote>
-<h4 id="转换数据"><a href="#转换数据" class="headerlink" title="转换数据"></a>转换数据</h4><p>比如创建一个平方数列表：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>squares = []</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>):</div><div class="line"><span class="meta">... </span>    squares.append(x**<span class="number">2</span>)</div><div class="line">...</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>squares</div><div class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>, <span class="number">16</span>, <span class="number">25</span>, <span class="number">36</span>, <span class="number">49</span>, <span class="number">64</span>, <span class="number">81</span>]</div></pre></td></tr></table></figure></p>
-<p>用列表推导式：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">squares = [x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>)]</div></pre></td></tr></table></figure></p>
-<p>当然，这也等价于<code>squares = map(lambda x: x**2, range(10))</code>，但是列表推导式更清晰可读。</p>
-<h4 id="过滤数据"><a href="#过滤数据" class="headerlink" title="过滤数据"></a>过滤数据</h4><p>比如得到偶数列表：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>[x <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">10</span>) <span class="keyword">if</span> x%<span class="number">2</span> == <span class="number">0</span>]</div><div class="line">[<span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>]</div></pre></td></tr></table></figure></p>
-<h3 id="集合推导式-set-comprehension"><a href="#集合推导式-set-comprehension" class="headerlink" title="集合推导式(set comprehension)"></a>集合推导式(set comprehension)</h3><p>如果列表推导式的结果里有很多重复项的话，可以使用集合推导式，语法就是把列表推导式外面的方括号换为花括号，如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>&#123;x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> [<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]&#125;</div><div class="line">set([<span class="number">1</span>, <span class="number">4</span>, <span class="number">9</span>])</div></pre></td></tr></table></figure></p>
-<h3 id="字典推导式-dict-comprehension"><a href="#字典推导式-dict-comprehension" class="headerlink" title="字典推导式(dict comprehension)"></a>字典推导式(dict comprehension)</h3><p>字典推导式也是用花括号，只不过是<code>key:value</code>的形式。比如下面代码互换字典的key和value：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>d = &#123;<span class="string">"a"</span>:<span class="number">1</span>, <span class="string">"b"</span>:<span class="number">2</span>, <span class="string">"c"</span>:<span class="number">3</span>, <span class="string">"d"</span>:<span class="number">4</span>&#125;</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>&#123;v:k <span class="keyword">for</span> k,v <span class="keyword">in</span> d.items()&#125;</div><div class="line">&#123;<span class="number">1</span>: <span class="string">'a'</span>, <span class="number">2</span>: <span class="string">'b'</span>, <span class="number">3</span>: <span class="string">'c'</span>, <span class="number">4</span>: <span class="string">'d'</span>&#125;</div></pre></td></tr></table></figure></p>
-<h2 id="生成器表达式-generator-expression"><a href="#生成器表达式-generator-expression" class="headerlink" title="生成器表达式(generator expression)"></a>生成器表达式(generator expression)</h2><p>生成器表达式是列表推导式的生成器版本，使用的是圆括号，而不是方括号：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>g = (x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">5</span>))</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>g</div><div class="line">&lt;generator object &lt;genexpr&gt; at <span class="number">0x026258F0</span>&gt;</div></pre></td></tr></table></figure></p>
-<p>结果是一个生成器对象，该对象知道如何遍历一个值序列。但与列表推导式不同的是，它不会一次性计算出所有的值；而是等待求值请求。内建函数<code>next</code>从生成器获取下一个值：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>next(g)</div><div class="line"><span class="number">0</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>next(g)</div><div class="line"><span class="number">1</span></div></pre></td></tr></table></figure></p>
-<p>抵达序列的末尾时，<code>next</code> 会抛出<code>StopIteration</code> 异常。你还可以使用 for 循环遍历这些值：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> val <span class="keyword">in</span> g:</div><div class="line"><span class="meta">... </span>    print(val)</div><div class="line"><span class="number">4</span></div><div class="line"><span class="number">9</span></div><div class="line"><span class="number">16</span></div></pre></td></tr></table></figure></p>
-<p>生成器对象会记录其在序列中的位置，因此 for 循环是从 next 结束的地方开始的。一旦生成器被消耗完，它会抛出 <code>StopException</code>，因此：生成器只能遍历一次 。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>next(g)</div><div class="line">StopIteration</div></pre></td></tr></table></figure></p>
-<p>生成器表达式常与<code>sum</code> 、<code>max</code>和<code>min</code>等函数一起使用，作为函数唯一参数时，可省略两侧括号：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>sum(x**<span class="number">2</span> <span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">5</span>))</div><div class="line"><span class="number">30</span></div></pre></td></tr></table></figure></p>
+        <p>Python中字符串分割的常用方法是直接调用字符串的<code>str.split</code>方法，但是其只能指定一种分隔符，如果想指定多个分隔符拆分字符串需要用到<code>re.split</code>方法（正则表达式的split方法）。<br><a id="more"></a></p>
+<h2 id="str-split"><a href="#str-split" class="headerlink" title="str.split"></a>str.split</h2><p>字符串的split方法函数原型如下，其中sep为指定的分隔符，maxsplit为最大分割次数：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">str.split(sep=<span class="keyword">None</span>, maxsplit=<span class="number">-1</span>)</div></pre></td></tr></table></figure></p>
+<p>默认情况下，不指定分隔符时则以空白字符（空格，回车，制表符等）作为分隔符拆分字符串：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'A B\tC\nD'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s.split()</div><div class="line">[<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>在结果列表中，不会包含空字符串：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'   A B\tC\nD\n\n'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s.split()</div><div class="line">[<span class="string">'A'</span>, <span class="string">'B'</span>, <span class="string">'C'</span>, <span class="string">'D'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>指定分隔符：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'www.google.com'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s.split(<span class="string">'.'</span>)</div><div class="line">[<span class="string">'www'</span>, <span class="string">'google'</span>, <span class="string">'com'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'AA||BB||CC||DD'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s.split(<span class="string">'||'</span>)</div><div class="line">[<span class="string">'AA'</span>, <span class="string">'BB'</span>, <span class="string">'CC'</span>, <span class="string">'DD'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>指定最大分割次数：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'www.google.com'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s.split(<span class="string">'.'</span>, <span class="number">1</span>)</div><div class="line">[<span class="string">'www'</span>, <span class="string">'google.com'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'AA||BB||CC||DD'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s.split(<span class="string">'||'</span>, <span class="number">2</span>)</div><div class="line">[<span class="string">'AA'</span>, <span class="string">'BB'</span>, <span class="string">'CC||DD'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>由此可见，当指定最大分割次数<code>maxsplit</code>时，结果列表长度为<code>maxsplit+1</code>。<br>但是，字符串的split方法只能指定一个分隔符，如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">s = <span class="string">'AAAA,BBBB:CCCC;DDDD'</span></div></pre></td></tr></table></figure></p>
+<p>如果想指定逗号、冒号、分号都做为分隔符，字符串的split方法是做不到的，此时要用正则表达式中的split方法。</p>
+<h2 id="re-split"><a href="#re-split" class="headerlink" title="re.split"></a>re.split</h2><p>正则表达式的split方法原型如下，其中pattern为指定的分隔正则表达式，string为要分割的字符串，maxsplit为最大分割次数，flags为正则表达式用到的通用标志：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">re.split(pattern, string, maxsplit=<span class="number">0</span>, flags=<span class="number">0</span>)</div></pre></td></tr></table></figure></p>
+<p>参考示例：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'AAAA,BBBB:CCCC;DDDD'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'[,:;]'</span>, s)</div><div class="line">[<span class="string">'AAAA'</span>, <span class="string">'BBBB'</span>, <span class="string">'CCCC'</span>, <span class="string">'DDDD'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>如果在正则表达式里使用了捕获组也就是括号，则结果列表中也会包含捕获的内容：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'AAAA,BBBB:CCCC;DDDD'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'([,:;])'</span>, s)</div><div class="line">[<span class="string">'AAAA'</span>, <span class="string">','</span>, <span class="string">'BBBB'</span>, <span class="string">':'</span>, <span class="string">'CCCC'</span>, <span class="string">';'</span>, <span class="string">'DDDD'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>如果不想在结果中看到分隔符，但仍然想用括号对正则表达式模式进行分组，可以使用非捕获组，以<code>(?:...)</code>的形式指定，示例如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'AAAA,BBBB:CCCC;DDDD'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'(?:[,:;])'</span>, s)</div><div class="line">[<span class="string">'AAAA'</span>, <span class="string">'BBBB'</span>, <span class="string">'CCCC'</span>, <span class="string">'DDDD'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>指定最大分割次数：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>s = <span class="string">'AAAA,BBBB:CCCC;DDDD'</span></div><div class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'[,:;]'</span>, s, <span class="number">1</span>)</div><div class="line">[<span class="string">'AAAA'</span>, <span class="string">'BBBB:CCCC;DDDD'</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'[,:;]'</span>, s, <span class="number">2</span>)</div><div class="line">[<span class="string">'AAAA'</span>, <span class="string">'BBBB'</span>, <span class="string">'CCCC;DDDD'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>由此可见，当指定最大分割次数<code>maxsplit</code>时，结果列表长度为<code>maxsplit+1</code>。<br>指定正则表达式中的通用标志flags：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">'[a-f]+'</span>, <span class="string">'0a3B9'</span>, flags=re.IGNORECASE)</div><div class="line">[<span class="string">'0'</span>, <span class="string">'3'</span>, <span class="string">'9'</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -451,8 +440,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/most-common-learn-python-questions.html" rel="next" title="Python学习之路上的几个经典问题">
-                <i class="fa fa-chevron-left"></i> Python学习之路上的几个经典问题
+              <a href="/python-sorted-dict-list-by-common-keys.html" rel="next" title="Python通过公共键对字典列表进行排序">
+                <i class="fa fa-chevron-left"></i> Python通过公共键对字典列表进行排序
               </a>
             
           </div>
@@ -460,10 +449,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/python-file-operation-related-issues.html" rel="prev" title="Python文件操作相关问题">
-                Python文件操作相关问题 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -606,7 +591,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#条件表达式"><span class="nav-number">1.</span> <span class="nav-text">条件表达式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#推导式"><span class="nav-number">2.</span> <span class="nav-text">推导式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#列表推导式-list-comprehension"><span class="nav-number">2.1.</span> <span class="nav-text">列表推导式(list comprehension)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语法如下："><span class="nav-number">2.1.1.</span> <span class="nav-text">语法如下：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#转换数据"><span class="nav-number">2.1.2.</span> <span class="nav-text">转换数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#过滤数据"><span class="nav-number">2.1.3.</span> <span class="nav-text">过滤数据</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#集合推导式-set-comprehension"><span class="nav-number">2.2.</span> <span class="nav-text">集合推导式(set comprehension)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字典推导式-dict-comprehension"><span class="nav-number">2.3.</span> <span class="nav-text">字典推导式(dict comprehension)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成器表达式-generator-expression"><span class="nav-number">3.</span> <span class="nav-text">生成器表达式(generator expression)</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#str-split"><span class="nav-number">1.</span> <span class="nav-text">str.split</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#re-split"><span class="nav-number">2.</span> <span class="nav-text">re.split</span></a></li></ol></div>
             
 
           </div>

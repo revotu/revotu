@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/python-split-string-methods.html</loc>
+    <lastmod>2017-10-22T14:35:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>Python字符串分割方法总结</title>
+        <pubTime>2017-10-22T13:49:35.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/python-sorted-dict-list-by-common-keys.html</loc>
     <lastmod>2017-10-19T03:53:02.000Z</lastmod>
     <data>
@@ -769,12 +786,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
+    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python开发环境复制迁移之requirements files</title>
-        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
+        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
+        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -820,12 +837,12 @@
 
     
   <url>
-    <loc>http://www.revotu.com/how-to-flush-output-of-python-print.html</loc>
+    <loc>http://www.revotu.com/copy-python-environment-with-requirements-files.html</loc>
     <lastmod>2017-08-25T10:06:35.787Z</lastmod>
     <data>
         <display>
-        <title>Python中print如何刷新缓冲立刻打印输出结果</title>
-        <pubTime>2017-08-24T03:36:48.000Z</pubTime>
+        <title>Python开发环境复制迁移之requirements files</title>
+        <pubTime>2017-08-25T09:22:35.000Z</pubTime>
         
         <tag>Python</tag>
          
@@ -1096,25 +1113,6 @@
 
     
   <url>
-    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Python Selenium WebDriver简明指南</title>
-        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
-        
-        <tag>Python</tag>
-         
-        <tag>WebDriver</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://www.revotu.com/advanced-c-interview-questions-and-answers.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1278,6 +1276,23 @@
 
     
   <url>
+    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Nginx Rewrite简明指南</title>
+        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
+        
+        <tag>Nginx</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.revotu.com/remove-newlines-from-a-file.html</loc>
     <lastmod>2017-07-08T03:12:38.600Z</lastmod>
     <data>
@@ -1290,23 +1305,6 @@
         <tag>grep</tag>
          
         <tag>sed</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.revotu.com/nginx-rewrite-concise-guide.html</loc>
-    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
-    <data>
-        <display>
-        <title>Nginx Rewrite简明指南</title>
-        <pubTime>2015-08-05T07:58:34.000Z</pubTime>
-        
-        <tag>Nginx</tag>
          
          
            
@@ -1597,6 +1595,25 @@
         <tag>Python</tag>
          
         <tag>Script</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.revotu.com/python-selenium-webdriver-concise-guide.html</loc>
+    <lastmod>2017-07-08T03:12:38.600Z</lastmod>
+    <data>
+        <display>
+        <title>Python Selenium WebDriver简明指南</title>
+        <pubTime>2016-04-09T10:59:37.000Z</pubTime>
+        
+        <tag>Python</tag>
+         
+        <tag>WebDriver</tag>
          
          
            
