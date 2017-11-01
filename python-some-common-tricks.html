@@ -81,7 +81,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python,Selenium," />
+  <meta name="keywords" content="Python," />
 
 
 
@@ -97,17 +97,17 @@
 
 
 
-<meta name="description" content="设置公共的proxy代理方式由于公共的proxy不设有用户名密码，则可以直接使用chrome options的--proxy-server=ip:port参数启动chrome。123456789101112import timefrom selenium import webdriverPROXY = &apos;219.153.76.77:8080&apos;chrome_options = webdriver.C">
-<meta name="keywords" content="Python,Selenium">
+<meta name="description" content="startswith()和endswith()参数可以是元组当检测字符串开头或结尾时，如果有多个检测值，可以用元组作为startswith()和endswith()参数：12345678910111213# badif image.endswith(&apos;.jpg&apos;) or image.endswith(&apos;.png&apos;) or image.endswith(&apos;.gif&apos;):    pass# goodi">
+<meta name="keywords" content="Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Selenium Chrome 设置带用户名密码的proxy代理">
-<meta property="og:url" content="http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html">
+<meta property="og:title" content="Python一些不为人知的基础技巧">
+<meta property="og:url" content="http://www.revotu.com/python-some-common-tricks.html">
 <meta property="og:site_name" content="大师兄">
-<meta property="og:description" content="设置公共的proxy代理方式由于公共的proxy不设有用户名密码，则可以直接使用chrome options的--proxy-server=ip:port参数启动chrome。123456789101112import timefrom selenium import webdriverPROXY = &apos;219.153.76.77:8080&apos;chrome_options = webdriver.C">
-<meta property="og:updated_time" content="2017-07-21T12:54:48.741Z">
+<meta property="og:description" content="startswith()和endswith()参数可以是元组当检测字符串开头或结尾时，如果有多个检测值，可以用元组作为startswith()和endswith()参数：12345678910111213# badif image.endswith(&apos;.jpg&apos;) or image.endswith(&apos;.png&apos;) or image.endswith(&apos;.gif&apos;):    pass# goodi">
+<meta property="og:updated_time" content="2017-11-01T12:08:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Selenium Chrome 设置带用户名密码的proxy代理">
-<meta name="twitter:description" content="设置公共的proxy代理方式由于公共的proxy不设有用户名密码，则可以直接使用chrome options的--proxy-server=ip:port参数启动chrome。123456789101112import timefrom selenium import webdriverPROXY = &apos;219.153.76.77:8080&apos;chrome_options = webdriver.C">
+<meta name="twitter:title" content="Python一些不为人知的基础技巧">
+<meta name="twitter:description" content="startswith()和endswith()参数可以是元组当检测字符串开头或结尾时，如果有多个检测值，可以用元组作为startswith()和endswith()参数：12345678910111213# badif image.endswith(&apos;.jpg&apos;) or image.endswith(&apos;.png&apos;) or image.endswith(&apos;.gif&apos;):    pass# goodi">
 
 
 
@@ -135,13 +135,13 @@
 
 
 
-  <link rel="canonical" href="http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html"/>
+  <link rel="canonical" href="http://www.revotu.com/python-some-common-tricks.html"/>
 
 
 
 
 
-  <title>Selenium Chrome 设置带用户名密码的proxy代理 | 大师兄</title>
+  <title>Python一些不为人知的基础技巧 | 大师兄</title>
   
 
 
@@ -304,7 +304,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/use-authenticated-proxy-in-selenium-chromedriver.html">
+    <link itemprop="mainEntityOfPage" href="http://www.revotu.com/python-some-common-tricks.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="大师兄">
@@ -321,7 +321,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Selenium Chrome 设置带用户名密码的proxy代理</h1>
+          <h1 class="post-title" itemprop="name headline">Python一些不为人知的基础技巧</h1>
         
 
         <div class="post-meta">
@@ -333,8 +333,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-10T16:37:57+08:00">
-                2017-07-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-30T20:55:46+08:00">
+                2017-10-30
               </time>
             
 
@@ -351,7 +351,7 @@
 
           
           
-             <span id="/use-authenticated-proxy-in-selenium-chromedriver.html" class="leancloud_visitors" data-flag-title="Selenium Chrome 设置带用户名密码的proxy代理">
+             <span id="/python-some-common-tricks.html" class="leancloud_visitors" data-flag-title="Python一些不为人知的基础技巧">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -379,10 +379,18 @@
       
 
       
-        <h2 id="设置公共的proxy代理方式"><a href="#设置公共的proxy代理方式" class="headerlink" title="设置公共的proxy代理方式"></a>设置公共的proxy代理方式</h2><p>由于公共的proxy不设有用户名密码，则可以直接使用chrome options的<code>--proxy-server=ip:port</code>参数启动chrome。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> time</div><div class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</div><div class="line"></div><div class="line">PROXY = <span class="string">'219.153.76.77:8080'</span></div><div class="line">chrome_options = webdriver.ChromeOptions()</div><div class="line">chrome_options.add_argument(<span class="string">'--proxy-server=&#123;0&#125;'</span>.format(PROXY))</div><div class="line">driver = webdriver.Chrome(chrome_options=chrome_options)</div><div class="line">driver.get(<span class="string">'http://httpbin.org/ip'</span>) <span class="comment"># 访问一个IP回显网站，查看代理配置是否生效了</span></div><div class="line">print(driver.page_source)</div><div class="line"></div><div class="line">time.sleep(<span class="number">15</span>)</div><div class="line">driver.quit()</div></pre></td></tr></table></figure></p>
+        <h2 id="startswith-和endswith-参数可以是元组"><a href="#startswith-和endswith-参数可以是元组" class="headerlink" title="startswith()和endswith()参数可以是元组"></a>startswith()和endswith()参数可以是元组</h2><p>当检测字符串开头或结尾时，如果有多个检测值，可以用元组作为<code>startswith()</code>和<code>endswith()</code>参数：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># bad</span></div><div class="line"><span class="keyword">if</span> image.endswith(<span class="string">'.jpg'</span>) <span class="keyword">or</span> image.endswith(<span class="string">'.png'</span>) <span class="keyword">or</span> image.endswith(<span class="string">'.gif'</span>):</div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="comment"># good</span></div><div class="line"><span class="keyword">if</span> image.endswith((<span class="string">'.jpg'</span>, <span class="string">'.png'</span>, <span class="string">'.gif'</span>)):</div><div class="line">    <span class="keyword">pass</span></div><div class="line"></div><div class="line"><span class="comment"># bad</span></div><div class="line"><span class="keyword">if</span> url.startswith(<span class="string">'http:'</span>) <span class="keyword">or</span> url.startswith(<span class="string">'https:'</span>) <span class="keyword">or</span> url.startswith(<span class="string">'ftp:'</span>):</div><div class="line">    <span class="keyword">pass</span></div><div class="line"><span class="comment"># good</span></div><div class="line"><span class="keyword">if</span> url.startswith((<span class="string">'http:'</span>, <span class="string">'https:'</span>, <span class="string">'ftp:'</span>)):</div><div class="line">    <span class="keyword">pass</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<h2 id="设置私有的proxy代理方式"><a href="#设置私有的proxy代理方式" class="headerlink" title="设置私有的proxy代理方式"></a>设置私有的proxy代理方式</h2><p>由于私有的proxy代理需要设置用户名密码，但chrome options并不支持<code>USERNAME:PASSWD@IP:PORT</code>这种方式，因此考虑用chrome插件实现自动代理用户名密码认证的方法。根据指定的代理<code>USERNAME:PASSWD@IP:PORT</code>自动创建一个Chrome代理插件，然后就可以在”Selenium + Chrome Driver”中通过安装该插件实现代理配置功能，具体代码如下。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># coding: utf-8</span></div><div class="line"><span class="comment"># proxy.py</span></div><div class="line"><span class="comment"># Selenium Chrome设置带用户名密码的proxy代理</span></div><div class="line"><span class="keyword">import</span> os</div><div class="line"><span class="keyword">import</span> re</div><div class="line"><span class="keyword">import</span> time</div><div class="line"><span class="keyword">import</span> zipfile</div><div class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</div><div class="line"></div><div class="line"><span class="comment"># Chrome代理模板插件地址: https://github.com/revotu/selenium-chrome-auth-proxy</span></div><div class="line">CHROME_PROXY_HELPER_DIR = <span class="string">'chrome-proxy-helper'</span></div><div class="line"><span class="comment"># 存储自定义Chrome代理扩展文件的目录</span></div><div class="line">CUSTOM_CHROME_PROXY_EXTENSIONS_DIR = <span class="string">'chrome-proxy-extensions'</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_chrome_proxy_extension</span><span class="params">(proxy)</span>:</span></div><div class="line">    <span class="string">"""获取一个Chrome代理扩展,里面配置有指定的代理(带用户名密码认证)</span></div><div class="line">    proxy - 指定的代理,格式: username:password@ip:port</div><div class="line">    """</div><div class="line">    m = re.compile(<span class="string">'([^:]+):([^\@]+)\@([\d\.]+):(\d+)'</span>).search(proxy)</div><div class="line">    <span class="keyword">if</span> m:</div><div class="line">        <span class="comment"># 提取代理的各项参数</span></div><div class="line">        username = m.groups()[<span class="number">0</span>]</div><div class="line">        password = m.groups()[<span class="number">1</span>]</div><div class="line">        ip = m.groups()[<span class="number">2</span>]</div><div class="line">        port = m.groups()[<span class="number">3</span>]</div><div class="line">        <span class="comment"># 创建一个定制Chrome代理扩展(zip文件)</span></div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(CUSTOM_CHROME_PROXY_EXTENSIONS_DIR):</div><div class="line">            os.mkdir(CUSTOM_CHROME_PROXY_EXTENSIONS_DIR)</div><div class="line">        extension_file_path = os.path.join(CUSTOM_CHROME_PROXY_EXTENSIONS_DIR, <span class="string">'&#123;&#125;.zip'</span>.format(proxy.replace(<span class="string">':'</span>, <span class="string">'_'</span>)))</div><div class="line">        <span class="keyword">if</span> <span class="keyword">not</span> os.path.exists(extension_file_path):</div><div class="line">            <span class="comment"># 扩展文件不存在，创建</span></div><div class="line">            zf = zipfile.ZipFile(extension_file_path, mode=<span class="string">'w'</span>)</div><div class="line">            zf.write(os.path.join(CHROME_PROXY_HELPER_DIR, <span class="string">'manifest.json'</span>), <span class="string">'manifest.json'</span>)</div><div class="line">            <span class="comment"># 替换模板中的代理参数</span></div><div class="line">            background_content = open(os.path.join(CHROME_PROXY_HELPER_DIR, <span class="string">'background.js'</span>)).read()</div><div class="line">            background_content = background_content.replace(<span class="string">'%proxy_host'</span>, ip)</div><div class="line">            background_content = background_content.replace(<span class="string">'%proxy_port'</span>, port)</div><div class="line">            background_content = background_content.replace(<span class="string">'%username'</span>, username)</div><div class="line">            background_content = background_content.replace(<span class="string">'%password'</span>, password)</div><div class="line">            zf.writestr(<span class="string">'background.js'</span>, background_content)</div><div class="line">            zf.close()</div><div class="line">        <span class="keyword">return</span> extension_file_path</div><div class="line">    <span class="keyword">else</span>:</div><div class="line">        <span class="keyword">raise</span> Exception(<span class="string">'Invalid proxy format. Should be username:password@ip:port'</span>)</div><div class="line"></div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</div><div class="line">    options = webdriver.ChromeOptions()</div><div class="line">    <span class="comment"># 添加一个自定义的代理插件（配置特定的代理，含用户名密码认证）</span></div><div class="line">    options.add_extension(get_chrome_proxy_extension(proxy=<span class="string">'username:password@ip:port'</span>))</div><div class="line">    driver = webdriver.Chrome(chrome_options=options)</div><div class="line">    <span class="comment"># 访问一个IP回显网站，查看代理配置是否生效了</span></div><div class="line">    driver.get(<span class="string">'http://httpbin.org/ip'</span>)</div><div class="line">    <span class="keyword">print</span> driver.page_source</div><div class="line">    time.sleep(<span class="number">15</span>)</div><div class="line">    driver.quit()</div></pre></td></tr></table></figure></p>
-<p>其中用到的Chrome代理模板插件地址: <a href="https://github.com/revotu/selenium-chrome-auth-proxy" target="_blank" rel="external">selenium and chrome set proxy authentication</a></p>
+<h2 id="enumerate-设置start参数做为索引起始值"><a href="#enumerate-设置start参数做为索引起始值" class="headerlink" title="enumerate()设置start参数做为索引起始值"></a>enumerate()设置start参数做为索引起始值</h2><p>当用enumerate()迭代同时要得到索引时，可以设置start参数作为索引起始值：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># bad</span></div><div class="line"><span class="keyword">for</span> index, v <span class="keyword">in</span> enumerate(data):</div><div class="line">    print(index+<span class="number">1</span>, v)</div><div class="line"><span class="comment"># good</span></div><div class="line"><span class="keyword">for</span> index, v <span class="keyword">in</span> enumerate(data, start=<span class="number">1</span>):</div><div class="line">    print(index, v)</div></pre></td></tr></table></figure></p>
+<h2 id="对切片命名"><a href="#对切片命名" class="headerlink" title="对切片命名"></a>对切片命名</h2><p>当代码中到处都是硬编码的切片索引时，我们的代码将变得无法阅读。可以对切片命名解决此问题：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">record = <span class="string">'....................100.................513.25......'</span></div><div class="line"></div><div class="line"><span class="comment"># bad</span></div><div class="line">cost = int(record[<span class="number">20</span>:<span class="number">23</span>]) * float(record[<span class="number">40</span>:<span class="number">46</span>])</div><div class="line"></div><div class="line"><span class="comment"># good</span></div><div class="line">SHARES = slice(<span class="number">20</span>, <span class="number">23</span>)</div><div class="line">PRICE = slice(<span class="number">40</span>, <span class="number">46</span>)</div><div class="line">cost = int(record[SHARES]) * float(record[PRICE])</div></pre></td></tr></table></figure></p>
+<p>作为一条基本准则，代码中如果有很多硬编码的索引值，将导致可读性合可维护性都不佳。一般来说，内置的slice()函数会创建一个切片对象，可以用在任何允许进行切片操作的地方。例如：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span>items = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>a = slice(<span class="number">2</span>, <span class="number">4</span>)</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>items[<span class="number">2</span>:<span class="number">4</span>]</div><div class="line">[<span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>items[a]</div><div class="line">[<span class="number">2</span>, <span class="number">3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>items[a] = [<span class="number">-2</span>, <span class="number">-3</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>items</div><div class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">-2</span>, <span class="number">-3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">del</span> items[a]</div><div class="line"><span class="meta">&gt;&gt;&gt; </span>items</div><div class="line">[<span class="number">0</span>, <span class="number">1</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>]</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<h2 id="上下文管理器可以同时管理多个资源"><a href="#上下文管理器可以同时管理多个资源" class="headerlink" title="上下文管理器可以同时管理多个资源"></a>上下文管理器可以同时管理多个资源</h2><p>假设你要读取一个文件的内容，经过处理以后，写入到另一个文件。你能写出pythonic的代码，所以你使用了上下文管理器，满意地的写出了下面这样的代码：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> open(<span class="string">'input.txt'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> source:</div><div class="line">    <span class="keyword">with</span> open(<span class="string">'output.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> target:</div><div class="line">        target.write(source.read())</div></pre></td></tr></table></figure></p>
+<p>你已经做的很好了，但是上下文管理器可以同时管理多个资源，上面这段代码还可以这样写：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">with</span> open(<span class="string">'input.txt'</span>, <span class="string">'r'</span>) <span class="keyword">as</span> source, open(<span class="string">'output.txt'</span>, <span class="string">'w'</span>) <span class="keyword">as</span> target:</div><div class="line">    target.write(source.read())</div></pre></td></tr></table></figure></p>
+<h2 id="else子句"><a href="#else子句" class="headerlink" title="else子句"></a>else子句</h2><p>Python中的else子句不仅能在if语句中使用，还能在for、while、和try语句中使用。<br>在for循环或是while循环正常运行完毕时（而不是通过break语句或是return语句或是异常退出循环），才会运行else块。<br>举个例子：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>):</div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span><span class="keyword">else</span>:</div><div class="line"><span class="meta">... </span>    print(<span class="string">'Iterated over everything'</span>)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">0</span></div><div class="line"><span class="number">1</span></div><div class="line"><span class="number">2</span></div><div class="line">Iterated over everything</div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>如上，for循环正常结束，所以运行了后面的else块。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">3</span>):</div><div class="line"><span class="meta">... </span>    <span class="keyword">if</span> i == <span class="number">2</span>:</div><div class="line"><span class="meta">... </span>        <span class="keyword">break</span></div><div class="line"><span class="meta">... </span>    print(i)</div><div class="line"><span class="meta">... </span><span class="keyword">else</span>:</div><div class="line"><span class="meta">... </span>    print(<span class="string">'Iterated over everything'</span>)</div><div class="line"><span class="meta">... </span></div><div class="line"><span class="number">0</span></div><div class="line"><span class="number">1</span></div><div class="line">&gt;&gt;&gt;</div></pre></td></tr></table></figure></p>
+<p>由此可以看出，for循环如果没有正常运行完毕（如上面是break结束循环的），是不会运行后面的else块。<br>仅当try块中没有异常抛出时才运行else块。一开始，你可能觉得没必要在try/except块中使用else子句。毕竟，在下述代码片段中，只有dangerous_call()不抛出异常，after_call()才会执行，对吧？<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>：</div><div class="line">    dangerous_call()</div><div class="line">    after_call()</div><div class="line"><span class="keyword">except</span> OSError:</div><div class="line">    log(<span class="string">'OSError...'</span>)</div></pre></td></tr></table></figure></p>
+<p>然而，after_call()不应该放在try块中。为了清晰明确，try块中应该只包括抛出预期异常的语句。因此，向下面这样写更好：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">try</span>:</div><div class="line">    dangerous_call()</div><div class="line"><span class="keyword">except</span> OSError:</div><div class="line">    log(<span class="string">'OSError...'</span>)</div><div class="line"><span class="keyword">else</span>:</div><div class="line">    after_call()</div></pre></td></tr></table></figure></p>
+<p>现在很明确，try块防守的是dangerous_call()可能出现的错误，而不是after_call()。而且很明显，只有try块不抛出异常，才会执行after_call()。但要注意一点，else子句抛出的异常不会由前面的except子句处理，也就是说此时after_call()如果抛出异常，将不会被捕获到。</p>
 
       
     </div>
@@ -419,8 +427,6 @@
           
             <a href="/tags/Python/" rel="tag"># Python</a>
           
-            <a href="/tags/Selenium/" rel="tag"># Selenium</a>
-          
         </div>
       
 
@@ -432,8 +438,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/python-code-style-guideline.html" rel="next" title="Python编码规范">
-                <i class="fa fa-chevron-left"></i> Python编码规范
+              <a href="/python-split-string-methods.html" rel="next" title="Python字符串分割方法总结">
+                <i class="fa fa-chevron-left"></i> Python字符串分割方法总结
               </a>
             
           </div>
@@ -441,10 +447,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/remove-all-html-attributes-with-beautifulsoup.html" rel="prev" title="BeautifulSoup删除html文档中所有属性">
-                BeautifulSoup删除html文档中所有属性 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -587,7 +589,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置公共的proxy代理方式"><span class="nav-number">1.</span> <span class="nav-text">设置公共的proxy代理方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置私有的proxy代理方式"><span class="nav-number">2.</span> <span class="nav-text">设置私有的proxy代理方式</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#startswith-和endswith-参数可以是元组"><span class="nav-number">1.</span> <span class="nav-text">startswith()和endswith()参数可以是元组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enumerate-设置start参数做为索引起始值"><span class="nav-number">2.</span> <span class="nav-text">enumerate()设置start参数做为索引起始值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对切片命名"><span class="nav-number">3.</span> <span class="nav-text">对切片命名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上下文管理器可以同时管理多个资源"><span class="nav-number">4.</span> <span class="nav-text">上下文管理器可以同时管理多个资源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#else子句"><span class="nav-number">5.</span> <span class="nav-text">else子句</span></a></li></ol></div>
             
 
           </div>
